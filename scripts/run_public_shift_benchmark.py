@@ -17,7 +17,7 @@ from sklearn.pipeline import Pipeline
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from scripts.run_large_scale_conformal import (  # noqa: E402
+from scripts.large_scale_conformal import (  # noqa: E402
     LargeDataset,
     TARGET_COVERAGE,
     bootstrap_ci,
@@ -31,7 +31,8 @@ from scripts.run_large_scale_conformal import (  # noqa: E402
     prediction_sets,
     sample_target_pool,
 )
-from scripts.run_public_shift_benchmark_v2 import (  # noqa: E402
+from scripts.public_data_preparation import (  # noqa: E402
+    ensure_public_data_dirs,
     evaluate_confidence_threshold,
     estimate_domain_auc,
     prepare_brfss_multiyear,
@@ -40,8 +41,8 @@ from scripts.run_public_shift_benchmark_v2 import (  # noqa: E402
 )
 
 
-RESULTS_DIR = ROOT / "results" / "public_benchmark_v3"
-FIGURES_DIR = ROOT / "figures" / "public_benchmark_v3"
+RESULTS_DIR = ROOT / "results" / "public_benchmark"
+FIGURES_DIR = ROOT / "figures" / "public_benchmark"
 REPORTS_DIR = ROOT / "reports"
 
 DEFAULT_SEEDS = [0, 1, 2, 3, 4]
@@ -76,6 +77,7 @@ def fmt(value: object, digits: int = 3) -> str:
 
 
 def ensure_dirs() -> None:
+    ensure_public_data_dirs()
     for path in [RESULTS_DIR, FIGURES_DIR, REPORTS_DIR]:
         path.mkdir(parents=True, exist_ok=True)
 
@@ -234,7 +236,7 @@ def dataset_audit_rows(datasets: list[LargeDataset]) -> tuple[list[dict[str, obj
     return dataset_rows, shift_rows
 
 
-def run_benchmark_v3(
+def run_benchmark(
     datasets: list[LargeDataset],
     seeds: list[int],
     target_fractions: list[float],
@@ -245,9 +247,9 @@ def run_benchmark_v3(
     dataset_rows, shift_rows = dataset_audit_rows(datasets)
 
     for ds in datasets:
-        print(f"[v3] dataset={ds.name} n={ds.final_n} shifts={len(ds.shifts)}", flush=True)
+        print(f"[benchmark] dataset={ds.name} n={ds.final_n} shifts={len(ds.shifts)}", flush=True)
         for seed in seeds:
-            print(f"[v3] seed={seed} dataset={ds.name}", flush=True)
+            print(f"[benchmark] seed={seed} dataset={ds.name}", flush=True)
             split_specs = [get_random_split(ds, seed)]
             for spec in ds.shifts:
                 shifted = get_shift_split(ds, spec, seed)
@@ -461,11 +463,11 @@ def run_benchmark_v3(
     selective = pd.DataFrame(selective_rows)
     dataset_audit = pd.DataFrame(dataset_rows)
     shift_audit = pd.DataFrame(shift_rows)
-    results.to_csv(RESULTS_DIR / "public_benchmark_v3_conformal_results.csv", index=False)
-    subgroups.to_csv(RESULTS_DIR / "public_benchmark_v3_subgroup_coverage.csv", index=False)
-    selective.to_csv(RESULTS_DIR / "public_benchmark_v3_selective_baseline.csv", index=False)
-    dataset_audit.to_csv(RESULTS_DIR / "public_benchmark_v3_dataset_audit.csv", index=False)
-    shift_audit.to_csv(RESULTS_DIR / "public_benchmark_v3_shift_audit.csv", index=False)
+    results.to_csv(RESULTS_DIR / "public_benchmark_conformal_results.csv", index=False)
+    subgroups.to_csv(RESULTS_DIR / "public_benchmark_subgroup_coverage.csv", index=False)
+    selective.to_csv(RESULTS_DIR / "public_benchmark_selective_baseline.csv", index=False)
+    dataset_audit.to_csv(RESULTS_DIR / "public_benchmark_dataset_audit.csv", index=False)
+    shift_audit.to_csv(RESULTS_DIR / "public_benchmark_shift_audit.csv", index=False)
     return results, subgroups, selective, dataset_audit, shift_audit
 
 
@@ -667,12 +669,12 @@ def summarize_and_test(
         .reset_index()
     )
 
-    summary.to_csv(RESULTS_DIR / "public_benchmark_v3_summary.csv", index=False)
-    all_summary.to_csv(RESULTS_DIR / "public_benchmark_v3_summary_all_shifts.csv", index=False)
-    by_shift.to_csv(RESULTS_DIR / "public_benchmark_v3_by_shift.csv", index=False)
-    ablation_summary.to_csv(RESULTS_DIR / "public_benchmark_v3_ablation_summary.csv", index=False)
-    test_df.to_csv(RESULTS_DIR / "public_benchmark_v3_statistical_tests.csv", index=False)
-    selective_summary.to_csv(RESULTS_DIR / "public_benchmark_v3_selective_summary.csv", index=False)
+    summary.to_csv(RESULTS_DIR / "public_benchmark_summary.csv", index=False)
+    all_summary.to_csv(RESULTS_DIR / "public_benchmark_summary_all_shifts.csv", index=False)
+    by_shift.to_csv(RESULTS_DIR / "public_benchmark_by_shift.csv", index=False)
+    ablation_summary.to_csv(RESULTS_DIR / "public_benchmark_ablation_summary.csv", index=False)
+    test_df.to_csv(RESULTS_DIR / "public_benchmark_statistical_tests.csv", index=False)
+    selective_summary.to_csv(RESULTS_DIR / "public_benchmark_selective_summary.csv", index=False)
     return summary, by_shift, ablation_summary, test_df, selective_summary
 
 
@@ -716,7 +718,7 @@ def make_figures(
         )
         if i < len(boxes) - 1:
             ax.annotate("", xy=(x + 0.14, 0.45), xytext=(x + 0.10, 0.45), xycoords=ax.transAxes, arrowprops=dict(arrowstyle="->", lw=1.3, color="black"))
-    save_figure(fig, "figure1_v3_design.png")
+    save_figure(fig, "figure1_design.png")
 
     primary_plot = results[
         (results["experiment"] == "primary")
@@ -904,15 +906,15 @@ def write_report(
     audit_brief = dataset_audit[["dataset", "analysis_n", "positive_prevalence", "n_numeric_features", "n_categorical_features", "mean_feature_missing_rate", "max_feature_missing_rate"]]
     shift_audit_brief = shift_audit[["dataset", "shift_name", "source_n", "target_n", "source_positive_prevalence", "target_positive_prevalence", "prevalence_difference", "drop_defining_features"]]
 
-    report = f"""# Public Shift Benchmark v3 收尾实验报告
+    report = f"""# Public Shift Benchmark 收尾实验报告
 
 生成日期：2026-07-05  
 项目目录：`{ROOT}`  
-实验版本：v3 收尾增强版  
+实验版本：论文发布版  
 
 ## 本轮目标
 
-本轮针对 v2 的投稿前风险点做 5 项收尾实验：扩展 seed 稳健性、去除 split-defining 变量的敏感性分析、补密目标域标注预算曲线、加入 importance-weighted conformal 对照、生成数据处理和 shift 审计表。
+本轮针对投稿前风险点做 5 项收尾实验：扩展 seed 稳健性、去除 split-defining 变量的敏感性分析、补密目标域标注预算曲线、加入 importance-weighted conformal 对照、生成数据处理和 shift 审计表。
 
 ## 数据与审计
 
@@ -974,14 +976,14 @@ importance-weighted source split 的中位 coverage 为 **{fmt(weighted_source['
 
 ## 图表清单
 
-- `figures/public_benchmark_v3/figure1_v3_design.png`
-- `figures/public_benchmark_v3/figure2_seed_robustness.png`
-- `figures/public_benchmark_v3/figure3_dense_budget_curve.png`
-- `figures/public_benchmark_v3/figure4_method_comparison.png`
-- `figures/public_benchmark_v3/figure5_ablation_sensitivity.png`
-- `figures/public_benchmark_v3/supplement_shift_shortfall_heatmap.png`
-- `figures/public_benchmark_v3/supplement_effect_estimates.png`
-- `figures/public_benchmark_v3/supplement_shift_prevalence_audit.png`
+- `figures/public_benchmark/figure1_design.png`
+- `figures/public_benchmark/figure2_seed_robustness.png`
+- `figures/public_benchmark/figure3_dense_budget_curve.png`
+- `figures/public_benchmark/figure4_method_comparison.png`
+- `figures/public_benchmark/figure5_ablation_sensitivity.png`
+- `figures/public_benchmark/supplement_shift_shortfall_heatmap.png`
+- `figures/public_benchmark/supplement_effect_estimates.png`
+- `figures/public_benchmark/supplement_shift_prevalence_audit.png`
 
 ## 投稿质量判断
 
@@ -993,14 +995,14 @@ importance-weighted source split 的中位 coverage 为 **{fmt(weighted_source['
 
 ```bash
 cd {ROOT}
-python3 scripts/run_public_shift_benchmark_v3.py --seeds {' '.join(str(seed) for seed in seeds)} --target-fractions {' '.join(str(frac) for frac in target_fractions)} --max-brfss-per-year {max_brfss_per_year}
+python3 scripts/run_public_shift_benchmark.py --seeds {' '.join(str(seed) for seed in seeds)} --target-fractions {' '.join(str(frac) for frac in target_fractions)} --max-brfss-per-year {max_brfss_per_year}
 ```
 """
-    (REPORTS_DIR / "public_shift_benchmark_v3_report.md").write_text(report, encoding="utf-8")
+    (REPORTS_DIR / "public_shift_benchmark_report.md").write_text(report, encoding="utf-8")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run public-data deployment-shift conformal benchmark v3.")
+    parser = argparse.ArgumentParser(description="Run the public-data deployment-shift conformal benchmark.")
     parser.add_argument("--seeds", nargs="+", type=int, default=DEFAULT_SEEDS)
     parser.add_argument("--target-fractions", nargs="+", type=float, default=DEFAULT_TARGET_FRACTIONS)
     parser.add_argument("--max-brfss-per-year", type=int, default=60_000)
@@ -1016,7 +1018,7 @@ def main() -> None:
         prepare_nhanes_multicycle(force=args.force_preprocess),
         prepare_uci_with_pseudo(force=args.force_preprocess),
     ]
-    results, subgroups, selective, dataset_audit, shift_audit = run_benchmark_v3(datasets, args.seeds, args.target_fractions)
+    results, subgroups, selective, dataset_audit, shift_audit = run_benchmark(datasets, args.seeds, args.target_fractions)
     summary, by_shift, ablation_summary, tests, selective_summary = summarize_and_test(results, selective, args.target_fractions)
     make_figures(results, summary, by_shift, ablation_summary, tests, dataset_audit, shift_audit)
     write_report(
@@ -1032,8 +1034,8 @@ def main() -> None:
         args.target_fractions,
         args.max_brfss_per_year,
     )
-    print(f"Wrote {RESULTS_DIR / 'public_benchmark_v3_summary.csv'}")
-    print(f"Wrote {REPORTS_DIR / 'public_shift_benchmark_v3_report.md'}")
+    print(f"Wrote {RESULTS_DIR / 'public_benchmark_summary.csv'}")
+    print(f"Wrote {REPORTS_DIR / 'public_shift_benchmark_report.md'}")
 
 
 if __name__ == "__main__":

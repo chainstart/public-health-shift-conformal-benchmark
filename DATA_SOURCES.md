@@ -26,8 +26,8 @@ The completed benchmark sorted encounters by identifier and retained the first e
 
 Use these files to inspect dataset sizes, features, source-target partitions, and empirical prevalence differences:
 
-- `results/public_benchmark_v3_dataset_audit.csv`
-- `results/public_benchmark_v3_shift_audit.csv`
+- `results/public_benchmark_dataset_audit.csv`
+- `results/public_benchmark_shift_audit.csv`
 - `tables/dataset_protocol.csv`
 - `tables/shift_protocol.csv`
 

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this benchmark package, please cite the associated manuscript and this repository."
-title: "Public-Health and Clinical Tabular Shift-Conformal Benchmark v3"
+title: "Public-Health and Clinical Tabular Shift-Conformal Benchmark"
 type: dataset
 authors:
   - family-names: Chen
@@ -14,9 +14,9 @@ authors:
   - family-names: Feng
     given-names: Yan
 date-released: 2026-07-08
-version: "3.0.0"
-repository-code: "https://github.com/chainstart/public-health-shift-conformal-benchmark-v3"
-url: "https://github.com/chainstart/public-health-shift-conformal-benchmark-v3"
+version: "paper-release"
+repository-code: "https://github.com/chainstart/public-health-shift-conformal-benchmark"
+url: "https://github.com/chainstart/public-health-shift-conformal-benchmark"
 license: "MIT"
 abstract: "A public-health and clinical tabular benchmark for evaluating target-domain recalibration of conformal prediction under deployment-style distribution shift."
 keywords:

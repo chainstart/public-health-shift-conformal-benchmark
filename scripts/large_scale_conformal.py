@@ -1410,7 +1410,7 @@ def write_report(manifest: pd.DataFrame, summary: pd.DataFrame, tests: pd.DataFr
 
 ```bash
 cd {ROOT}
-python3 scripts/run_large_scale_conformal.py --seeds 0 1 2 3 4 5 --models sgd_logistic --target-fractions 0.05 0.10 0.20
+python3 scripts/large_scale_conformal.py --seeds 0 1 2 3 4 5 --models sgd_logistic --target-fractions 0.05 0.10 0.20
 ```
 
 主要输出：

@@ -14,7 +14,7 @@
   "clinical_scope": "BRFSS/NHANES are unweighted prediction tables; UCI is patient-first and dated; the work is framed as a methodological stress test, not clinical deployment validation.",
   "target_sampling": "Target domain is split into 30% pool and 70% fixed test; budget samples are stratified deterministic draws from the pool with minimum 100 where possible.",
   "uci_cohort": "UCI raw encounters are sorted by encounter_id and deduplicated by patient_nbr, retaining first encounter before defining readmitted <30 as the label.",
-  "code_files": "exp/tasks/v3_benchmark/code/run_public_shift_benchmark_v3.py and code/run_large_scale_conformal.py",
-  "result_files": "exp/tasks/v3_benchmark/results contains conformal results, subgroup coverage, ablation, statistical tests, mechanism score diagnostics, and L2 sensitivity CSVs.",
+  "code_files": "scripts/run_public_shift_benchmark.py, scripts/public_data_preparation.py, and scripts/large_scale_conformal.py",
+  "result_files": "results/ contains conformal results, subgroup coverage, ablation, statistical tests, mechanism score diagnostics, and L2 sensitivity CSVs.",
   "paper_outputs": "writing/paper/main.pdf, cohort_definitions.tex, primary_shift_level_inference.tex, demographic_subgroup_audit.tex, shift_subgroup_worst_cases.tex, target_budget_shift_uncertainty.tex, figures/system_architecture.png, figures/experiment_setup.png, figures/score_threshold_mismatch.png"
 }

@@ -2,45 +2,33 @@
 
 ## Packaging status
 
-Created on 2026-07-08 from the local ARA project:
+Created on 2026-07-08 from the local manuscript experiment workspace.
 
-`/home/biostar/work/projects/ara/projects/public-shift-conformal-benchmark-v3`
+This release folder consolidates benchmark outputs that were previously spread across local experiment, manuscript-table, figure, and code directories.
 
-This release folder consolidates the benchmark outputs that were previously spread across:
-
-- `exp/tasks/v3_benchmark/results/`
-- `exp/v3_benchmark/`
-- `writing/paper/tables/`
-- `writing/paper/figures/`
-- `exp/tasks/v3_benchmark/code/`
+- experiment result CSVs
+- manuscript tables
+- manuscript figures
+- benchmark runner scripts
 
 ## What is complete
 
-- Completed v3 run-level outputs are included.
+- Completed benchmark run-level outputs are included.
 - Dataset and shift audit files are included.
 - Summary metrics and statistical tests are included.
 - Ablation, mechanism-diagnostic, subgroup, and L2-backbone sensitivity outputs are included.
 - Manuscript figures and tables are included.
-- The v3 runner and shared conformal utility script are included.
+- The benchmark runner, public-data preparation helpers, and shared conformal utility script are included.
 - Citation metadata and package-level README are included.
 
-## Known limitation
+## Reproducibility scope
 
-`code/run_public_shift_benchmark_v3.py` imports:
-
-```python
-from scripts.run_public_shift_benchmark_v2 import (
-    evaluate_confidence_threshold,
-    estimate_domain_auc,
-    prepare_brfss_multiyear,
-    prepare_nhanes_multicycle,
-    prepare_uci_with_pseudo,
-)
-```
-
-The file `run_public_shift_benchmark_v2.py` was not found under `/home/biostar` during packaging. This means the current release is sufficient for auditing the reported outputs, tables, figures, split definitions, and statistical summaries, but it is not a fully self-contained raw-data rerun package.
-
-The GitHub release is therefore intentionally described as an auditable benchmark-results and paper-support package. A future release can restore or refactor the missing public-data preparation helper if one-command regeneration from raw public downloads is required.
+The release now includes the public-data preparation helpers needed by
+`scripts/run_public_shift_benchmark.py`; it no longer depends on a separate
+historical preprocessing script. Raw BRFSS, NHANES, and UCI source files are not
+redistributed. Full reruns download or read those public files from the original
+providers and may depend on provider availability, network access, and local
+compute/storage.
 
 ## GitHub release checklist
 
@@ -49,4 +37,4 @@ The GitHub release is therefore intentionally described as an auditable benchmar
 - Run release validation over included CSV, table, figure, and metadata files.
 - Confirm that public source URLs for BRFSS, NHANES, and UCI are current.
 - Confirm that manuscript text cites the final GitHub URL.
-- Tag the release version, for example `v3.0.0`.
+- Tag the release as the manuscript-linked paper release.

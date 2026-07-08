@@ -1,4 +1,4 @@
-# Public-Health and Clinical Tabular Shift-Conformal Benchmark v3
+# Public-Health and Clinical Tabular Shift-Conformal Benchmark
 
 This repository is the standalone benchmark support package associated with the manuscript:
 
@@ -27,8 +27,8 @@ The benchmark contains 528,458 analytic records in the completed experiment, 12 
 
 ## Directory layout
 
-- `code/`: v3 benchmark runner and shared conformal utilities copied from the ARA experiment directory.
-- `results/`: run-level and analysis-level CSV outputs from the completed v3 experiments.
+- `scripts/`: benchmark runner, public-data preparation helpers, conformal utilities, and release validator.
+- `results/`: run-level and analysis-level CSV outputs from the completed benchmark experiments.
 - `summaries/`: compact evidence packet used during manuscript synthesis.
 - `tables/`: manuscript tables in CSV and TeX form.
 - `figures/`: manuscript-ready diagnostic figures from the completed benchmark analyses.
@@ -41,32 +41,38 @@ The benchmark contains 528,458 analytic records in the completed experiment, 12 
 
 ## Key files
 
-- `results/public_benchmark_v3_conformal_results.csv`: run-level conformal metrics.
-- `results/public_benchmark_v3_subgroup_coverage.csv`: subgroup and class-coverage outputs.
-- `results/public_benchmark_v3_shift_audit.csv`: source-target shift definitions and counts.
-- `results/public_benchmark_v3_dataset_audit.csv`: dataset-level audit metadata.
-- `results/public_benchmark_v3_statistical_tests.csv`: paired statistical comparisons.
-- `results/public_benchmark_v3_ablation_summary.csv`: shift-defining feature ablation summary.
-- `results/public_benchmark_v3_mechanism_score_diagnostics.csv`: score-threshold diagnostic outputs.
-- `results/public_benchmark_v3_l2_backbone_sensitivity.csv`: L2-backbone sensitivity outputs.
+- `results/public_benchmark_conformal_results.csv`: run-level conformal metrics.
+- `results/public_benchmark_subgroup_coverage.csv`: subgroup and class-coverage outputs.
+- `results/public_benchmark_shift_audit.csv`: source-target shift definitions and counts.
+- `results/public_benchmark_dataset_audit.csv`: dataset-level audit metadata.
+- `results/public_benchmark_statistical_tests.csv`: paired statistical comparisons.
+- `results/public_benchmark_ablation_summary.csv`: shift-defining feature ablation summary.
+- `results/public_benchmark_mechanism_score_diagnostics.csv`: score-threshold diagnostic outputs.
+- `results/public_benchmark_l2_backbone_sensitivity.csv`: L2-backbone sensitivity outputs.
 
 ## Reproducibility status and scope
 
 The reported manuscript analyses can be audited from the run-level outputs, split identifiers, audit CSV files, generated tables, and figures included here. The release is designed to support independent inspection of the benchmark evidence used in the manuscript.
 
-Raw public datasets are not redistributed. The included code documents the analysis pipeline and model/calibration logic used for the v3 experiments, but one historical public-data preparation helper imported by `code/run_public_shift_benchmark_v3.py` was not found in the local project tree at release-packaging time. Therefore, this release should be cited as an auditable benchmark-results and paper-support package, not as a complete one-command raw-data regeneration archive.
+Raw public datasets are not redistributed. The included scripts contain the public-data download/preparation helpers, model pipeline, conformal calibration workflows, statistical summaries, and figure/report generation code used for the benchmark release. A full rerun requires network access to the original public data providers and enough local compute/storage for BRFSS, NHANES, and UCI preprocessing.
 
 Run the lightweight release check with:
 
 ```bash
-python code/validate_release.py
+python scripts/validate_release.py
+```
+
+Run the benchmark pipeline from public downloads with:
+
+```bash
+python scripts/run_public_shift_benchmark.py
 ```
 
 ## Citation
 
 Use `CITATION.cff` to cite this repository. The manuscript should cite the public repository URL:
 
-`https://github.com/chainstart/public-health-shift-conformal-benchmark-v3`
+`https://github.com/chainstart/public-health-shift-conformal-benchmark`
 
 ## License
 
