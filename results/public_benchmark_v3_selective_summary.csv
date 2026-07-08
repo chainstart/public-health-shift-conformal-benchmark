@@ -1,0 +1,11 @@
+experiment,setting,workflow,target_cal_fraction,auto_rate,auto_accuracy,manual_review_rate,n_runs
+primary,covariate_shift,source_confidence_threshold,0.0,0.4434397145693476,0.8792034948694504,0.5565602854306524,75
+primary,covariate_shift,target_confidence_threshold,0.005,0.0384898909977295,0.8963707408634296,0.9615101090022704,75
+primary,covariate_shift,target_confidence_threshold,0.01,0.1047668663714509,0.8990234276172646,0.8952331336285491,75
+primary,covariate_shift,target_confidence_threshold,0.02,0.1076842927845793,0.8967447520535443,0.8923157072154206,75
+primary,covariate_shift,target_confidence_threshold,0.03,0.1060171919770773,0.9010776324635691,0.8939828080229226,75
+primary,covariate_shift,target_confidence_threshold,0.05,0.1545715029955717,0.899329413542347,0.8454284970044282,75
+primary,covariate_shift,target_confidence_threshold,0.1,0.1475384214639229,0.898614454168619,0.8524615785360771,75
+primary,covariate_shift,target_confidence_threshold,0.15,0.1387340453243032,0.8982892649988239,0.8612659546756968,75
+primary,covariate_shift,target_confidence_threshold,0.2,0.1387861422245376,0.8987163675383019,0.8612138577754623,75
+primary,random_exchangeable,source_confidence_threshold,0.0,0.3678190476190476,0.901984642174126,0.6321809523809524,15

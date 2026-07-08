@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "claim_scope": "Public tabular benchmark of conformal threshold transport under selected deployment-style shifts in BRFSS, NHANES, and UCI readmission data.",
+  "no_general_necessity_claim": "The manuscript explicitly does not claim that target-domain recalibration is necessary in general or uniformly superior to all source-only/adaptation-aware alternatives.",
+  "source_baseline_scope": "Comparative claims are limited to source split conformal and one implemented clipped source-only importance-weighting baseline.",
+  "primary_shift_variables_retained": "Primary analyses retain shift-defining variables when they are part of the harmonized feature space, reflecting observable deployment boundaries.",
+  "shift_level_primary_inference": "The manuscript now treats 12 non-pseudo deployment shifts as primary inferential units: source shift vs random coverage-error mean diff 0.113, median 0.049, p=4.9e-04; target10 vs source shortfall mean diff -0.101, median -0.034, p=0.021.",
+  "shift_defining_ablation": "Sensitivity drops exact defining variables for all 12 shifts; source split mean shortfall remains 0.0609 and target10 shortfall is 0.0006; target-minus-source shortfall median is -0.0291, Wilcoxon p=1.19e-08.",
+  "l2_backbone_sensitivity": "L2-SGD backbone reproduces the qualitative result: source split median coverage 0.8597/shortfall 0.0403 and target10 split median coverage 0.9001/shortfall 0.0.",
+  "mechanism_diagnostic": "Target oracle q90 minus source qhat tracks source undercoverage across 60 shift-run pairs with Spearman r=0.946.",
+  "inferential_unit": "Primary inference uses 12 non-pseudo deployment shifts after averaging over seeds; 60 matched shift-run analyses are repeated-split sensitivity summaries.",
+  "budget_uncertainty": "Target budget table now reports shift-level coverage, shortfall, and set-size bootstrap intervals across all target fractions.",
+  "subgroup_scope": "Class-conditional results and demographic subgroup audit are descriptive and are not claimed as fairness or subgroup-conditional validity guarantees; subgroup audit now reports pooled worst values plus per-shift worst subgroup cases with denominators.",
+  "clinical_scope": "BRFSS/NHANES are unweighted prediction tables; UCI is patient-first and dated; the work is framed as a methodological stress test, not clinical deployment validation.",
+  "target_sampling": "Target domain is split into 30% pool and 70% fixed test; budget samples are stratified deterministic draws from the pool with minimum 100 where possible.",
+  "uci_cohort": "UCI raw encounters are sorted by encounter_id and deduplicated by patient_nbr, retaining first encounter before defining readmitted <30 as the label.",
+  "code_files": "exp/tasks/v3_benchmark/code/run_public_shift_benchmark_v3.py and code/run_large_scale_conformal.py",
+  "result_files": "exp/tasks/v3_benchmark/results contains conformal results, subgroup coverage, ablation, statistical tests, mechanism score diagnostics, and L2 sensitivity CSVs.",
+  "paper_outputs": "writing/paper/main.pdf, cohort_definitions.tex, primary_shift_level_inference.tex, demographic_subgroup_audit.tex, shift_subgroup_worst_cases.tex, target_budget_shift_uncertainty.tex, figures/system_architecture.png, figures/experiment_setup.png, figures/score_threshold_mismatch.png"
+}

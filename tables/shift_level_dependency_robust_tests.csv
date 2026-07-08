@@ -1,0 +1,3 @@
+backbone,comparison,median_difference,wilcoxon_p,n_shifts,source_mean_shortfall,target10_mean_shortfall
+sgd_elasticnet,target10_minus_source_shortfall_shift_means,-0.0339902872577828,0.02099609375,12,0.10400694196944854,0.0027239881553188868
+sgd_l2,target10_minus_source_shortfall_shift_means,-0.03887690263654595,0.02099609375,12,0.10793762696996662,0.00245571037869292

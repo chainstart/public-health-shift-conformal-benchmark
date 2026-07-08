@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "nominal_coverage": 0.9,
+  "total_n": 528458,
+  "dataset_count": 3,
+  "seed_count": 5,
+  "non_pseudo_shift_count": 12,
+  "non_pseudo_shift_run_pairs": 60,
+  "main_result": "Source split conformal prediction under-covered under deployment shifts but not under exchangeable random controls.",
+  "best_supported_conclusion": "Small target-domain calibration sets restore conformal coverage under public health deployment shifts in public datasets; source-only weighting is not an adequate substitute.",
+  "publication_readiness_note": "The study can support a benchmark/methods manuscript but still needs real ICU/EHR validation for a high-impact clinical deployment claim."
+}
+

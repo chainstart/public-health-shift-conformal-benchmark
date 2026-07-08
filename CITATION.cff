@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this benchmark package, please cite the associated manuscript and this repository."
+title: "Public-Health and Clinical Tabular Shift-Conformal Benchmark v3"
+type: dataset
+authors:
+  - family-names: Chen
+    given-names: Zhipeng
+  - family-names: Zhan
+    given-names: Jingyi
+  - family-names: Wang
+    given-names: Qisheng
+  - family-names: Tang
+    given-names: Haolun
+  - family-names: Feng
+    given-names: Yan
+date-released: 2026-07-08
+version: "3.0.0"
+repository-code: "https://github.com/chainstart/public-health-shift-conformal-benchmark-v3"
+url: "https://github.com/chainstart/public-health-shift-conformal-benchmark-v3"
+license: "MIT"
+abstract: "A public-health and clinical tabular benchmark for evaluating target-domain recalibration of conformal prediction under deployment-style distribution shift."
+keywords:
+  - conformal prediction
+  - public health
+  - clinical prediction
+  - distribution shift
+  - benchmark
+  - target-domain recalibration
+preferred-citation:
+  type: article
+  title: "A public-health and clinical tabular benchmark for target-domain recalibration of conformal prediction under deployment shift"
+  authors:
+    - family-names: Chen
+      given-names: Zhipeng
+    - family-names: Zhan
+      given-names: Jingyi
+    - family-names: Wang
+      given-names: Qisheng
+    - family-names: Tang
+      given-names: Haolun
+    - family-names: Feng
+      given-names: Yan
+  year: 2026
+  notes: "Manuscript prepared for Journal of Biomedical Informatics."
