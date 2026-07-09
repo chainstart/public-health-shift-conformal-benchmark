@@ -17,6 +17,7 @@ REQUIRED_FILES = [
     "RELEASE_NOTES.md",
     "CHECKSUMS.sha256",
     "requirements.txt",
+    "scripts/create_manuscript_figures.py",
     "scripts/run_public_shift_benchmark.py",
     "scripts/public_data_preparation.py",
     "scripts/large_scale_conformal.py",
@@ -29,6 +30,7 @@ REQUIRED_FILES = [
     "tables/target_calibration_budget_table.csv",
     "summaries/headline_metrics.csv",
     "figures/quality_by_task.png",
+    "figures/mechanism_diagnostics.png",
     "figures/score_threshold_mismatch.png",
 ]
 

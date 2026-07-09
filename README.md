@@ -62,6 +62,12 @@ Run the lightweight release check with:
 python scripts/validate_release.py
 ```
 
+Regenerate the manuscript empirical figures from the archived result tables with:
+
+```bash
+python scripts/create_manuscript_figures.py
+```
+
 Run the benchmark pipeline from public downloads with:
 
 ```bash

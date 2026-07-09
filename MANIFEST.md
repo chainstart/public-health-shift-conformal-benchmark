@@ -13,6 +13,7 @@ Release date: 2026-07-08
 - `summaries/`: compact evidence packet used during manuscript synthesis.
 - `tables/`: manuscript tables in CSV and TeX form.
 - `figures/`: benchmark figures generated from completed analyses.
+- `scripts/create_manuscript_figures.py`: regenerates manuscript empirical result figures from archived CSV outputs.
 - `DATA_SOURCES.md`: public data-source description and audit file pointers.
 - `CITATION.cff`: citation metadata.
 - `LICENSE` and `NOTICE.md`: repository licensing and source-data notice.
