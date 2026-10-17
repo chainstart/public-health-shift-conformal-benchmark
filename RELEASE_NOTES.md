@@ -1,5 +1,10 @@
 # Release Notes
 
+## Development source updates, 2026-10-17
+
+Added a prediction-only calibration plugin interface, seven contract tests, and an explicit public-data source inventory and bounded access probe. The historical cohort builder, benchmark runner and reported result tables are unchanged. These development additions have not produced new manuscript results and do not create a new tagged or Zenodo release. See METHOD_PLUGINS.md for the exact scope and differences from historical calibration conventions.
+
+
 ## Packaging status
 
 Created on 2026-07-08 from the local manuscript experiment workspace.

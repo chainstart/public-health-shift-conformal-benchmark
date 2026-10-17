@@ -1,0 +1,481 @@
+{
+  "schema": "public-cohort-source-catalog.v1",
+  "baseline_public_commit": "2ef735d198037e5badd2cbe1fedf47a0f8f4dcfa",
+  "source_code_sha256": "0d1c4284b842ceac45814acde7a9f1e4b9e20d35a8abdcb9ec82edca6baaa7ca",
+  "source_code": "scripts/public_data_preparation.py",
+  "scope": "Recipe extracted from the public implementation; not a record of newly downloaded or regenerated cohorts.",
+  "files": [
+    {
+      "dataset": "BRFSS",
+      "year": 2011,
+      "file_id": "LLCP2011XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2011/files/LLCP2011XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2011_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2013,
+      "file_id": "LLCP2013XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2013_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2015,
+      "file_id": "LLCP2015XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2015/files/LLCP2015XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2015_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2017,
+      "file_id": "LLCP2017XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2017/files/LLCP2017XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2017_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2019,
+      "file_id": "LLCP2019XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2019/files/LLCP2019XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2019_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2021,
+      "file_id": "LLCP2021XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2021/files/LLCP2021XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2021_xpt.zip"
+    },
+    {
+      "dataset": "BRFSS",
+      "year": 2023,
+      "file_id": "LLCP2023XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2023/files/LLCP2023XPT.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/public_benchmark/brfss_2023_xpt.zip"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "DEMO_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "RIDAGEYR",
+        "RIAGENDR",
+        "RIDRETH3",
+        "DMDEDUC2",
+        "DMDMARTL",
+        "INDFMPIR"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_DEMO_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "DIQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "DIQ010"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_DIQ_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "BMX_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BMXBMI",
+        "BMXWT",
+        "BMXHT",
+        "BMXWAIST"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_BMX_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "BPQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BPQ020",
+        "BPQ080"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_BPQ_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "SMQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "SMQ020"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_SMQ_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2011-2012",
+      "cycle_start": 2011,
+      "file_id": "MCQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "MCQ160B",
+        "MCQ160C",
+        "MCQ160F",
+        "MCQ160M"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2011_MCQ_G.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "DEMO_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "RIDAGEYR",
+        "RIAGENDR",
+        "RIDRETH3",
+        "DMDEDUC2",
+        "DMDMARTL",
+        "INDFMPIR"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_DEMO_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "DIQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DIQ_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "DIQ010"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_DIQ_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "BMX_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BMXBMI",
+        "BMXWT",
+        "BMXHT",
+        "BMXWAIST"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_BMX_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "BPQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BPQ020",
+        "BPQ080"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_BPQ_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "SMQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/SMQ_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "SMQ020"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_SMQ_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2013-2014",
+      "cycle_start": 2013,
+      "file_id": "MCQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "MCQ160B",
+        "MCQ160C",
+        "MCQ160F",
+        "MCQ160M"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2013_MCQ_H.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "DEMO_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEMO_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "RIDAGEYR",
+        "RIAGENDR",
+        "RIDRETH3",
+        "DMDEDUC2",
+        "DMDMARTL",
+        "INDFMPIR"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_DEMO_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "DIQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DIQ_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "DIQ010"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_DIQ_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "BMX_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BMXBMI",
+        "BMXWT",
+        "BMXHT",
+        "BMXWAIST"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_BMX_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "BPQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BPQ_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BPQ020",
+        "BPQ080"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_BPQ_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "SMQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/SMQ_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "SMQ020"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_SMQ_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2015-2016",
+      "cycle_start": 2015,
+      "file_id": "MCQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/MCQ_I.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "MCQ160B",
+        "MCQ160C",
+        "MCQ160F",
+        "MCQ160M"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2015_MCQ_I.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "DEMO_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "RIDAGEYR",
+        "RIAGENDR",
+        "RIDRETH3",
+        "DMDEDUC2",
+        "DMDMARTL",
+        "INDFMPIR"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_DEMO_J.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "DIQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "DIQ010"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_DIQ_J.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "BMX_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BMXBMI",
+        "BMXWT",
+        "BMXHT",
+        "BMXWAIST"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_BMX_J.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "BPQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BPQ_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "BPQ020",
+        "BPQ080"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_BPQ_J.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "SMQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/SMQ_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "SMQ020"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_SMQ_J.xpt"
+    },
+    {
+      "dataset": "NHANES",
+      "cycle": "2017-2018",
+      "cycle_start": 2017,
+      "file_id": "MCQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/MCQ_J.xpt",
+      "format": "xpt",
+      "selected_columns": [
+        "SEQN",
+        "MCQ160B",
+        "MCQ160C",
+        "MCQ160F",
+        "MCQ160M"
+      ],
+      "join_key": "SEQN",
+      "join": "DEMO left join",
+      "local_cache": "data/raw_large/public_benchmark/nhanes_2017_MCQ_J.xpt"
+    },
+    {
+      "dataset": "UCI",
+      "file_id": "296 diabetes 130-US hospitals",
+      "url": "https://archive.ics.uci.edu/static/public/296/diabetes%2B130-us%2Bhospitals%2Bfor%2Byears%2B1999-2008.zip",
+      "format": "zip",
+      "local_cache": "data/raw_large/uci_diabetes_130_hospitals.zip",
+      "archive_member": "diabetic_data.csv"
+    }
+  ]
+}
