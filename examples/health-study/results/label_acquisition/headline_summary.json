@@ -1,0 +1,89 @@
+{
+  "risk300": {
+    "available_mondrian": {
+      "planned_labels": 300,
+      "regime": "risk_priority",
+      "coverage": 0.9317900464699292,
+      "class_0_coverage": 0.9448914823579316,
+      "class_1_coverage": 0.8526880634600866,
+      "positive_class_shortfall": 0.0521373918396215,
+      "class_coverage_gap": 0.0947829727519436,
+      "mean_set_size": 1.4870764964598704,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.5129235035401296,
+      "full_set_rate": 0.4870764964598704,
+      "correct_singleton_rate": 0.4447135500100587,
+      "incorrect_singleton_rate": 0.0682099535300709
+    },
+    "available_split": {
+      "planned_labels": 300,
+      "regime": "risk_priority",
+      "coverage": 0.935894796069766,
+      "class_0_coverage": 0.9322343514119096,
+      "class_1_coverage": 0.9221553330972462,
+      "positive_class_shortfall": 0.0426246683997464,
+      "class_coverage_gap": 0.1056922575114178,
+      "mean_set_size": 1.6454273576818714,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.3545726423181287,
+      "full_set_rate": 0.6454273576818713,
+      "correct_singleton_rate": 0.2904674383878945,
+      "incorrect_singleton_rate": 0.0641052039302341
+    },
+    "known_design_rule": {
+      "planned_labels": 300,
+      "regime": "risk_priority",
+      "coverage": 0.9022968221284184,
+      "class_0_coverage": 0.9012528329483036,
+      "class_1_coverage": 0.9091860151667936,
+      "positive_class_shortfall": 0.0159423121886527,
+      "class_coverage_gap": 0.0429266162132553,
+      "mean_set_size": 1.5123908087280755,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.4876091912719243,
+      "full_set_rate": 0.5123908087280756,
+      "correct_singleton_rate": 0.3899060134003427,
+      "incorrect_singleton_rate": 0.0977031778715815
+    },
+    "sentinel_mondrian": {
+      "planned_labels": 300,
+      "regime": "risk_priority",
+      "coverage": 0.9022968221284184,
+      "class_0_coverage": 0.9012528329483036,
+      "class_1_coverage": 0.9091860151667936,
+      "positive_class_shortfall": 0.0159423121886527,
+      "class_coverage_gap": 0.0429266162132553,
+      "mean_set_size": 1.5123908087280755,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.4876091912719243,
+      "full_set_rate": 0.5123908087280756,
+      "correct_singleton_rate": 0.3899060134003427,
+      "incorrect_singleton_rate": 0.0977031778715815
+    },
+    "sentinel_split": {
+      "planned_labels": 300,
+      "regime": "risk_priority",
+      "coverage": 0.9003119143999402,
+      "class_0_coverage": 0.8957015866149888,
+      "class_1_coverage": 0.8813443131882924,
+      "positive_class_shortfall": 0.0727866239109673,
+      "class_coverage_gap": 0.1444979219801353,
+      "mean_set_size": 1.5442278953128248,
+      "empty_set_rate": 2.1897410631192863e-06,
+      "singleton_rate": 0.4557677252050491,
+      "full_set_rate": 0.5442300850538878,
+      "correct_singleton_rate": 0.3560818293460524,
+      "incorrect_singleton_rate": 0.0996858958589966
+    }
+  },
+  "condition_minima": {
+    "available_mondrian": 0.8149069569444389,
+    "sentinel_mondrian": 0.8959220251180279
+  },
+  "conditions_positive_below90": {
+    "available_mondrian": 12,
+    "sentinel_mondrian": 1
+  },
+  "figures_are_descriptive": true,
+  "all_twelve_conditions_in_plot": true
+}

@@ -1,0 +1,15 @@
+
+Independent institutional extension (Supplementary Code 1)
+
+Paths below are relative to `external-validation-20261017/` in Supplementary Code 1. Primary and posthoc analyses remain distinct. The six conditions are related comparisons from two collections, not six independent datasets; they are not pooled into the twelve primary conditions.
+
+| Claim | Location | Code / aggregate evidence | Boundary |
+|---|---|---|---|
+| Four cardiac centers, 920 records; two sepsis hospitals, 24,095 eligible of 40,336 original files | S14; Table S23 | protocol.json; data-source-summary.json; prepare_external.py; audit_external_cohorts.py | Diagnostic cardiac outcome; retrospective hour12 sepsis landmark, later supplied-label transition hours13–24; observed clock/length selection; no future features |
+| External budget and class-protection–resolution comparisons | 3.4 final paragraph; S16; Table S24; Figure S3; Table S18; Figure S2 | run_external.py; verify_external.py; make_external_assets.py; reference/results/budget_by_condition.csv; budget_by_dataset.csv; budget_label_counts.csv | Two fixed predictors, five seeds/draws, eight fractions; source may already be conservative; weak sepsis discrimination; no independent deployment-population inference |
+| External label-observation comparison | 3.4 final paragraph; S16; Figure S4; Tables S19–S20 | run_external.py; verify_external.py; reference/results/channel_by_condition.csv; channel_by_dataset.csv; channel_label_counts.csv | All three observation mechanisms, four calibration alternatives; sentinel advantage not universal; same planned count is not equal cost |
+| Source-only L2 sensitivity | 3.4 final paragraph; S15–S16; Table S22 | source_solver_diagnostic.json; run_source_solver_diagnostic.py; verify_external.py; reference/source-solver-results/budget_by_condition.csv; predictor_diagnostics.csv | Explicitly posthoc; optimization and regularization both differ; unchanged roles and no target tuning; does not replace frozen results or establish clinical utility |
+
+The code archive redistributes no raw patients or prediction arrays. Provider versions and hashes are in data-source-summary.json. Reproduction commands acquire the raw data and regenerate all measurements and verifier outputs.
+
+Exact role counts for every model and seed are in reference/results/role_counts.csv. The external target pool is rounded upward and the test takes its complement; the primary benchmark rounds its target test upward. No allocation or result is changed by this reporting clarification.

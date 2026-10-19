@@ -1,0 +1,27 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Shift-level source split and 10\% target recalibration results over five seeds. Coverage target is 0.90; positive values in the last two columns indicate improvement after target-domain recalibration.}
+\label{primary-tab:shift_level_results}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Shift & Src cov. & Src short. & Tgt10 cov. & Tgt10 short. & Cov. gain & Short. red. \\
+\midrule
+BRFSS & age\_65plus & 0.82746 & 0.07254 & 0.90161 & 0.00071 & 0.07415 & 0.07184 \\
+BRFSS & obesity & 0.69018 & 0.20982 & 0.90098 & 0.00013 & 0.21079 & 0.20969 \\
+BRFSS & race\_black\_vs\_white & 0.86152 & 0.03848 & 0.89653 & 0.00462 & 0.03501 & 0.03387 \\
+BRFSS & region\_south & 0.86689 & 0.03311 & 0.89784 & 0.00228 & 0.03095 & 0.03084 \\
+BRFSS & time\_future & 0.94666 & 0.00000 & 0.90041 & 0.00087 & -0.04626 & -0.00087 \\
+NHANES & age\_65plus & 0.36446 & 0.53554 & 0.90441 & 0.00447 & 0.53995 & 0.53106 \\
+NHANES & obesity & 0.69161 & 0.20839 & 0.90772 & 0.00133 & 0.21611 & 0.20706 \\
+NHANES & race\_black\_vs\_white & 0.95983 & 0.00000 & 0.89722 & 0.00651 & -0.06260 & -0.00651 \\
+NHANES & time\_future & 0.92694 & 0.00000 & 0.90036 & 0.00382 & -0.02658 & -0.00382 \\
+UCI & age\_older70 & 0.78593 & 0.11407 & 0.89804 & 0.00325 & 0.11211 & 0.11082 \\
+UCI & emergency\_admission & 0.86387 & 0.03613 & 0.90146 & 0.00202 & 0.03759 & 0.03411 \\
+UCI & race\_african\_american & 0.91070 & 0.00000 & 0.90143 & 0.00270 & -0.00927 & -0.00270 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

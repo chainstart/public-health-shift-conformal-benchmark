@@ -1,0 +1,17 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Cohort and outcome definitions used in the benchmark. All preprocessing transformations are fit within the source-training split of each run through a scikit-learn pipeline and then applied unchanged to source calibration, target calibration, and target test rows.}
+\label{tab:cohort_definitions}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}L{2.0cm}YYY@{}}
+\toprule
+Dataset & Analytic unit & Binary outcome & Main cohort and feature boundary \\
+\midrule
+BRFSS 2011--2023 & Respondent-year survey row, capped by stratified sampling at up to 60{,}000 rows per included year & Self-reported diagnosed diabetes: \texttt{DIABETE4} or \texttt{DIABETE3}=1 versus no diabetes, coded as 3; other responses excluded & Common multiyear BRFSS questionnaire and derived variables observed across source and target years; survey weights, strata, and PSU variables are not used \\
+NHANES 2011--2018 & Participant-cycle row from merged DEMO, DIQ, BMX, BPQ, SMQ, and MCQ files & Self-reported diabetes: \texttt{DIQ010}=1 versus \texttt{DIQ010}=2; other responses excluded & Common multicycle demographic, examination, and questionnaire variables; survey design variables are not used in the conformal benchmark \\
+UCI diabetes readmission & First inpatient encounter per patient after removing invalid sex entries & 30-day readmission: \texttt{readmitted=<30} versus all other readmission categories & Public 130-US-hospitals diabetes readmission table; encounter rows sorted by \texttt{encounter\_id} and deduplicated by \texttt{patient\_nbr} before feature construction \\
+\bottomrule
+\end{tabularx}
+\end{table*}

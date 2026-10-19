@@ -1,0 +1,22 @@
+{
+  "input": "papers/20260706aihealth0001/research/jbi-r1-20261009/results/matched/extended_replicate_metrics.csv",
+  "input_sha256": "e2088cf953b924a7aa35b059a3ebb04eb91b46ab9be9064cdf88cb5bddef6c76",
+  "script_sha256": "75bedde9251fc08ba3bdd466ec607048f8495c586d688af5a31c1f57c81080b9",
+  "method_rows": 2700,
+  "conditions": 12,
+  "methods": 9,
+  "floors": [
+    0.85,
+    0.88,
+    0.9
+  ],
+  "analysis": "Exploratory descriptive; thresholds are retrospective evaluation criteria, not clinical tolerances or tuning objectives.",
+  "checks": "Binary set rate and size identities, nonnegative correct/error singleton masses, unique keys, complete methods/conditions.",
+  "files": {
+    "floor_sensitivity.csv": "ca9636c5a78827a4ed3633c8f23db2253e5dd293c209384aabd57ffbaa22caea",
+    "replicate_diagnostics.csv": "039a9cb9fb81738b110aec6e65d3b34bd91284ad1243ccd31a61159b6d9936a0",
+    "dataset_diagnostics.csv": "2137468f25b0b9fd5fd91f4dee30d53f5eecea2de25e291b6900a982b55c0a1c",
+    "condition_diagnostics.csv": "ac32d4dfa27c928ec0af7d2a98cb357f63b41fdf38080539f85738678cc31525",
+    "equal_dataset_diagnostics.csv": "462058a2ec6034084f1fd6abf47a12de2d5560902052b76e4d5bbe9e88bf369d"
+  }
+}

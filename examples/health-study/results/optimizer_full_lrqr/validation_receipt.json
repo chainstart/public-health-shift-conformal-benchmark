@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "artifact_hash_mismatches": [],
+    "checked_problems": 300,
+    "combined_lrqr_copy_mismatch": 0,
+    "cv_selection_mismatches": 0,
+    "draw_mismatches": 0,
+    "feature_mismatches": 0,
+    "input_hash_mismatches": 0,
+    "metric_mismatches": 0,
+    "mismatch_examples": [],
+    "objective_or_gradient_mismatches": 0,
+    "prior_metrics_copy_mismatch": 0,
+    "role_overlaps": 0,
+    "source_labeled_unlabeled_overlaps": 0,
+    "summary_mismatches": 0,
+    "threshold_mismatches": 0
+  },
+  "created_at_utc": "2026-10-09T15:20:52.138833+00:00",
+  "schema_version": "ara.public_shift.lrqr_verification.v1",
+  "scope": "Independent reconstruction of input hashes, role/draw separation, source-supported feature maps, saved LR-QR objectives and gradients, prediction sets, metrics, aggregation, and CV selection. The optimizer trajectory itself is not rerun.",
+  "status": "PASS"
+}

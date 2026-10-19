@@ -1,0 +1,8 @@
+{
+  "status": "posthoc_diagnostic_frozen_before_L2_fitting",
+  "primary_protocol_unchanged": "protocol.json",
+  "reason": "The frozen sepsis experiment yielded modest discrimination and extreme SGD probabilities. Check whether coverage/efficiency observations depend on the source optimizer; keep both original predictors and every outcome.",
+  "model": "L2 LogisticRegression, C=1, solver=lbfgs, max_iter=5000, class_weight=balanced; source-only median imputation/standardization; no target tuning or model selection",
+  "scope": "sepsis only, both institutional directions and whole-dataset random control; same five seeds, unchanged roles and five 10% target draws; all three observation mechanisms and four calibration methods",
+  "status_of_evidence": "Exploratory predictor-optimization control, not a preregistered independent confirmation; no substitution for the frozen primary results"
+}

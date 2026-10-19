@@ -1,0 +1,15 @@
+{
+  "status": "frozen_before_full_rerun",
+  "reason": "Prespecified 4000-step OT validation materially changed its headline failure; complete all 300 original draws at that setting. No initialization is selected by test outcomes: uniform initialization remains canonical. Baseline 1000-step data remain preserved.",
+  "ot_steps": 4000,
+  "ot_initialization": "uniform",
+  "lrqr_cv_steps": 1800,
+  "lrqr_final_steps": 8000,
+  "lrqr_initial_betas": [
+    0.25,
+    1,
+    4
+  ],
+  "case_scope": "all 60 models and five matched draws, no exclusions",
+  "interpretation": "New complete results replace comparator headlines. The validation subset and analytic controls remain independent supporting measurements of numerical sensitivity. No clinical recommendation or generalization across deployments is inferred."
+}

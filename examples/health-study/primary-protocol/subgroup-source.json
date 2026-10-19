@@ -1,0 +1,8 @@
+{
+  "url": "https://raw.githubusercontent.com/chainstart/public-health-shift-conformal-benchmark/2ef735d198037e5badd2cbe1fedf47a0f8f4dcfa/results/public_benchmark_subgroup_coverage.csv",
+  "sha256": "91e8ae07fb60adedbccb2e31202ac93f87bfdf44e9057a800ad288b971985c43",
+  "bytes": 15017201,
+  "local_path": "archived-release/results/public_benchmark_subgroup_coverage.csv",
+  "derived_path": "results/primary-subgroups-with-counts-and-size.csv",
+  "scope": "Original public aggregate subgroup measurements, not raw participant records."
+}

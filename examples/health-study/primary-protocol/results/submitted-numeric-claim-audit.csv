@@ -1,0 +1,59 @@
+claim,computed,display,submitted_display,matches
+Random-control coverage median,0.9009333333333334,0.9009,0.9009,True
+Shifted source coverage median,0.8620293838395436,0.8620,0.8620,True
+Shifted source shortfall median,0.0379706161604564,0.0380,0.0380,True
+Target10 ordinary coverage median,0.9010632965571639,0.9011,0.9011,True
+Target10 ordinary shortfall median,0.0,0.0000,0.0000,True
+Target10 ordinary shortfall mean,0.0027239881553188868,0.0027,0.0027,True
+Target10 Mondrian coverage median,0.9012062193646909,0.9012,0.9012,True
+Target10 Mondrian class-gap median,0.01003799864232325,0.0100,0.0100,True
+Weighted-source coverage median,0.8620059646357965,0.8620,0.8620,True
+nhanes_multicycle_diabetes age_65plus source mean,0.36446394296682205,0.3645,0.3645,True
+brfss_multiyear_diabetes obesity source mean,0.6901828588058398,0.6902,0.6902,True
+Table 3 target_recalibrated_split 0.005 coverage,0.9123765148603857,0.9124,0.9124,True
+Table 3 target_recalibrated_split 0.005 mean_shortfall,0.0032114013496929044,0.0032,0.0032,True
+Table 3 target_recalibrated_split 0.005 below_nominal,19.0,19,19,True
+Table 3 target_recalibrated_split 0.005 class_gap,0.0920481182628204,0.0920,0.0921,False
+Table 3 target_recalibrated_split 0.01 coverage,0.9023884417605643,0.9024,0.9024,True
+Table 3 target_recalibrated_split 0.01 mean_shortfall,0.005793475562339793,0.0058,0.0058,True
+Table 3 target_recalibrated_split 0.01 below_nominal,25.0,25,25,True
+Table 3 target_recalibrated_split 0.01 class_gap,0.09684358461441185,0.0968,0.0968,True
+Table 3 target_recalibrated_split 0.05 coverage,0.9011645586427923,0.9012,0.9012,True
+Table 3 target_recalibrated_split 0.05 mean_shortfall,0.003175823389761058,0.0032,0.0032,True
+Table 3 target_recalibrated_split 0.05 below_nominal,27.0,27,27,True
+Table 3 target_recalibrated_split 0.05 class_gap,0.1058380993754443,0.1058,0.1058,True
+Table 3 target_recalibrated_split 0.1 coverage,0.9010632965571639,0.9011,0.9011,True
+Table 3 target_recalibrated_split 0.1 mean_shortfall,0.0027239881553188868,0.0027,0.0027,True
+Table 3 target_recalibrated_split 0.1 below_nominal,28.0,28,28,True
+Table 3 target_recalibrated_split 0.1 class_gap,0.10442602047994434,0.1044,0.1044,True
+Table 3 target_recalibrated_mondrian 0.005 coverage,0.9111673212586708,0.9112,0.9112,True
+Table 3 target_recalibrated_mondrian 0.005 mean_shortfall,0.004250428261130265,0.0043,0.0043,True
+Table 3 target_recalibrated_mondrian 0.005 below_nominal,19.0,19,19,True
+Table 3 target_recalibrated_mondrian 0.005 class_gap,0.0468433104542503,0.0468,0.0468,True
+Table 3 target_recalibrated_mondrian 0.01 coverage,0.9046969790752286,0.9047,0.9047,True
+Table 3 target_recalibrated_mondrian 0.01 mean_shortfall,0.0049985752999795,0.0050,0.0050,True
+Table 3 target_recalibrated_mondrian 0.01 below_nominal,23.0,23,23,True
+Table 3 target_recalibrated_mondrian 0.01 class_gap,0.0365568381732303,0.0366,0.0366,True
+Table 3 target_recalibrated_mondrian 0.05 coverage,0.9017778635971432,0.9018,0.9018,True
+Table 3 target_recalibrated_mondrian 0.05 mean_shortfall,0.0027714623430238213,0.0028,0.0028,True
+Table 3 target_recalibrated_mondrian 0.05 below_nominal,24.0,24,24,True
+Table 3 target_recalibrated_mondrian 0.05 class_gap,0.016202886052943698,0.0162,0.0162,True
+Table 3 target_recalibrated_mondrian 0.1 coverage,0.9012062193646909,0.9012,0.9012,True
+Table 3 target_recalibrated_mondrian 0.1 mean_shortfall,0.002296570815006215,0.0023,0.0023,True
+Table 3 target_recalibrated_mondrian 0.1 below_nominal,26.0,26,26,True
+Table 3 target_recalibrated_mondrian 0.1 class_gap,0.01003799864232325,0.0100,0.0100,True
+Shift-control condition mean error difference,0.11285630044570978,0.1129,0.1129,True
+Shift-control condition median error difference,0.049268801051331745,0.0493,0.0493,True
+Shift-control nominal Wilcoxon p,0.00048828125,0.000488,0.000488,True
+target10 condition mean shortfall difference,-0.10128295381412962,-0.1013,-0.1013,True
+target10 condition median shortfall difference,-0.0339902872577828,-0.0340,-0.0340,True
+target10 nominal Wilcoxon p,0.02099609375,0.0210,0.0210,True
+weighted condition mean shortfall difference,-0.034436547908297234,-0.0344,-0.0344,True
+weighted condition median shortfall difference,1.0419380046890191e-05,0.0000104,0.0000104,True
+weighted nominal Wilcoxon p,0.7421875,0.7422,0.7422,True
+"Threshold correlation, sixty pairs",0.9458434795681118,0.946,0.946,True
+"Threshold correlation, twelve means",0.9610062376230345,0.961,0.961,True
+Prevalence gap versus source shortfall,0.8257535078834962,0.826,0.826,True
+Prevalence gap versus shortfall reduction,0.7412587412587414,0.741,0.741,True
+Ablation source: mean of twelve condition medians,0.06087662845728232,0.0609,0.0609,True
+Ablation target: mean of twelve condition medians,0.0005873676815680772,0.0006,0.0006,True

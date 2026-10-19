@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-09T23:21:00+08:00",
+  "reason": "Residual objective/gradient at 4000 steps merits an additional fixed 8000-step check before finalizing claims.",
+  "cases": "same 80 predetermined sensitivity problems",
+  "ot_steps": 8000,
+  "initialization": "uniform",
+  "learning_rate": 0.001,
+  "selection": "No target-test selection; main budget remains previously fixed 4000; retain and report all 8000 outcomes."
+}

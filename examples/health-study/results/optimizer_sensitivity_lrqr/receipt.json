@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "method": "lrqr",
+  "cases": 80,
+  "pair_count": 16,
+  "device": "cpu",
+  "reference_code_sha256": "12c8652c73255d6000e2a37600dfca4a7e2bc2ed6ed7edf2ef65456f457348ca",
+  "script_sha256": "635923bbdb71141b18a9f91269267a317bae20fc56ed4dc4dd3bd26f3d09b2a0",
+  "generation_provenance_sha256": "0e04f72db644383033ac3620412a9e846868be9e718d17c90bdecf4fa3707194",
+  "elapsed_seconds": 516.2114304229617,
+  "files": {
+    "seed0_equal_dataset_summary.csv": "9d15e8294e9f4d7279d7c3409e0a1be3bb955f20b23c58b2a0b48456798a45be",
+    "replicate_metrics.csv": "8da6b1a2987b258a0ab8900adf2fc84d3caeeabbe0cbe2c0eb44e33fd36fabbd",
+    "cv_trace_600.csv": "6a0e8c2c31e680eb0f9bd8a62850d285606dc7a2916fbb7c49acdde652f26f85",
+    "condition_summary.csv": "7e169dfb8a8f0dfd29da6eb559e7cd13df56c234833bc02c80d6103baeebf288",
+    "partial_metrics.csv": "9527aba39415b3d4769c14a6b6b1c2deaf0ba080a0105e84e444d43df120f9dd",
+    "optimization_diagnostics.csv": "e263c2006f6941e65d03706c921b9d3861224891b636e631428ca14d497a9737",
+    "cv_trace_1800.csv": "301957d28087354c4674cf86a134a0b0c7342bd0e0e9e72f934b151713d6943e"
+  }
+}

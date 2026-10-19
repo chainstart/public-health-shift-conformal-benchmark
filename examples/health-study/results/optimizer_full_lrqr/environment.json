@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-09T15:18:20.927744+00:00",
+  "packages": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "torch": "2.10.0"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "torch_cuda_available": false,
+  "torch_cuda_device": null
+}

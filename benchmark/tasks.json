@@ -1,0 +1,124 @@
+{
+  "protocol": "outcome-blind-binary-v1",
+  "alpha": 0.1,
+  "model_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_n": 300,
+  "target_n": 300,
+  "replicates": 5,
+  "tasks": [
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift_name": "time_future",
+      "group_col": "survey_year",
+      "source_values": "2011;2013;2015",
+      "target_values": "2017;2019;2021;2023",
+      "drop_defining_features": "survey_year",
+      "description": "train/calibrate on 2011-2015 BRFSS, test on 2017-2023"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift_name": "region_south",
+      "group_col": "region",
+      "source_values": "northeast;midwest;west",
+      "target_values": "south",
+      "drop_defining_features": "region;_STATE",
+      "description": "train/calibrate outside US South, test in Southern states"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift_name": "age_65plus",
+      "group_col": "age_group",
+      "source_values": "18_64",
+      "target_values": "65_plus",
+      "drop_defining_features": "age80;_AGE65YR;_AGEG5YR",
+      "description": "train/calibrate adults 18-64, test adults 65+"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift_name": "obesity",
+      "group_col": "obesity_group",
+      "source_values": "not_obese",
+      "target_values": "obese",
+      "drop_defining_features": "bmi;_BMI5CAT",
+      "description": "Recorded BMI >=30 (or BRFSS BMI category 4) versus other records, including unavailable BMI."
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift_name": "race_black_vs_white",
+      "group_col": "race_group",
+      "source_values": "white",
+      "target_values": "black",
+      "drop_defining_features": "_RACE",
+      "description": "train/calibrate white respondents, test black respondents"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift_name": "time_future",
+      "group_col": "cycle_start",
+      "source_values": "2011;2013",
+      "target_values": "2015;2017",
+      "drop_defining_features": "cycle_start",
+      "description": "train/calibrate NHANES 2011-2014, test 2015-2018"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift_name": "age_65plus",
+      "group_col": "age_group",
+      "source_values": "18_64",
+      "target_values": "65_plus",
+      "drop_defining_features": "RIDAGEYR",
+      "description": "Participants younger than 65 (including children) versus 65 and older; historical group label 18_64 is not an adult-only restriction."
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift_name": "obesity",
+      "group_col": "obesity_group",
+      "source_values": "not_obese",
+      "target_values": "obese",
+      "drop_defining_features": "BMXBMI;BMXWT;BMXHT;BMXWAIST",
+      "description": "Recorded BMI >=30 (or BRFSS BMI category 4) versus other records, including unavailable BMI."
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift_name": "race_black_vs_white",
+      "group_col": "race_group",
+      "source_values": "white",
+      "target_values": "black",
+      "drop_defining_features": "RIDRETH3",
+      "description": "train/calibrate white respondents, test black respondents"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift_name": "age_older70",
+      "group_col": "age_group",
+      "source_values": "younger",
+      "target_values": "older70",
+      "drop_defining_features": "age_mid",
+      "description": "train/calibrate on patients younger than 70, test on patients 70+"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift_name": "race_african_american",
+      "group_col": "race_group",
+      "source_values": "Caucasian",
+      "target_values": "AfricanAmerican",
+      "drop_defining_features": "race",
+      "description": "train/calibrate on Caucasian patients, test on African American patients"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift_name": "emergency_admission",
+      "group_col": "admission_shift_group",
+      "source_values": "non_emergency",
+      "target_values": "emergency_room",
+      "drop_defining_features": "admission_source_id;admission_mode",
+      "description": "train/calibrate on non-emergency admissions, test on emergency-room admissions"
+    }
+  ]
+}

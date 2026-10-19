@@ -1,0 +1,35 @@
+{
+  "basis": "Archived original per-run outputs; no new fitting, no replacement of methods or observations",
+  "primary_rows": 1140,
+  "random_control_rows": 15,
+  "unique_shift_seed_pairs": 60,
+  "checks": 58,
+  "matching_checks": 57,
+  "mismatches": [
+    {
+      "claim": "Table 3 target_recalibrated_split 0.005 class_gap",
+      "computed": 0.0920481182628204,
+      "display": "0.0920",
+      "submitted_display": "0.0921",
+      "matches": false
+    }
+  ],
+  "all_original_primary_medians_reconstructed": true,
+  "calibration_count_rows": 480,
+  "count_matches_to_archived_target_runs": 960,
+  "independent_10pct_class_count_checks": 120,
+  "primary_target_label_range": [
+    100,
+    48000
+  ],
+  "minimum_source_calibration_count": 3634,
+  "overflow_counterexample_n8_applies_to_reported_ordinary_primary_runs": false,
+  "archived_execution_independently_rerun": false,
+  "row_level_predictions_reconstructed": false,
+  "bootstrap_intervals": "Retained archived condition-resampling intervals; not population inference over independent deployments",
+  "inputs": {
+    "results/public_benchmark_conformal_results.csv": "c8fe9f0cc65a161f67ec640b6fe3ad7e66c3d713d0babd0d3c26489b5962efad",
+    "tables/mechanism_score_diagnostics_run_level.csv": "94c7b25f70c2d2c562ee7c73472de7e304edb52aed327bde1ee1efdfe1030ef3",
+    "results/public_benchmark_shift_audit.csv": "112bc6690b4988eb04bc941f1aee2527448dcf09987a036118bf647c68101751"
+  }
+}

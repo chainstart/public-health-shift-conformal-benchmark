@@ -1,0 +1,27 @@
+{
+  "source": "Published paper-support v1.4.15",
+  "doi": "10.5281/zenodo.23461041",
+  "purpose": "Reusable cohort acquisition and fixed source-predictor preparation; original numeric behavior retained",
+  "files": [
+    {
+      "path": "benchmark/prepare_data.py",
+      "sha256": "a9715d5536e5ff7a059fd8966756462a405484427bb2bffb6daf3cf89e2d5f55"
+    },
+    {
+      "path": "scripts/run_large_scale_conformal.py",
+      "sha256": "6a29440ca0b42927738460f2e9a6221abb32f487e208868ecd2dee30d64f50b1"
+    },
+    {
+      "path": "scripts/run_public_shift_benchmark_v2.py",
+      "sha256": "8fa53f046d2888bd52ec8a7136268e9663a15d4a0daa1fd612b4d1f1c09ad414"
+    },
+    {
+      "path": "exp/source_role_outcome_blind_20260725/generate.py",
+      "sha256": "b8ee4978842728b9d9e67de68c602c9dd32135976a64a0f8ec2823d1c37e6068"
+    },
+    {
+      "path": "exp/row_level_remediation_20260725/generate_row_level_predictions.py",
+      "sha256": "2bcb160b9fe0b72928257ef1b3d108925209bb7bde0eaeb3500454379fce0307"
+    }
+  ]
+}

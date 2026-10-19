@@ -1,0 +1,119 @@
+{
+  "version": "1.4.2",
+  "methods": 9,
+  "method_rows": 2700,
+  "ot_steps": 4000,
+  "lrqr_cv_steps": 1800,
+  "lrqr_final_steps": 8000,
+  "scope": "Main numerical estimates replace low-budget comparator estimates; these are finite optimizations, not global-optimality certificates.",
+  "equal_dataset_summary": [
+    {
+      "method": "label_shift_weighted_300",
+      "coverage": 0.7816182616035113,
+      "coverage_shortfall": 0.13333407427418922,
+      "mean_set_size": 1.397006657140686,
+      "empty_set_rate": 0.001281805420819841,
+      "singleton_rate": 0.6004297320176741,
+      "full_set_rate": 0.39828846256150613,
+      "class_0_coverage": 0.7401169399238773,
+      "class_1_coverage": 0.9103447920641283,
+      "class_coverage_gap": 0.2772621716012909
+    },
+    {
+      "method": "lrqr_300_300_300",
+      "coverage": 0.9214518658190104,
+      "coverage_shortfall": 0.02564741046682285,
+      "mean_set_size": 1.7058697961439455,
+      "empty_set_rate": 0.019343803084664105,
+      "singleton_rate": 0.2554425976867262,
+      "full_set_rate": 0.7252135992286096,
+      "class_0_coverage": 0.9118701735006226,
+      "class_1_coverage": 0.930938406992386,
+      "class_coverage_gap": 0.09295314038411868
+    },
+    {
+      "method": "ot_minmax_weighted_cdf_300",
+      "coverage": 0.9761809221655834,
+      "coverage_shortfall": 0.001117264403037423,
+      "mean_set_size": 1.8668311568037605,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.13316884319623937,
+      "full_set_rate": 0.8668311568037605,
+      "class_0_coverage": 0.9713163154356685,
+      "class_1_coverage": 0.994220723727024,
+      "class_coverage_gap": 0.03083785110355457
+    },
+    {
+      "method": "score_covariate_weighted_300",
+      "coverage": 0.902464562612645,
+      "coverage_shortfall": 0.010435489134628656,
+      "mean_set_size": 1.5482451385936724,
+      "empty_set_rate": 5.4743526577982154e-05,
+      "singleton_rate": 0.4516453743531715,
+      "full_set_rate": 0.5482998821202506,
+      "class_0_coverage": 0.8980217707461889,
+      "class_1_coverage": 0.8814709642785754,
+      "class_coverage_gap": 0.14458177271639117
+    },
+    {
+      "method": "source_mondrian_full",
+      "coverage": 0.8049780150728708,
+      "coverage_shortfall": 0.10314196115922138,
+      "mean_set_size": 1.4010730966338085,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.5989269033661914,
+      "full_set_rate": 0.4010730966338086,
+      "class_0_coverage": 0.7698466203620403,
+      "class_1_coverage": 0.9127470286612619,
+      "class_coverage_gap": 0.20740842669024775
+    },
+    {
+      "method": "source_split_300",
+      "coverage": 0.8061475671921912,
+      "coverage_shortfall": 0.10399470005177558,
+      "mean_set_size": 1.3942095862782147,
+      "empty_set_rate": 0.00042675078634909586,
+      "singleton_rate": 0.6049369121490871,
+      "full_set_rate": 0.39463633706456386,
+      "class_0_coverage": 0.7734605170205552,
+      "class_1_coverage": 0.8809110150855991,
+      "class_coverage_gap": 0.2579043502178506
+    },
+    {
+      "method": "source_split_full",
+      "coverage": 0.8065675876131975,
+      "coverage_shortfall": 0.10266838037972599,
+      "mean_set_size": 1.3937248847887853,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.6062751152112146,
+      "full_set_rate": 0.3937248847887855,
+      "class_0_coverage": 0.7738079272087236,
+      "class_1_coverage": 0.8814679886485889,
+      "class_coverage_gap": 0.257634549329599
+    },
+    {
+      "method": "target_mondrian_300",
+      "coverage": 0.9026371532161098,
+      "coverage_shortfall": 0.006097395064963658,
+      "mean_set_size": 1.5115287284830963,
+      "empty_set_rate": 0.0,
+      "singleton_rate": 0.4884712715169037,
+      "full_set_rate": 0.5115287284830963,
+      "class_0_coverage": 0.9017681858232914,
+      "class_1_coverage": 0.9102603360374184,
+      "class_coverage_gap": 0.037383167827263926
+    },
+    {
+      "method": "target_split_300",
+      "coverage": 0.8993518644016801,
+      "coverage_shortfall": 0.007521401356635732,
+      "mean_set_size": 1.5415218587768849,
+      "empty_set_rate": 5.310122078064269e-05,
+      "singleton_rate": 0.45837193878155386,
+      "full_set_rate": 0.5415749599976655,
+      "class_0_coverage": 0.894852755877274,
+      "class_1_coverage": 0.879076104040497,
+      "class_coverage_gap": 0.1476695050211443
+    }
+  ]
+}

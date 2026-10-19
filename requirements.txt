@@ -1,7 +1,2 @@
-numpy==2.3.4
-pandas==2.3.3
-scikit-learn==1.8.0
-scipy==1.16.3
-matplotlib
-seaborn
-
+# Full CPU cohort/predictor preparation environment tested for interface v2.0.0
+-r requirements-lock.txt

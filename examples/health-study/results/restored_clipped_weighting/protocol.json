@@ -1,0 +1,19 @@
+{
+  "question": "Retain original clipped-domain-weighting comparator, correcting roles and empty-set handling.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": 12,
+  "target_fraction": 0.1,
+  "target_draw": 0,
+  "target_outcomes_used_for_weights": false,
+  "target_test_features_used_for_weights": false,
+  "threshold": "first sorted true source score with cumulative normalized weight at least .9; original heuristic, no candidate infinity mass",
+  "fallback_argmax": false,
+  "claim": "Empirical heuristic; no distribution-free validity asserted.",
+  "code_sha256": "559151432a75ab42487e72b6d69236301d7ac967ed942a3ad8ba1d1253a39e7e"
+}

@@ -1,0 +1,2 @@
+variant,coverage,class_0_coverage,class_1_coverage,mean_set_size,empty_set_rate,singleton_rate,full_set_rate,correct_singleton_rate,incorrect_singleton_rate
+steps8000,0.9732395371511903,0.9678452275765562,0.9938294129213401,1.8575237158339226,0.0,0.14247628416607752,0.8575237158339224,0.11571582131726788,0.026760462848809646

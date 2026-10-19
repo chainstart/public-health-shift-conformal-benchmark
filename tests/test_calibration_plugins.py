@@ -8,6 +8,9 @@ import sys
 import tempfile
 import unittest
 
+HISTORICAL = Path(__file__).resolve().parents[1] / 'examples/legacy-experiments'
+sys.path.insert(0, str(HISTORICAL))
+
 from scripts.calibration_plugins import (
     CalibrationRow, finite_quantile, fit_mondrian, fit_split,
     load_fitter, predict_sets, read_csv,
@@ -73,7 +76,7 @@ class CalibrationContractTests(unittest.TestCase):
             pred.write_text("row_id,p1\nt0,0.2\nt1,0.5\n")
             subprocess.run([sys.executable, "-m", "scripts.calibration_plugins",
                             "--calibration", str(cal), "--predictions", str(pred),
-                            "--alpha", "0.4", "--output", str(out)], check=True)
+                            "--alpha", "0.4", "--output", str(out)], check=True, cwd=HISTORICAL)
             self.assertEqual([r["prediction_set"] for r in json.loads(out.read_text())["predictions"]],
                              [[0], []])
             pred.write_text("row_id,p1,label\nt0,0.2,1\n")

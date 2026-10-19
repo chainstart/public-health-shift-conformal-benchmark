@@ -1,0 +1,26 @@
+\begin{longtable}{L{1.5cm}L{3.1cm}rrrrrr}
+\caption{Posthoc source-only L2 logistic sensitivity at the unchanged 10\% budget. Optimization and regularization both differ from the frozen SGD predictor. The two prespecified predictor families are reported in Table S18.} \label{tab:s-external-solver} \\
+\toprule
+Target & Calibration & Coverage & Class 0 & Class 1 & Size & \shortstack{Source\\AUROC} & \shortstack{Target\\AUROC} \\
+\midrule
+\endfirsthead
+\caption[]{Posthoc source-only L2 logistic sensitivity at the unchanged 10\% budget. Optimization and regularization both differ from the frozen SGD predictor. The two prespecified predictor families are reported in Table S18.} \\
+\toprule
+Target & Calibration & Coverage & Class 0 & Class 1 & Size & \shortstack{Source\\AUROC} & \shortstack{Target\\AUROC} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+B to A & Source Mondrian & 0.9625 & 0.9691 & 0.4688 & 1.5150 & 0.6198 & 0.4677 \\
+B to A & Source split & 0.9577 & 0.9695 & 0.0805 & 1.0459 & 0.6198 & 0.4677 \\
+B to A & Target Mondrian & 0.9040 & 0.9033 & 0.9563 & 1.8615 & 0.6198 & 0.4677 \\
+B to A & Target split & 0.9052 & 0.9168 & 0.0444 & 0.9462 & 0.6198 & 0.4677 \\
+A to B & Source Mondrian & 0.9439 & 0.9462 & 0.5764 & 1.5044 & 0.6259 & 0.5236 \\
+A to B & Source split & 0.9427 & 0.9468 & 0.2610 & 1.1265 & 0.6259 & 0.5236 \\
+A to B & Target Mondrian & 0.8964 & 0.8959 & 0.9888 & 1.8869 & 0.6259 & 0.5236 \\
+A to B & Target split & 0.8957 & 0.9000 & 0.1894 & 1.0231 & 0.6259 & 0.5236 \\
+\end{longtable}

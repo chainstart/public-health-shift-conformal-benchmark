@@ -1,0 +1,72 @@
+{
+  "question": "Retain the submitted feature-ablation and L2 sensitivity, correcting the role/quantile implementation only.",
+  "variants": [
+    "shift_feature_ablation",
+    "l2_logistic"
+  ],
+  "drop_mapping": {
+    "brfss_multiyear_diabetes": {
+      "time_future": [
+        "survey_year"
+      ],
+      "region_south": [
+        "region",
+        "_STATE"
+      ],
+      "age_65plus": [
+        "age80",
+        "_AGE65YR",
+        "_AGEG5YR"
+      ],
+      "obesity": [
+        "bmi",
+        "_BMI5CAT"
+      ],
+      "race_black_vs_white": [
+        "_RACE"
+      ]
+    },
+    "nhanes_multicycle_diabetes": {
+      "time_future": [
+        "cycle_start"
+      ],
+      "age_65plus": [
+        "RIDAGEYR"
+      ],
+      "obesity": [
+        "BMXBMI",
+        "BMXWT",
+        "BMXHT",
+        "BMXWAIST"
+      ],
+      "race_black_vs_white": [
+        "RIDRETH3"
+      ]
+    },
+    "uci_diabetes_readmission": {
+      "age_older70": [
+        "age_mid"
+      ],
+      "race_african_american": [
+        "race"
+      ],
+      "emergency_admission": [
+        "admission_source_id",
+        "admission_mode"
+      ]
+    }
+  },
+  "model_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "calibration_draws": 5,
+  "target_fraction": 0.1,
+  "alpha": 0.1,
+  "selection": "All twelve conditions; no test-label tuning or favorable subset selection.",
+  "summary": "Average draws, then seeds, then conditions within dataset; equal weight to datasets.",
+  "code_sha256": "f6a542b746d0190aa970f9b48e9cf2a4ce633d61b2ff58d70166e9256aef7bdd"
+}

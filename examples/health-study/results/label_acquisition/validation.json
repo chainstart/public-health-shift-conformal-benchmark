@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "metric_rows": 9000,
+  "calibration_draws": 3600,
+  "maximum_absolute_metric_error": 4.440892098500626e-16,
+  "scope": "Active-set propensity normalization; deterministic eligibility and draws; exact row IDs/class counts; independent sorted ranks; every membership metric and known-design rule. No clinical-utility or real-observation-mechanism validation.",
+  "code_sha256": "efcef0d3c129a90bd1fb3ffdc10eee4993a098332b5d480066fc62230e62393b"
+}

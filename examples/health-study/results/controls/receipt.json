@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "metric_rows": 600,
+  "pairs": 60,
+  "calibration_n": 300,
+  "replicates": 5,
+  "scope": "Source-domain diagnostic with the already source-fitted model; not part of the transported-method contrasts.",
+  "code_sha256": "5a63e55d58672c914492cb1b186eb3da81178ea0a61a53d55edd248733f9b1ae",
+  "outputs": {
+    "finite_rank_examples.csv": "f2cdb3fc72cede2db0806373edfa36fb5a47e39805ed0a65670fe43ea834b0e0",
+    "control_summary.csv": "6de41dae66203cecfe200e44095f118d672114bdccf47691c101142986ab5a8e",
+    "control_metrics.csv": "994637c4149a842c9c0c96ff7a1445c81dd431c5954b2da97e3b67597075e5c9",
+    "control_by_dataset.csv": "7e4bcff5dbd4403fd9ac69c573401619df23bbe8740ee6e0a79103f35d145136"
+  }
+}

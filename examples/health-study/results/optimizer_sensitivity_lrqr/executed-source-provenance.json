@@ -1,0 +1,6 @@
+{
+  "executed_source_sha256": "37635ad6450982b022d4c8b1306f547e1a9103f5d0d00812aac9a1ef5146dea0",
+  "preserved_executed_source": "../executed-driver.py",
+  "completion_source_sha256": "635923bbdb71141b18a9f91269267a317bae20fc56ed4dc4dd3bd26f3d09b2a0",
+  "explanation": "The driver was extended with an optional full-run CLI during the sensitivity process. Python had loaded the original bytes, preserved exactly and verified by the completed OT receipt. Default sensitivity semantics were unchanged. Completion receipt hashes the later on-disk source; this separate provenance record identifies the actual launch source without altering the receipt."
+}

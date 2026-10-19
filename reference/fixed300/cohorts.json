@@ -1,0 +1,17 @@
+[
+  {
+    "dataset": "brfss_multiyear_diabetes",
+    "records": 420000,
+    "outcome_prevalence": 0.13567142857142858
+  },
+  {
+    "dataset": "nhanes_multicycle_diabetes",
+    "records": 36943,
+    "outcome_prevalence": 0.08645751563219013
+  },
+  {
+    "dataset": "uci_diabetes_readmission",
+    "records": 71515,
+    "outcome_prevalence": 0.08799552541424877
+  }
+]

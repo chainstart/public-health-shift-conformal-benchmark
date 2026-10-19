@@ -1,0 +1,27 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Direct score-threshold mechanism diagnostics. Source qhat is the source-calibration split conformal threshold; target oracle q90 is the diagnostic 90th percentile of target-test nonconformity scores computed using held-out labels.}
+\label{primary-tab:score_mechanism}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Shift & Source qhat & Target q90 & Q gap & Source short. & Tgt10 qhat \\
+\midrule
+BRFSS & age\_65plus & 0.7147 & 0.8001 & 0.0854 & 0.0725 & 0.8021 \\
+BRFSS & obesity & 0.7276 & 0.9091 & 0.1815 & 0.2098 & 0.9098 \\
+BRFSS & race\_black\_vs\_white & 0.7379 & 0.7876 & 0.0496 & 0.0385 & 0.7825 \\
+BRFSS & region\_south & 0.7171 & 0.7655 & 0.0484 & 0.0331 & 0.7624 \\
+BRFSS & time\_future & 0.7411 & 0.6549 & -0.0862 & 0.0000 & 0.6555 \\
+NHANES & age\_65plus & 0.7809 & 0.9812 & 0.2002 & 0.5355 & 0.9813 \\
+NHANES & obesity & 0.7104 & 0.8924 & 0.1820 & 0.2084 & 0.9005 \\
+NHANES & race\_black\_vs\_white & 0.7817 & 0.5768 & -0.2049 & 0.0000 & 0.5693 \\
+NHANES & time\_future & 0.7473 & 0.6749 & -0.0724 & 0.0000 & 0.6777 \\
+UCI & age\_older70 & 0.7330 & 0.8100 & 0.0769 & 0.1141 & 0.8086 \\
+UCI & emergency\_admission & 0.6972 & 0.7326 & 0.0354 & 0.0361 & 0.7337 \\
+UCI & race\_african\_american & 0.6717 & 0.6588 & -0.0128 & 0.0000 & 0.6589 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

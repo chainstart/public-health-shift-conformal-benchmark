@@ -1,0 +1,26 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Shift-defining feature ablation. The primary benchmark retained shift-defining variables when they were part of the harmonized feature space. This sensitivity drops those variables, then reruns source split conformal and 10\% target-domain split recalibration on the same shifts and seeds.}
+\label{primary-tab:shift_defining_feature_ablation}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}L{1.35cm}L{2.55cm}Yrrrr@{}}
+\toprule
+Dataset & Shift & Dropped variables & Source cov. & Source shortfall & Target10 cov. & Target10 shortfall \\
+\midrule
+BRFSS & time\_future & \texttt{survey\_year} & 0.94973 & 0.00000 & 0.90083 & 0.00000 \\
+BRFSS & region\_south & \texttt{region; \_STATE} & 0.86509 & 0.03491 & 0.89833 & 0.00167 \\
+BRFSS & age\_65plus & \texttt{age80; \_AGE65YR; \_AGEG5YR} & 0.75721 & 0.14279 & 0.90268 & 0.00000 \\
+BRFSS & obesity & \texttt{bmi; \_BMI5CAT} & 0.86926 & 0.03074 & 0.90127 & 0.00000 \\
+BRFSS & race\_black\_vs\_white & \texttt{\_RACE} & 0.86418 & 0.03582 & 0.89810 & 0.00190 \\
+NHANES & time\_future & \texttt{cycle\_start} & 0.88987 & 0.01013 & 0.90239 & 0.00000 \\
+NHANES & age\_65plus & \texttt{RIDAGEYR} & 0.60241 & 0.29759 & 0.89663 & 0.00337 \\
+NHANES & obesity & \texttt{BMXBMI; BMXWT; BMXHT; BMXWAIST} & 0.83253 & 0.06747 & 0.91114 & 0.00000 \\
+NHANES & race\_black\_vs\_white & \texttt{RIDRETH3} & 0.92330 & 0.00000 & 0.90425 & 0.00000 \\
+UCI & age\_older70 & \texttt{age\_mid} & 0.80224 & 0.09776 & 0.90080 & 0.00000 \\
+UCI & race\_african\_american & \texttt{race} & 0.91586 & 0.00000 & 0.89990 & 0.00010 \\
+UCI & emergency\_admission & \texttt{admission\_source\_id; admission\_mode} & 0.88669 & 0.01331 & 0.90307 & 0.00000 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

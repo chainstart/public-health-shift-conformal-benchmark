@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Only verified OT4000 and LRQR1800CV/8000final replace their prior300 rows; all seven remaining methods preserved. Independent verifier receipts copied, main aggregation rebuilt.",
+  "cases": 600,
+  "script_sha256": "977f6cbc3db9933ae075d22443b11b3ea5a4e04d9b90ea747a6ff60e7f6ca778",
+  "ot_verification_sha256": "7ce0e1659ee07dd18b06c15d9fad2653380241cd8d213eddea85e3dbba18c548",
+  "lrqr_verification_sha256": "b768619a781ddc18a05cda42eb68116a89c18b8a6860cb2e4957fc1b6d9c2a5c",
+  "original_low_budget_sha256": "917ecf4032d916350d7860ea36e55ed1ca354c32c9a295564b6e753415536fcf",
+  "updated_rows_sha256": "e2088cf953b924a7aa35b059a3ebb04eb91b46ab9be9064cdf88cb5bddef6c76"
+}

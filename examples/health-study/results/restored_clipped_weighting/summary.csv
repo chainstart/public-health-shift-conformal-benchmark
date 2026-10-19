@@ -1,0 +1,8 @@
+,equal_dataset_mean
+coverage,0.8539611004869863
+shortfall,0.05525099504479621
+mean_set_size,1.4621263423416362
+class_coverage_gap,0.19614013920650186
+empty_set_rate,0.0
+singleton_rate,0.5378736576583641
+full_set_rate,0.4621263423416359

@@ -1,0 +1,22 @@
+{
+  "output": "manuscript/figures/graphical_abstract_original_design.pdf",
+  "sha256": "74d1542abb39b89f7d1c381b09c2f3319b04935a828db9c2e3e8d5afe0548c93",
+  "basis": "Submitted four-panel color composition, rebuilt as editable deterministic vector artwork",
+  "not_bitmap_identical": true,
+  "numbers": {
+    "source_seed_median": 0.8615655438788278,
+    "control_seed_median": 0.8999714285714285,
+    "target_split_seed_median": 0.9000452185792349,
+    "target_mondrian_gap_seed_median": 0.01272887214069661
+  },
+  "schematic_elements": [
+    "people",
+    "dataset icons",
+    "score curves"
+  ],
+  "empirical_bar_ylim": [
+    0.75,
+    1.0
+  ],
+  "all_empirical_bars_generated_from_reference_csv": true
+}

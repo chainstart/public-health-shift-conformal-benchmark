@@ -1,0 +1,19 @@
+\begin{table}[!tbp]
+\centering
+\caption{Predictive-backbone sensitivity over the same 60 non-pseudo shift-run pairs. Values are medians over shift-run pairs. The L2-SGD backbone changes classifier regularization while preserving preprocessing, splitting, and conformal protocol.}
+\label{primary-tab:backbone_sensitivity}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\columnwidth}
+\begin{tabular}{llrrrr}
+\toprule
+Backbone & Workflow & Coverage & Shortfall & Set size & Class gap \\
+\midrule
+Elastic-net SGD & source split & 0.8620 & 0.0380 & 1.3811 & 0.1430 \\
+Elastic-net SGD & target split 10\% & 0.9011 & 0.0000 & 1.6147 & 0.1044 \\
+L2 SGD & source split & 0.8597 & 0.0403 & 1.3392 & 0.1634 \\
+L2 SGD & target split 10\% & 0.9001 & 0.0000 & 1.5025 & 0.1162 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

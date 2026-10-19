@@ -1,0 +1,6 @@
+method,uses_target_labels,source_n,target_n,alpha
+source_split,False,300,300,0.1
+source_mondrian,False,300,300,0.1
+target_split,True,300,300,0.1
+target_mondrian,True,300,300,0.1
+example_source_split,False,300,300,0.1

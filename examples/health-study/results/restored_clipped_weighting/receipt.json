@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "fits": 60,
+  "all_conditions": true,
+  "target_test_outcomes_for_weighting": false,
+  "weighted_cdf_threshold_reconstruction": true,
+  "protocol_sha256": "498ed2d43e546cb5c94cb5cd39b8b22cf7ab1bf4a6ff93eb4e6d98059dbd0cb2",
+  "outputs": {
+    "condition_summary.csv": "dda1ca4be38034c2719d59bbbf0f162eb7aa5adf08e9adad50b5caa702b4182b",
+    "metrics.csv": "5ac78a6a91d35dd56ad4edee47549f5c591dd69a9dd5c2de67964bf8a57b86e5",
+    "summary.csv": "017abe9f61f2f24c83302868aa51ceaabe420c5cfe18e075a4818fd1962626cf"
+  }
+}

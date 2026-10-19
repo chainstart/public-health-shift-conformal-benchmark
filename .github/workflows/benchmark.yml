@@ -1,0 +1,15 @@
+name: Benchmark interface
+on: [push, pull_request]
+jobs:
+  interface:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-benchmark.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python -m benchmark fixture --workspace work/smoke
+      - run: python -m benchmark evaluate --workspace work/smoke --methods source_split source_mondrian target_split target_mondrian examples/source_split.py --out work/smoke/results.csv
+      - run: python -m benchmark compare --input work/smoke/results.csv --out work/smoke/comparison

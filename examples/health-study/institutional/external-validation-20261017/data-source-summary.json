@@ -1,0 +1,136 @@
+{
+  "protocol_sha256": "699957ca87210ad17165ecb8fe3cac2ffcdfc42518c3823db07147a72a926039",
+  "code_sha256": "d9073895687c8b83ae983123833b1e6e3490f3f43b56b66a8fbe54c0eba4af17",
+  "heart": {
+    "url": "https://archive.ics.uci.edu/static/public/45/heart+disease.zip",
+    "archive_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+    "files": [
+      {
+        "file": "processed.cleveland.data",
+        "sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+        "input_rows": 303,
+        "eligible_rows": 303,
+        "excluded_invalid_label": 0
+      },
+      {
+        "file": "processed.hungarian.data",
+        "sha256": "d1ad108f785768cd3d7e82dc522e6f5a61eea93cccfb3a46ee8076f73fc3d796",
+        "input_rows": 294,
+        "eligible_rows": 294,
+        "excluded_invalid_label": 0
+      },
+      {
+        "file": "processed.switzerland.data",
+        "sha256": "834a405ccf5b66ab4056bb77794adc8df0b7125186454c0a1d002d33c6c3b314",
+        "input_rows": 123,
+        "eligible_rows": 123,
+        "excluded_invalid_label": 0
+      },
+      {
+        "file": "processed.va.data",
+        "sha256": "e7c93d8d0d2acdadfa4c5e8de768e2191e7f618b952e29623f1f0d5949ff6b8f",
+        "input_rows": 200,
+        "eligible_rows": 200,
+        "excluded_invalid_label": 0
+      }
+    ],
+    "centers": [
+      {
+        "center": "cleveland",
+        "size": 303,
+        "sum": 139,
+        "mean": 0.45874587458745875
+      },
+      {
+        "center": "hungarian",
+        "size": 294,
+        "sum": 106,
+        "mean": 0.36054421768707484
+      },
+      {
+        "center": "long_beach",
+        "size": 200,
+        "sum": 149,
+        "mean": 0.745
+      },
+      {
+        "center": "switzerland",
+        "size": 123,
+        "sum": 115,
+        "mean": 0.9349593495934959
+      }
+    ]
+  },
+  "sepsis": {
+    "provider_url": "https://physionet.org/files/challenge-2019/1.0.0/training/",
+    "alternative_publisher_transport": "https://physionet-open.s3.amazonaws.com/challenge-2019/1.0.0/training/",
+    "raw_files": 40336,
+    "eligible_patients": 24095,
+    "exclusions": [
+      {
+        "hospital": "A",
+        "exclusion": "eligible",
+        "n": 10174
+      },
+      {
+        "hospital": "A",
+        "exclusion": "fewer_than_24_observed_hours",
+        "n": 4499
+      },
+      {
+        "hospital": "A",
+        "exclusion": "nonsequential_ICULOS_1_to_24",
+        "n": 5663
+      },
+      {
+        "hospital": "B",
+        "exclusion": "eligible",
+        "n": 13921
+      },
+      {
+        "hospital": "B",
+        "exclusion": "fewer_than_24_observed_hours",
+        "n": 5176
+      },
+      {
+        "hospital": "B",
+        "exclusion": "nonsequential_ICULOS_1_to_24",
+        "n": 903
+      }
+    ],
+    "hospitals": [
+      {
+        "center": "A",
+        "size": 10174,
+        "sum": 136,
+        "mean": 0.013367407116178493
+      },
+      {
+        "center": "B",
+        "size": 13921,
+        "sum": 78,
+        "mean": 0.005603045758207025
+      }
+    ],
+    "manifest_sha256": "9f8a60ae90c5f0647f2b97de4241e1f33a7cb06e09e3f59b816893abb1a74b51"
+  },
+  "cohort_hashes": {
+    "heart.parquet": "b1b8ed09c6e3b7bbe4de640c4e3af88d056fc05b0ad868d4d30528c10d1117b5",
+    "sepsis.parquet": "125fdd2a2ed1a11458f05c06868db10c8484595b8fb660f5933cc66b0aee8fc3"
+  },
+  "description": "Public provider data and versions; hashes identify exact inputs. Raw patient records are not redistributed.",
+  "licenses": {
+    "heart": {
+      "license": "CC BY 4.0",
+      "provider": "https://archive.ics.uci.edu/dataset/45/heart+disease"
+    },
+    "sepsis": {
+      "license": "CC BY 4.0",
+      "provider": "https://physionet.org/content/challenge-2019/1.0.0/"
+    }
+  },
+  "endpoint": {
+    "heart": "num > 0 at diagnostic work-up",
+    "sepsis": "End-of-hour-12 landmark; supplied Challenge-label transition during hours 13\u201324, no supplied positive in first 12 hours. Retrospectively require at least 24 observed sequential ICU hours starting at 1."
+  }
+}

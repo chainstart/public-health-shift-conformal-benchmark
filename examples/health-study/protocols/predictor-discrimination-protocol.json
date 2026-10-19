@@ -1,0 +1,13 @@
+{
+  "status": "frozen_before_execution",
+  "trigger": "Independent referee optional suggestion: distinguish weak fixed predictors from calibration-driven ambiguous sets",
+  "population": "All 60 primary fitted source models and their untouched target-test predictions; no exclusions or model tuning",
+  "metrics": [
+    "AUROC",
+    "average precision",
+    "Brier score",
+    "target-test prevalence"
+  ],
+  "aggregation": "mean seeds within condition; no independent-deployment inference or population CI",
+  "scope": "descriptive predictor discrimination/probability accuracy, separate from conformal set validity"
+}

@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-19",
+  "interface_version": "2.0.0",
+  "unit_and_integration_tests_passed": 15,
+  "preparation_environment": "requirements-lock.txt",
+  "input_acquisition": "cache-assisted; all 32 raw provider inputs signature-checked and hashed; 32/32 live URL signature probes passed",
+  "cohorts_rebuilt": 3,
+  "analytic_records": 528458,
+  "deployment_conditions": 12,
+  "source_models_refitted": 60,
+  "role_validation": {
+    "all_assignments_feature_blind": true,
+    "all_assignments_outcome_blind": true,
+    "all_partition_roles_have_both_classes": true,
+    "all_roles_disjoint": true
+  },
+  "method_measurements": 1500,
+  "unique_methods": 5,
+  "external_example_matches_builtin_rows": 300,
+  "maintained_api_matches_published_api_rows": 300,
+  "fresh_rebuild_matches_previous_frozen_evaluations_exactly": true,
+  "historical_git_blobs_preserved_exactly": 88,
+  "not_performed": [
+    "fresh download of all raw inputs (cached exact files reused)",
+    "re-running all separate OT/LR-QR optimization and external cardiac/sepsis case studies"
+  ],
+  "core_implementation_sha256": {
+    "api.py": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0",
+    "__main__.py": "8aacf4298a7a76bba576bfa4a58087e776b4db527b0d606072bf7852fa90685e",
+    "tasks.json": "345a45d61f5cd6e8b1bf6f4aeb44ac36aae015e68cec9992653d5a21e694545e"
+  },
+  "manuscript_text_policy": "No main manuscript, supplementary article or reviewer letters in public GitHub inventory"
+}

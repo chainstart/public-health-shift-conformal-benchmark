@@ -1,42 +1,18 @@
-# Manifest
+# Interface release inventory
 
-Release: `public-health-shift-conformal-benchmark`
+Version 2.0.0, 2026-10-19. The maintained benchmark is `benchmark/`, its user
+instructions are in `README.md` and `docs/`, and its method example is
+`examples/source_split.py`. The v1.4.15 experimental-code case study with manuscript text excluded
+is `examples/health-study/`; see its own `CONTENTS.md` and `UPSTREAM.json`.
 
-Repository URL: `https://github.com/chainstart/public-health-shift-conformal-benchmark`
+The complete previous GitHub tree, including original scripts, result CSVs,
+figures and tables, is preserved under `examples/legacy-experiments/`. Fixed URLs
+to the historical tag and commits remain valid. The [historical manifest](docs/HISTORICAL_MANIFEST.md) describes
+that July package, not the coverage of the new method-development interface.
+`examples/legacy-experiments/scripts/validate_release.py` remains a lightweight historical-file validator.
+`python -m unittest discover -s tests -v` exercises the maintained interface.
+See [verification](docs/VERIFICATION.md) for the actual tested scope.
 
-Release date: 2026-07-08
-
-## Contents
-
-- `scripts/`: benchmark runner, public-data preparation helpers, conformal-analysis utilities, and release validator.
-- `results/`: run-level and analysis-level CSV outputs from the completed benchmark experiments.
-- `summaries/`: compact evidence packet used during manuscript synthesis.
-- `tables/`: manuscript tables in CSV and TeX form.
-- `figures/`: benchmark figures generated from completed analyses.
-- `scripts/create_manuscript_figures.py`: regenerates manuscript empirical result figures from archived CSV outputs.
-- `DATA_SOURCES.md`: public data-source description and audit file pointers.
-- `CITATION.cff`: citation metadata.
-- `LICENSE` and `NOTICE.md`: repository licensing and source-data notice.
-- `CHECKSUMS.sha256`: SHA-256 checksums generated for this release.
-
-## Validation Summary
-
-The packaged release contains the manuscript-support metadata, validation
-script, checksum file, executable benchmark scripts, run-level results, tables,
-and figures. It includes:
-
-- 18 CSV result files under `results/`.
-- 25 CSV table or summary files under `tables/`.
-- 3 compact summary CSV files under `summaries/`.
-- 5 PNG figures under `figures/`.
-
-The included `scripts/validate_release.py` script checks that required files exist,
-that key CSV files can be parsed, that expected row counts for headline outputs
-match the packaged release, and that PNG files have valid PNG signatures.
-
-## Scope
-
-This is the manuscript-linked benchmark release. Raw public data are not
-redistributed; the included runner downloads or reads public-source files and
-recreates the benchmark outputs subject to provider availability and local
-compute/storage constraints.
+`CHECKSUMS.sha256` records all distributed files except itself. Raw records,
+probability arrays, generated workspaces, virtual environments and caches are
+excluded from the public inventory.

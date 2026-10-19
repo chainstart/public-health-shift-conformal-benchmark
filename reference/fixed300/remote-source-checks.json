@@ -1,0 +1,325 @@
+{
+  "checked_at": "2026-10-19T13:27:16.641563+00:00",
+  "files": [
+    {
+      "dataset": "BRFSS",
+      "release": "2011",
+      "file_identifier": "LLCP2011XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2011/files/LLCP2011XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2011/files/LLCP2011XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2013",
+      "file_identifier": "LLCP2013XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2015",
+      "file_identifier": "LLCP2015XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2015/files/LLCP2015XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2015/files/LLCP2015XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2017",
+      "file_identifier": "LLCP2017XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2017/files/LLCP2017XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2017/files/LLCP2017XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2019",
+      "file_identifier": "LLCP2019XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2019/files/LLCP2019XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2019/files/LLCP2019XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2021",
+      "file_identifier": "LLCP2021XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2021/files/LLCP2021XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2021/files/LLCP2021XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "BRFSS",
+      "release": "2023",
+      "file_identifier": "LLCP2023XPT.zip",
+      "url": "https://www.cdc.gov/brfss/annual_data/2023/files/LLCP2023XPT.zip",
+      "status": 206,
+      "resolved_url": "https://www.cdc.gov/brfss/annual_data/2023/files/LLCP2023XPT.zip",
+      "content_type": "application/x-zip-compressed",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "DEMO_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "DIQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "BMX_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "BPQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "SMQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2011-2012",
+      "file_identifier": "MCQ_G.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "DEMO_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "DIQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DIQ_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DIQ_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "BMX_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "BPQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "SMQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/SMQ_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/SMQ_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2013-2014",
+      "file_identifier": "MCQ_H.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "DEMO_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEMO_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEMO_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "DIQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DIQ_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DIQ_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "BMX_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "BPQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BPQ_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BPQ_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "SMQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/SMQ_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/SMQ_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2015-2016",
+      "file_identifier": "MCQ_I.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/MCQ_I.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/MCQ_I.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "DEMO_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "DIQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "BMX_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "BPQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BPQ_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BPQ_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "SMQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/SMQ_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/SMQ_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "NHANES",
+      "release": "2017-2018",
+      "file_identifier": "MCQ_J.xpt",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/MCQ_J.xpt",
+      "status": 206,
+      "resolved_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/MCQ_J.xpt",
+      "content_type": "text/plain",
+      "valid_file_signature": true
+    },
+    {
+      "dataset": "UCI",
+      "release": "1999-2008",
+      "file_identifier": "diabetic_data.csv",
+      "url": "https://archive.ics.uci.edu/static/public/296/diabetes%2B130-us%2Bhospitals%2Bfor%2Byears%2B1999-2008.zip",
+      "status": 200,
+      "resolved_url": "https://archive.ics.uci.edu/static/public/296/diabetes%2B130-us%2Bhospitals%2Bfor%2Byears%2B1999-2008.zip",
+      "content_type": null,
+      "valid_file_signature": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "model_fits": 60,
+  "metric_rows": 1200,
+  "backbone": "LightGBM",
+  "target_fraction": 0.1,
+  "replicates": 5,
+  "settings": {
+    "n_estimators": 120,
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "class_weight": "balanced",
+    "n_jobs": 2
+  },
+  "code_sha256": "fdd7b3e7c4a5814db169bd3020ed98edb741a6643c1f2285aafb640a418aba7c",
+  "outputs": {
+    "role_assignment.csv": "8b6a9b3af2c91c1722d51163463093dca78af67bb01b9a82b753577865146457",
+    "nonlinear_by_dataset.csv": "a6eeada895d086666ae6d096d1c40c7ef8ee4a7be963321d9f3797ebb15ff01d",
+    "nonlinear_summary.csv": "c9e1098a36d660a5c13c4dd05c314a8dd65e0a5f3954951e690ac25e2e6cd534",
+    "nonlinear_metrics.csv": "bded1d3376a1d6a2c6b42c6f002a0cd9a6fbe33633fc41f20402800b4fc1512b",
+    "nonlinear_by_shift.csv": "10f2dffea15c1d7d11c2c7b67ede19679c004357a7844c120531629c070e5cb6"
+  }
+}

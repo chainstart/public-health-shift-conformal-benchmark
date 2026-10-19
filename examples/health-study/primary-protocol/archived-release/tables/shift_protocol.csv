@@ -1,0 +1,16 @@
+dataset,shift_name,group_col,source_values,target_values,source_n,target_n,source_positive_prevalence,target_positive_prevalence,prevalence_difference,drop_defining_features,description
+brfss_multiyear_diabetes,time_future,survey_year,2011;2013;2015,2017;2019;2021;2023,180000,240000,0.1303111111111111,0.1396916666666666,0.0093805555555555,survey_year,"train/calibrate on 2011-2015 BRFSS, test on 2017-2023"
+brfss_multiyear_diabetes,region_south,region,northeast;midwest;west,south,291104,122000,0.1236087446410904,0.1617377049180328,0.0381289602769423,region;_STATE,"train/calibrate outside US South, test in Southern states"
+brfss_multiyear_diabetes,age_65plus,age_group,18_64,65_plus,268769,145343,0.0943747232753777,0.2129789532347619,0.1186042299593841,age80;_AGE65YR;_AGEG5YR,"train/calibrate adults 18-64, test adults 65+"
+brfss_multiyear_diabetes,obesity,obesity_group,not_obese,obese,302189,117811,0.095840682486788,0.2378385719499877,0.1419978894631996,bmi;_BMI5CAT,"train/calibrate non-obese respondents, test obese respondents"
+brfss_multiyear_diabetes,race_black_vs_white,race_group,white,black,270282,27421,0.1282512338964489,0.21009445315634,0.0818432192598911,_RACE,"train/calibrate white respondents, test black respondents"
+brfss_multiyear_diabetes,pseudo_random,pseudo_group,pseudo_a,pseudo_b,209742,210258,0.1359289031286056,0.1354145858897164,-0.0005143172388891,,negative-control random pseudo-domain split
+nhanes_multicycle_diabetes,time_future,cycle_start,2011;2013,2015;2017,18810,18133,0.0768208399787347,0.0964539789334362,0.0196331389547015,cycle_start,"train/calibrate NHANES 2011-2014, test 2015-2018"
+nhanes_multicycle_diabetes,age_65plus,age_group,18_64,65_plus,31734,5209,0.0545471733787105,0.2808600499136111,0.2263128765349005,RIDAGEYR,"train/calibrate adults 18-64, test adults 65+"
+nhanes_multicycle_diabetes,obesity,obesity_group,not_obese,obese,28021,8922,0.0541022804325327,0.1880744227751625,0.1339721423426297,BMXBMI;BMXWT;BMXHT;BMXWAIST,"train/calibrate non-obese respondents, test obese respondents"
+nhanes_multicycle_diabetes,race_black_vs_white,race_group,white,black,12112,8698,0.0837186261558784,0.097493676707289,0.0137750505514105,RIDRETH3,"train/calibrate white respondents, test black respondents"
+nhanes_multicycle_diabetes,pseudo_random,pseudo_group,pseudo_a,pseudo_b,18369,18574,0.0873210299961892,0.0856035318186712,-0.0017174981775179,,negative-control random pseudo-domain split
+uci_diabetes_readmission,age_older70,age_group,younger,older70,39818,31697,0.0778542367773368,0.1007350853393065,0.0228808485619696,age_mid,"train/calibrate on patients younger than 70, test on patients 70+"
+uci_diabetes_readmission,race_african_american,race_group,Caucasian,AfricanAmerican,53491,12887,0.0900338374679852,0.0848141537984014,-0.0052196836695837,race,"train/calibrate on Caucasian patients, test on African American patients"
+uci_diabetes_readmission,emergency_admission,admission_shift_group,non_emergency,emergency_room,33227,38288,0.0853522737532729,0.0902893857083159,0.0049371119550429,admission_source_id;admission_mode,"train/calibrate on non-emergency admissions, test on emergency-room admissions"
+uci_diabetes_readmission,pseudo_random,pseudo_group,pseudo_a,pseudo_b,35799,35716,0.0871812061789435,0.0888117370366222,0.0016305308576786,,negative-control random pseudo-domain split

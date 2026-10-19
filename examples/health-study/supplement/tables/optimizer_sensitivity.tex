@@ -1,0 +1,14 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Budget/initialization & Age class min & Age coverage & Age two-label & Objective & Gradient mean & Gradient max \\
+\midrule
+OT & 1,000 steps & 0.4203 & 0.5820 & 0.3642 & 0.4057 & 0.0110 & 0.0187 \\
+OT & 4,000; jitter 731 & 0.9064 & 0.9325 & 0.8747 & 0.2858 & 0.0042 & 0.0148 \\
+OT & 4,000; jitter 991 & 0.9057 & 0.9319 & 0.8737 & 0.2859 & 0.0042 & 0.0143 \\
+OT & 4,000 steps & 0.9076 & 0.9333 & 0.8762 & 0.2858 & 0.0042 & 0.0147 \\
+OT & 8,000 steps & 0.9078 & 0.9335 & 0.8765 & 0.2745 & 0.0008 & 0.0019 \\
+LR-QR & 600 CV / 2,000 final & 0.7197 & 0.7940 & 0.7043 & -0.9183 & 0.1409 & 0.3970 \\
+LR-QR & 1,800 / 8,000; extra starts & 0.6088 & 0.7135 & 0.5942 & -0.9196 & 0.1333 & 0.2664 \\
+LR-QR & 1,800 CV / 8,000 final & 0.6074 & 0.7125 & 0.5927 & -0.9196 & 0.1307 & 0.2921 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,34 @@
+\begin{longtable}{L{1cm}L{1.6cm}L{2cm}rrrrr}
+\caption{Untouched external-test predictor diagnostics, averaged over five source-model seeds. Random controls are contextual and not size-matched.} \label{tab:s-external-predictors} \\
+\toprule
+dataset & backbone & condition & n\_test & \shortstack{Positive\\min} & \shortstack{Positive\\max} & auroc & \shortstack{Balanced\\accuracy} \\
+\midrule
+\endfirsthead
+\caption[]{Untouched external-test predictor diagnostics, averaged over five source-model seeds. Random controls are contextual and not size-matched.} \\
+\toprule
+dataset & backbone & condition & n\_test & \shortstack{Positive\\min} & \shortstack{Positive\\max} & auroc & \shortstack{Balanced\\accuracy} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Heart & Logistic & CLE & 212 & 95 & 103 & 0.7043 & 0.6833 \\
+Heart & Logistic & HUN & 205 & 74 & 80 & 0.8341 & 0.7616 \\
+Heart & Logistic & VA & 140 & 104 & 107 & 0.6499 & 0.5965 \\
+Heart & Logistic & Random & 230 & 123 & 131 & 0.8590 & 0.7802 \\
+Heart & Logistic & SWI & 86 & 79 & 81 & 0.7437 & 0.6608 \\
+Heart & LightGBM & CLE & 212 & 95 & 103 & 0.8206 & 0.7515 \\
+Heart & LightGBM & HUN & 205 & 74 & 80 & 0.8464 & 0.7533 \\
+Heart & LightGBM & VA & 140 & 104 & 107 & 0.6413 & 0.6344 \\
+Heart & LightGBM & Random & 230 & 123 & 131 & 0.8706 & 0.7874 \\
+Heart & LightGBM & SWI & 86 & 79 & 81 & 0.7948 & 0.7447 \\
+Sepsis & Logistic & B to A & 7121 & 88 & 104 & 0.4469 & 0.4914 \\
+Sepsis & Logistic & A to B & 9744 & 45 & 68 & 0.5330 & 0.5353 \\
+Sepsis & Logistic & Random & 6024 & 53 & 61 & 0.5768 & 0.5631 \\
+Sepsis & LightGBM & B to A & 7121 & 88 & 104 & 0.5561 & 0.5000 \\
+Sepsis & LightGBM & A to B & 9744 & 45 & 68 & 0.5965 & 0.5000 \\
+Sepsis & LightGBM & Random & 6024 & 53 & 61 & 0.6005 & 0.5078 \\
+\end{longtable}

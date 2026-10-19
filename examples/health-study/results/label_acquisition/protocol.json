@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-10-17T04:37:18.235596+00:00",
+  "question": "Does the target-label observation channel determine when split versus classwise target recalibration is appropriate?",
+  "basis": "R1.2 benchmark quality; R1.3 information requirements; R2.major2/4 and R2.minor5 biomedical maintenance context.",
+  "design": "Controlled counterfactual observation mechanisms; not estimated real health-system missingness.",
+  "source_model": "All 60 verified primary elastic-net condition-seed prediction files; no refitting or tuning.",
+  "budgets": [
+    100,
+    300
+  ],
+  "replicates": 5,
+  "regimes": [
+    "uniform",
+    "outcome_depleted",
+    "risk_priority"
+  ],
+  "selection_weights": {
+    "uniform": "1",
+    "outcome_depleted": "0.2 for Y=1, 1 for Y=0; retrospective outcome-availability stress test, not a prospective sampling action",
+    "risk_priority": "0.1 + 0.9*p_source(Y=1|X); only preexisting model probabilities"
+  },
+  "eligibility": "Independent Bernoulli availability, c*w clipped at one; c fixes expected eligible count at 2*n. Sample n eligible rows uniformly; use all if insufficient. Never redraw or omit a failed quota.",
+  "sentinel": "Alternative feature/outcome-blind uniform calibration sample of n from the full pool; not restricted to available-label rows. Same planned label count, independently derived seed.",
+  "known_design_rule": "Use available-label Mondrian under uniform or outcome-only availability; under risk-prioritized availability use sentinel Mondrian. Collection-channel identity is prespecified, not learned from test results.",
+  "primary_outcomes": [
+    "class_0_coverage",
+    "class_1_coverage",
+    "positive_class_shortfall"
+  ],
+  "secondary_outcomes": [
+    "marginal coverage",
+    "mean set size",
+    "empty/singleton/two-label rates",
+    "correct and incorrect singleton masses",
+    "class counts and infinite thresholds"
+  ],
+  "nominal_coverage": 0.9,
+  "threshold_rule": "ceil((n+1)*.9) sorted rank; infinity for overflow/absent class; ties included; no argmax fallback",
+  "summary": "Draw means, seed means, condition means, equal-dataset means; no independent-deployment inference.",
+  "boundary": "Known-design benchmark policy, not a learned clinical selector or utility study. Label counts concern calibration inputs, not monetary/total acquisition cost. All conditions and all draws retained.",
+  "code_sha256": "4038debbfbda2a6035dd88221b35bfe0e3bb4d990fd5cd575b54574b9d2a5297"
+}

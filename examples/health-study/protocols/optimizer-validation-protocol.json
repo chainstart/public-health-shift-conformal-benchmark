@@ -1,0 +1,58 @@
+{
+  "status": "frozen_before_execution",
+  "trigger": "Unified referee required evidence, run 20261009T144004Z",
+  "design": "Use all twelve conditions, seed 0 and all five original draws; additionally all five seeds and five draws of NHANES age (headline worst-class condition for OT and LR-QR). This gives 80 paired calibration problems, without choosing cases by favorable outcome.",
+  "ot": [
+    {
+      "steps": 1000,
+      "initialization": "uniform",
+      "role": "exact baseline replay"
+    },
+    {
+      "steps": 4000,
+      "initialization": "uniform"
+    },
+    {
+      "steps": 4000,
+      "initialization": "normal logit jitter, deterministic seed 731"
+    },
+    {
+      "steps": 4000,
+      "initialization": "normal logit jitter, deterministic seed 991"
+    }
+  ],
+  "lrqr": [
+    {
+      "cv_steps": 600,
+      "final_steps": 2000,
+      "initial_betas": [
+        0.25,
+        1,
+        4
+      ],
+      "role": "exact baseline replay"
+    },
+    {
+      "cv_steps": 1800,
+      "final_steps": 8000,
+      "initial_betas": [
+        0.25,
+        1,
+        4
+      ]
+    },
+    {
+      "cv_steps": 1800,
+      "final_steps": 8000,
+      "initial_betas": [
+        0.1,
+        2,
+        10
+      ],
+      "lambda": "reuse increased-budget CV selection, never target-test selection"
+    }
+  ],
+  "controls": "OT two-support score distributions with independently enumerated piecewise-quadratic global simplex minimum, including objective evaluation agreement; LR-QR intercept-only model with closed-form global pinball-loss minimum and beta*h=1. Retain all objective gaps and failures.",
+  "measurements": "Calibration objective, optimization/stationarity diagnostics, selected hyperparameters, target marginal/class coverage, empty/singleton/full-set rates, correct and incorrect singleton masses. Compare paired effects, all conditions and full worst-condition seeds/draws. No pooled deployment significance test.",
+  "stopping": "Fixed budgets, no extra iterations based on favorable test performance; if findings materially change, revise the headline conclusions and retain baseline results."
+}

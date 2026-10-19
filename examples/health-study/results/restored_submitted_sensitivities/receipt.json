@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "model_fits": 120,
+  "measurements": 1200,
+  "all_original_conditions": true,
+  "roles_match_verified_primary": true,
+  "sorted_rank_membership_reconstruction": true,
+  "protocol_sha256": "e47df9d9fe39c8c44b5a83b1fa9435878958aa8cf1bb6c7bf7afd1614df7227b",
+  "outputs": {
+    "replicate_metrics.csv": "b31c6845e706ff8ac3116d4093b9846d96cc29e7f4f2fbd22df510ab9f6436fa",
+    "condition_summary.csv": "b7ebe6025b05a786fc4052fb1f0ff59c505fd3201c5820f9c3c0dfeb47ba843b",
+    "equal_dataset_summary.csv": "8e7fd0d5707357b704eaff0b294aeead17067de2a57f87f7ab1a0d12a6f257ad",
+    "fit_provenance.csv": "4370b2b50cfc88ddd78bfe118a48168c9f5d8e1c1af12321e3b0d2c79b8e7a92"
+  }
+}

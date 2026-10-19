@@ -1,0 +1,225 @@
+{
+  "status": "passed_with_subgroup_metadata_correction",
+  "test": "All three cohorts rebuilt from raw files in empty processed directories",
+  "brfss_model_inputs_and_labels_exactly_equal": true,
+  "other_cohorts_exactly_equal": [
+    {
+      "path": "data/processed_large/public_benchmark_v2/nhanes_multicycle_diabetes.csv",
+      "frame_equal": true,
+      "records": 36943
+    },
+    {
+      "path": "data/processed_large/uci_diabetes_readmission_patient_first.csv",
+      "frame_equal": true,
+      "records": 71515
+    }
+  ],
+  "brfss_cache_differences": [
+    "SEXVAR: 60000 raw values restored",
+    "sex_group: 2019 unknown corrected to male/female"
+  ],
+  "correction_prediction_files": [
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 0,
+      "changed_sex_groups": 32899,
+      "original_sha256": "fc44513b8b59b984b4080a1b6080cae76495e9abb747cb30603022105ae9bcb3",
+      "corrected_sha256": "03277324e8b6a0ce818846747780cb16fc5849ddeb0f29cf19ae6cc1e8f77ef9"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 1,
+      "changed_sex_groups": 33019,
+      "original_sha256": "3ce41b2e1d7c998ff051b83ad0e1d24d0d3f917b8eefba07b115e61c5ea67ef6",
+      "corrected_sha256": "77affa907356d1ac632c9680033775a0f384dd101cc46f664be60835c9fe2f71"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 2,
+      "changed_sex_groups": 33046,
+      "original_sha256": "7f34e8d1e29bc2bddde7ba51985bde92414b953365e402a387650497027df1f6",
+      "corrected_sha256": "77ec02bf41807dcd90d82880683e2d21519eabd3f8d7881feac6d2bf8ec1b84f"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 3,
+      "changed_sex_groups": 32809,
+      "original_sha256": "3db3e21771af34e632f027cec29497b25a0bdbac663158101843f823dc84d64e",
+      "corrected_sha256": "805e932f15473bb77b26c1f3df4ae7fc6dc4c915a2b4a3c81a25097fdd67f434"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 4,
+      "changed_sex_groups": 32760,
+      "original_sha256": "991707828f7e6cec6bb52f8b02584661a42e51af40b9eb381aa072f9c695c93e",
+      "corrected_sha256": "75c8ae4bc64269f5f9edca7de8cc06d08be2cca77d128732d42c436032d86fd4"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 0,
+      "changed_sex_groups": 30257,
+      "original_sha256": "396dcd00c11b2d49be51ae4b4caa97f2226eaec01ace354dc46bb25b1da175ee",
+      "corrected_sha256": "4a0ddf37adb122fb6fed082aee5865c49a2f0fed08727d54d7668749a1712e6f"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 1,
+      "changed_sex_groups": 30253,
+      "original_sha256": "5f770f14a16fc073812f899e57cfb3afb6c961f226861920f4557f23aafde9b1",
+      "corrected_sha256": "ab7f430f817f9a29aa484159ffbec62088dc0766cae86f96ed9a517b4b29063a"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 2,
+      "changed_sex_groups": 30400,
+      "original_sha256": "c52cbaf57f69618ccb6ff84fae9f8a65018821a9109e9b1ea152fd70d8a06479",
+      "corrected_sha256": "9d0b42301b8aeee70867083203721862421fbf09ab6370f9fe783257be946268"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 3,
+      "changed_sex_groups": 30326,
+      "original_sha256": "928bbdfb6cf9a4afbacdd81c61744db4c0b3644d30aaa2dc5189efa2c687fd44",
+      "corrected_sha256": "a66b13551cbdb6ac4f9f79696eff5a781a8ce97becb2de9e7fd4f703d7205b03"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 4,
+      "changed_sex_groups": 30304,
+      "original_sha256": "950392b2a2b679e4297bde04737c30471d95a1cb87d4812ecd9892fe2f0e6a58",
+      "corrected_sha256": "1aae8be0faf0ccd45854b7b93834adb69b5676a20975fad55e4ad4cd1673c199"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 0,
+      "changed_sex_groups": 18097,
+      "original_sha256": "ffaf9e0fe37605e9feadf45f92ded24cfc92b5199023b6e73d6cbda8653e3e0d",
+      "corrected_sha256": "9fbf532dbf89a0b662915d0b5b2598f4aa8eac0e59f0d2187da30ed4b8093c69"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 1,
+      "changed_sex_groups": 17973,
+      "original_sha256": "c46f0402400d7dedcbd28fe62bb9a98987fb6c96de7e516420cf9714cbe035ba",
+      "corrected_sha256": "45cbfb90e57ffb99752d6961f84ca42e1640551e47bd9964a19091797160bbcc"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 2,
+      "changed_sex_groups": 17946,
+      "original_sha256": "ea8a6fa48e5baac2c77e868d3e6cb509ba043d1fc9b28375986f038fad216c18",
+      "corrected_sha256": "cc58c4e549eda15ada8be684ac7c501530d76ebaed74453ac238aef4e06b68e7"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 3,
+      "changed_sex_groups": 17945,
+      "original_sha256": "518e64c4764faefd7857b4163e577702afc4ff028a7ee679a74f6a685c0a334f",
+      "corrected_sha256": "08fe5e272d771d690d940d9d18dcf713c5e5cdbd7e5f600c78de535868097779"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 4,
+      "changed_sex_groups": 17863,
+      "original_sha256": "2c90e1c719c51e872fd4d88e38dfd151b8ba462d4c6286537bc3cf20b9f2e9c5",
+      "corrected_sha256": "3fb3f07b94275a784b5e2a5637f8206236077dc821d2db41bd674629af24311e"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 0,
+      "changed_sex_groups": 30718,
+      "original_sha256": "3955936e228897d8f766dd8a8c80cc05119da8daf48b07ccd2876f846251ef1a",
+      "corrected_sha256": "0ba263df2652e9134202d1f823f15051ec4ef234c3ea32b09331d622549d2460"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 1,
+      "changed_sex_groups": 30686,
+      "original_sha256": "0df2cdf0bf5e3d6469be2ff76a2d9e505cc4b01d9c690eb0fa1cbc5e44d7919c",
+      "corrected_sha256": "3508ec60d93737275dbbd90b16f0d5b727bffee49636d789b0960c66e6a65278"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 2,
+      "changed_sex_groups": 30808,
+      "original_sha256": "504ea80da664a3fb59c2c890fd6076920b32a4c312be4ac2a414631d835d689e",
+      "corrected_sha256": "58ae02c5f4cfbe203e8dbe546a799ee6e5afba061cb77159910dc6dad2197198"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 3,
+      "changed_sex_groups": 30761,
+      "original_sha256": "bfb832eeafc2af5af0bb3de46b998d9a1796e4de5d30020197da20eae9872112",
+      "corrected_sha256": "a852f344a2b342fa2e5407a41ee09eec8df2e452a9e6639b53069d574271fb51"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 4,
+      "changed_sex_groups": 30769,
+      "original_sha256": "8d9bd1ea179be0f9de7e8c5070d4839f43e7cd891a42e37c88a3c8c6d9a3de08",
+      "corrected_sha256": "0b27ed76388caff163a49d61ba7c36a6fa6565daf371c55c4c29ab453c0cd25b"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 0,
+      "changed_sex_groups": 60000,
+      "original_sha256": "eda3873358153086b6711896423532965857a01193b1b47c95a74d435b680c05",
+      "corrected_sha256": "f48580d1544aa1402539a41bad42e625fd6c3fb81547bb03b1d18a1bbb9c37c9"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 1,
+      "changed_sex_groups": 60000,
+      "original_sha256": "da9d93485b9d34f875d82b3d95666df8213ecb0d293675af3e6b9e8c5cb67650",
+      "corrected_sha256": "36254fbfd2d1f4a380a7292bc7f1eaaaf89b01703f03935d5a78680aa4739d29"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 2,
+      "changed_sex_groups": 60000,
+      "original_sha256": "2be4ce27bf60b56252a7984b8dfbaf9a4495fc973f3fc0ea5ab392dada870a9c",
+      "corrected_sha256": "423f62afb1cb7c647a587f50ba23f1b1fa5533924c61c0f3726ce4ac19730cf5"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 3,
+      "changed_sex_groups": 60000,
+      "original_sha256": "288f39dde5ff28aa65d71a6a4dd02658e80f049c08953e5af71a6aae54887faf",
+      "corrected_sha256": "7399a507be3eb60aa943370eba54e0741edfc6c300359b95c5206fbb9c3fac14"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 4,
+      "changed_sex_groups": 60000,
+      "original_sha256": "6ffe415c9a658dec40185565e44787969851da518486655360894229acef6e95",
+      "corrected_sha256": "9d3df4ea298886b9822bbe52eeb770b30fe734552ffd8d6cd0b5f5454f27562b"
+    }
+  ],
+  "model_refits_required": false,
+  "reason": "Only sex-group reporting metadata differs; source model features, all twelve source-target definitions, row order, roles, probabilities and labels are exactly unchanged"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "pairs": 60,
+  "conditions": 12,
+  "spearman_seed_descriptive": 0.9679683415481797,
+  "spearman_condition_descriptive": 0.9842396880153765,
+  "inferential_pvalues_reported": false,
+  "interpretation": "Shared target-score diagnostic; not independent causal evidence. Test labels never fit a deployable threshold.",
+  "target_diagnostic_quantile": "numpy linear empirical percentile 0.9; descriptive only",
+  "source_threshold": "ceil((n+1)*0.9) order statistic, infinity on overflow",
+  "input_manifest_sha256": "0e04f72db644383033ac3620412a9e846868be9e718d17c90bdecf4fa3707194",
+  "code_sha256": "db7e35f563807c35624d309afd250ec60a7063e3ff0d3368a487f2b3afd49280",
+  "outputs": {
+    "prevalence_diagnostics_by_condition.csv": "4dbe5fb29fe5522c10deef9cde0dcf2cc4a3e3f0fb20e90867984609435b1dd2",
+    "threshold_diagnostic_by_seed.csv": "27f1026bffb58701dbdf0054872053acf565830e94bb3e994903157c9f3c5cfc",
+    "score_threshold_mismatch.pdf": "7f5b9e9a72f41a6587510eb61395022adc2d7aec6da851d2c14756017fd89b2f",
+    "threshold_diagnostic_by_condition.csv": "06298c8cb8c1e94f9fd0e601c16a171b890dfeb1d2e9f0128effd39c30594a3d"
+  }
+}

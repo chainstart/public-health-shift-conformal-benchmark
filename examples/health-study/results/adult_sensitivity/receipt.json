@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "metric_rows": 400,
+  "model_fits": 20,
+  "adult_only": true,
+  "observed_bmi_required_for_bmi_shift": true,
+  "source_labels": 300,
+  "target_labels": 300,
+  "inference": "Separate NHANES cohort sensitivity; excluded from primary all-age aggregation.",
+  "code_sha256": "18805c3f39e73cb08ed1defce24d9fb8e129916fe6d4503cb8a99a2059eb6ac2",
+  "outputs": {
+    "adult_cohort_counts.csv": "cade0b23e9431338b5d2328fedccbc8d3fbb91982f3f4fb42fe24113f5f23441",
+    "adult_role_assignment.csv": "b345c279e6e1c7cc4a6b9e371ff2d0132df2b5846b0ab587f75e8b4854d61d61",
+    "adult_metrics.csv": "801d27baa9c5276f67b5ef0253e8e5c5cf5736f45027db4e768f54d34c065362",
+    "adult_summary.csv": "e7fdc5cdcbd9214c666f2243f8404daf2897dd2cfc8d16425d2f0b7d47b73c60",
+    "adult_by_shift.csv": "706d423b9354c98b01aa2f1c4e17ba441db617e3fe650796718cd9248f2b2552"
+  }
+}

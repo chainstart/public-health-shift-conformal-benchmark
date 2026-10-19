@@ -1,0 +1,50 @@
+{
+  "protocol_id": "jbi-independent-clinical-tasks-v1",
+  "status": "frozen_before_external_model_fitting_or_coverage_inspection",
+  "author_instruction": "2026-10-17: add independent datasets, evaluate effectiveness, integrate all supported evidence into figures, tables, text and reviewer responses",
+  "datasets": {
+    "heart_multicenter": {
+      "provider": "UCI Heart Disease, dataset 45, DOI 10.24432/C52P4X",
+      "url": "https://archive.ics.uci.edu/static/public/45/heart+disease.zip",
+      "files": ["processed.cleveland.data", "processed.hungarian.data", "processed.switzerland.data", "processed.va.data"],
+      "outcome": "num > 0 versus num = 0; contemporaneous diagnostic classification, not prospective incidence",
+      "features": "the standard 13 predictors, with ? and -9 coded missing; no outcome or institution identifier as predictor",
+      "conditions": "each of four centers held out as target, remaining three pooled as source",
+      "exclusions": "invalid or missing diagnostic labels only; retain incomplete predictor rows",
+      "boundary": "small historical cohorts; four related center comparisons, not four independent datasets"
+    },
+    "sepsis_hospitals": {
+      "provider": "PhysioNet/CinC 2019 version 1.0.0, DOI 10.13026/v64v-d857",
+      "url": "https://physionet.org/files/challenge-2019/1.0.0/training/",
+      "conditions": ["hospital A source to hospital B target", "hospital B source to hospital A target"],
+      "unit": "one record per patient file; no hourly pseudo-replication",
+      "eligibility": "at least 24 observed hourly rows, valid binary Challenge labels, no positive Challenge label during hours 1-12; require ordered ICULOS 1-24",
+      "prediction_time": "end of hour 12",
+      "outcome": "any positive supplied SepsisLabel in hours 13-24",
+      "features": "mean, last observed value and missing fraction for each of the first 34 physiological columns in hours 1-12; Age, Gender, Unit1, Unit2, HospAdmTime last observed in hours 1-12; exclude SepsisLabel and ICULOS",
+      "boundary": "supplied Challenge labels begin six hours before clinical onset; endpoint is future Challenge-label transition, not a new clinical onset adjudication or reproduction of Challenge utility. Conditioning on >=24h observation is retrospective cohort selection. No future predictors, post-hour-12 measurements, hospital identifier or later stay length enter the predictor"
+    }
+  },
+  "roles": "deterministic outcome-blind permutations for each dataset/condition/seed: source 70% proper training, 30% calibration; target 30% calibration pool, 70% untouched test; patient IDs disjoint; no target-guided tuning or failed-run redraws",
+  "model_seeds": [0,1,2,3,4],
+  "models": {
+    "elastic_net": "source-fitted median imputation and standardization; categorical most-frequent imputation, one-hot encoding min_frequency=20; SGDClassifier loss=log_loss, penalty=elasticnet, l1_ratio=0.10, alpha=0.0001, max_iter=1000, tol=0.001, class_weight=balanced",
+    "lightgbm": "same source-fitted preprocessing; LGBMClassifier n_estimators=120, num_leaves=31, learning_rate=0.05, class_weight=balanced, n_jobs=2; no target tuning"
+  },
+  "fractions_of_full_target": [0.005,0.01,0.02,0.03,0.05,0.10,0.15,0.20],
+  "calibration_draws_per_seed": 5,
+  "primary_methods": ["source_split", "source_mondrian", "target_split", "target_mondrian"],
+  "random_controls": "whole-dataset outcome-blind 25% test, then 30% calibration within remaining development data, five seeds per model; contextual controls, not condition-size matched",
+  "thresholds": "ceil((n+1)*0.90) sorted non-interpolated order statistic, infinity on rank overflow/absent class, inclusive ties, no argmax fallback; source full calibration, target nested uniform permutations",
+  "observation_channel_extension": {
+    "budget": "10% of each full target domain, same five model seeds and five draws; report actual class counts and infinity rates",
+    "regimes": {"uniform": "weight 1", "outcome_depleted": "weight .2 for class1 and 1 for class0; retrospective availability stress test", "risk_priority": "weight .1+.9*p_source(class1|X)"},
+    "availability": "independent Bernoulli eligibility probabilities min(1,c*weight), with c chosen for expected 2*n eligible rows; take uniform n eligible rows or all if quota insufficient; no resampling failed quotas",
+    "comparisons": ["available_split", "available_mondrian", "sentinel_split", "sentinel_mondrian"],
+    "sentinel": "independent uniform n labels from full pool, alternative acquisition protocol; no equal monetary-cost claim"
+  },
+  "outcomes": ["marginal coverage", "coverage shortfall", "both outcome-class coverages", "mean set size", "empty/singleton/two-label rates", "correct and incorrect singleton rates", "class label counts", "rank overflow", "AUROC and balanced accuracy as predictor diagnostics"],
+  "aggregation": "average draws within seed, then seeds within condition, then conditions within dataset; show all conditions and both models; keep new extension separate from original 12 conditions and original 528458-record summaries",
+  "integrity": "download URLs and SHA256; source-only preprocessing; patient disjointness; fixed predictions; independent sorted-score reconstruction of all metrics and draw membership; all failures and non-supportive results retained",
+  "interpretation": "external empirical validation, not universal superiority or proof of clinical benefit; no exact replication of numeric effect sizes assumed; no changing datasets, endpoints or methods after viewing coverage"
+}

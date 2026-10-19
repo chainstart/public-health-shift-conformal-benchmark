@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "original_path": "/home/biostar/work/projects/ara/projects/public-shift-conformal-benchmark-v3/writing/scripts/plot_quality_by_task.py",
+      "archived_copy": "research/jbi-r1-20261009/original_plotters/plot_quality_by_task.py",
+      "sha256": "0dba40ad7493dddbecfec4a35fc68f9be48f060cb89d18cae732ae2f629f9a5c"
+    },
+    {
+      "original_path": "/home/biostar/work/projects/ara/projects/public-shift-conformal-benchmark-v3/benchmark_release/public_health_shift_conformal_benchmark_v3/scripts/create_manuscript_figures.py",
+      "archived_copy": "research/jbi-r1-20261009/original_plotters/create_manuscript_figures.py",
+      "sha256": "685caad4f3ff11f22a8fff5b82de26c0cf35f9677e9732e2780f9ba33bf2ac95"
+    }
+  ],
+  "note": "Recovered original research source; byte-preserved. Release Figure 3 PNG is byte-identical to submitted Figure 3; the shared release palette differs from the submitted Figure 3 palette, which is explicitly restored by the adapter. Original Figure 2 source found in writing/scripts, not the schematic-only submitted-source script. No claim of bitwise reproducibility with changed data or dependency versions."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "fits": 15,
+  "seed_runs": 15,
+  "calibration_thresholds_independently_reconstructed": true,
+  "median_coverage": 0.8999714285714285,
+  "equal_dataset_mean_coverage": 0.8995697213698254,
+  "code_sha256": "c9b8b89ed5e4b66bc81e5b9f2ce6f7f75e263224dc3dc96becdb9d633baf4b22",
+  "outputs": {
+    "dataset_summary.csv": "5abeae9e093c1d6910e58fa101456ca959e730d68d4dc861e41850667f24e4a0",
+    "role_assignment.csv": "209d0f3a0e4f6057254feaa6eb6965080006981fca004c37b6abeb63bcaff6c6",
+    "control_metrics.csv": "8d45dfa1909483050d8703e6aa87bcea7d89022c48b34202bb728c1e20e25d75"
+  }
+}

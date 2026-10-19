@@ -1,0 +1,412 @@
+{
+  "standard_configuration": true,
+  "protocol": "outcome-blind-binary-v1",
+  "benchmark_version": "2.0.0",
+  "synthetic": false,
+  "source_n": 300,
+  "target_n": 300,
+  "replicates": 5,
+  "alpha": 0.1,
+  "prediction_inputs": [
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 0,
+      "sha256": "c055bb389321f4710d1edac3df9996b85b4e3c89fc57c3d54d99849844acc46d"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 1,
+      "sha256": "5c4baa4b63e5fbe78555e434f9dae134459f3e67a467599c4664e8a8113c83ab"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 2,
+      "sha256": "5b3293ccde766a1024a61b18ab42f68338c84f54733882b87423f997f64ae5ba"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 3,
+      "sha256": "9dc07f754a17a4db6b0b1d03a6cef059a57ebdf5b6494adcbf6ff935ee612fc1"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "age_65plus",
+      "seed": 4,
+      "sha256": "39355afab773e5caeacbbbde169ad5001bf701c06aef1580e3ba5bdcfb17dd02"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 0,
+      "sha256": "69e88be1e8a5e833b2106bea7cde067c541341822a45e56faf6341161d674372"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 1,
+      "sha256": "cb403c33449de26b4c4ca829c922dfca9149472b6a78b2adf1d400a76ebe79da"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 2,
+      "sha256": "81c42056bb234d530ef2b03d7c21e79e9d2af98aada239657db1db10a5601295"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 3,
+      "sha256": "40ec64a4fddb81cebc8c9bc6a91af33a0444a91380ebe6f357a48195dee9d349"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "obesity",
+      "seed": 4,
+      "sha256": "bc51916f4fb91bc7a40bff7620e04a4f1d8b7ebadf16d15282ca4fd9e95dfb89"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 0,
+      "sha256": "fe01c6c3a66a8a5f023b7e35a8fd4687446f8d082c701ec89f773e18051818dc"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 1,
+      "sha256": "b3a72777459dc2e3b0e2f9f4d2bf850661479fb936c73e211bd1f84f46fd9852"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 2,
+      "sha256": "4ec29837786728c2de238171eb6896647efcea9046a74180c455ecb42cfb225a"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 3,
+      "sha256": "5812ee1013604767727efe9c5602d93012585675933ac8f64f01504f269c1164"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 4,
+      "sha256": "c3eaa4f3286f6d589caea44f47c6a6bc02e68080a0077fbc54ec2edc57cd6b7e"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 0,
+      "sha256": "2290c7080ddea2f7d8cef67278e5280dd0d51baa9b4874bc37fd3913b5675781"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 1,
+      "sha256": "f29f24ffadca1448b65f811580bace0a687ce2538247399494aa008fd8eec639"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 2,
+      "sha256": "068c2f822b921825cf1e8f12b125bc7763e6bb74a27b43c02708abf981dcb42f"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 3,
+      "sha256": "07f1bace617923ea2cfced0b83434329ef547bb4229d6b0274a838138949d5e0"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "region_south",
+      "seed": 4,
+      "sha256": "4b5d99c43e2e2d562bb7bb4946f383959b7446bbb59f5d284c3f796b6d9e8b71"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 0,
+      "sha256": "4ae07bdbbf3be8183df154e6da56faff7f0c25b1350da25f459213b02e58c625"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 1,
+      "sha256": "892533d6a3aa906cd28ada475c0689064775826710bfe0d41f4eeb74f2e88b03"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 2,
+      "sha256": "f1f6c306b22cc3a171aad93ed358c004dcea0b11f755d1bacc3d092e970c28ed"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 3,
+      "sha256": "cd6c81accd3ec04425733e6b53653e639675d6095b16452dcb290ba655a16fe7"
+    },
+    {
+      "dataset": "brfss_multiyear_diabetes",
+      "shift": "time_future",
+      "seed": 4,
+      "sha256": "2233fb0965ca45de9244b89b8f3e6e73eb19388c4390c9bbda10c3f3f33b7514"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "age_65plus",
+      "seed": 0,
+      "sha256": "3fbd5bb728decea344e835f90acbacc9650853b68f707417cb9a69b83df0a0a2"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "age_65plus",
+      "seed": 1,
+      "sha256": "9785401d21f912c81c5f56a31652002fac747ee87af099da5eec15b66bbbc7a5"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "age_65plus",
+      "seed": 2,
+      "sha256": "c25e77c481e87d1725ce594f9687a5281e7c66dbb2c6bb64b18004050ec751c4"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "age_65plus",
+      "seed": 3,
+      "sha256": "c155b17fb6967cfa91ad2731f38ae51761040541d85dcabd4b7c279bef16a39f"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "age_65plus",
+      "seed": 4,
+      "sha256": "2138903f5d9ca0ed5958a4c0cd7e9f313efaa32cb9958d06bb05757229d5dc93"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "obesity",
+      "seed": 0,
+      "sha256": "9e9905373d9c1df021df68dd4ebf458987ed9eb86a8050cd0edbf3af063430f7"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "obesity",
+      "seed": 1,
+      "sha256": "ba60943c49971525b0d40a2cb8019cab34574390c561f6a76ee23a3dc8b058a5"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "obesity",
+      "seed": 2,
+      "sha256": "9f616be89db5c69cb446ff4ba4e514d3f974f9e7035ec4cb7e56d0bc687c2e2d"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "obesity",
+      "seed": 3,
+      "sha256": "cb2604f9e016d0686982feed7209e876e3bf0371ef67fd7f9268178768e470df"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "obesity",
+      "seed": 4,
+      "sha256": "11c5a9b7199a6072f4586387e4eb8f10c62647e3202af4595e71f318305a682c"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 0,
+      "sha256": "3da42512545a8d69ff438ec6cea21a393918c3a17a495b689619b32d77548b47"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 1,
+      "sha256": "d981a70702a290ca9bdcfc78c4fc1c96b312b47aa2c545c3e70fd512df2a6871"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 2,
+      "sha256": "e9c36da39b182feccb828bb2881bfa0fca1ea334d58d412445b8cb4fde43095d"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 3,
+      "sha256": "18a5fbeaf9be97f24dad1d208d82ec5e4fcddeaa4585b7a49fb60c9c90c56ecf"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "race_black_vs_white",
+      "seed": 4,
+      "sha256": "ace12155920db175aae9cfcda38f9adc1638105e047c57024edb5d7f77d736c5"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "time_future",
+      "seed": 0,
+      "sha256": "38d2a16820a1673b25d6380dfb783adb2ae4a8283e36375e01fd384bee50b74e"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "time_future",
+      "seed": 1,
+      "sha256": "0a4e2f75b5919c5b37ad0643a8326a7832dd66c1085eae1cab46e666af407a3a"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "time_future",
+      "seed": 2,
+      "sha256": "c361071e65665258bf45b9b1ab9f22806f73835fb3e05aae1e689534cadff023"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "time_future",
+      "seed": 3,
+      "sha256": "3c28a9a799d6169f012a0ea187c0432a57012b1a085d824198831e0590f033ee"
+    },
+    {
+      "dataset": "nhanes_multicycle_diabetes",
+      "shift": "time_future",
+      "seed": 4,
+      "sha256": "9d0f22fe56c839133e323f199090e59e5f2d1c303e5e0bb0558fe6a3e498f299"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "age_older70",
+      "seed": 0,
+      "sha256": "1f6b6e6c04d543a34f072dcf2c7b63c4144b277c16a1606fae30a08f29c7a9ac"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "age_older70",
+      "seed": 1,
+      "sha256": "c61fa600afd803b5ad0fc1767eb3f9672132c43eb45221985e7c89594e68aa33"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "age_older70",
+      "seed": 2,
+      "sha256": "61711fa69e706f2adc30ad981495848c41a8963cc4964d9ef94a3e89e0529125"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "age_older70",
+      "seed": 3,
+      "sha256": "b88cb7a5220cc2eca9ae41f066ae98d4388e1bfebb56b8d967c72154e30215c2"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "age_older70",
+      "seed": 4,
+      "sha256": "57fe3cc83fbc011fd974b8d362b766f392b1bb76cf629340e38027d7f0053dfc"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "emergency_admission",
+      "seed": 0,
+      "sha256": "210d4d837b8538e01bc36e89f01efa0d97ef4b57cf3176cf9937f9fb5c2c521b"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "emergency_admission",
+      "seed": 1,
+      "sha256": "0d01f5709e14e2c87046bcf259a9a3b8b0b537260605dfaf64d1c75c58eb3e00"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "emergency_admission",
+      "seed": 2,
+      "sha256": "65e03b9369805586ced63a6e07f949489c1026c133cdd854c658df20f5cf36d9"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "emergency_admission",
+      "seed": 3,
+      "sha256": "b21d055a06fbbbfd559911513d2bdda10b531f0886990bfb4f06967b0ef1260e"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "emergency_admission",
+      "seed": 4,
+      "sha256": "63029aaa9cf175d6024fa9560801da271d5ac2b849f80a07391175b2ef0826c0"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "race_african_american",
+      "seed": 0,
+      "sha256": "e695c3cebd4a92ae76d6903064a6a90496fc4b6ba121d421c3c520d9f2c6b22f"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "race_african_american",
+      "seed": 1,
+      "sha256": "e0c3b4ad695f634cce1f2d1f7b8867dccb4282f01e1f14655b9236d8f1290ec6"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "race_african_american",
+      "seed": 2,
+      "sha256": "7204e0694021a1cecb755402557e872e93b7b673807861c3c29efabb4d9d11de"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "race_african_american",
+      "seed": 3,
+      "sha256": "853205fc422ba2e119ee9db2bb19bb4e8a995c086e8980ee2a2ad60a0293c446"
+    },
+    {
+      "dataset": "uci_diabetes_readmission",
+      "shift": "race_african_american",
+      "seed": 4,
+      "sha256": "f2bd3606ecfa61ae28fbbba9f5851be64ba3e949b4180ac9daa057ad7e259b6e"
+    }
+  ],
+  "manifest_sha256": "4401bceae4d8011badd74e4116b60161dd5883be535a34e9a5e3b367452707e6",
+  "implementation_sha256": {
+    "api.py": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0",
+    "__main__.py": "8aacf4298a7a76bba576bfa4a58087e776b4db527b0d606072bf7852fa90685e",
+    "tasks.json": "345a45d61f5cd6e8b1bf6f4aeb44ac36aae015e68cec9992653d5a21e694545e"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1"
+  },
+  "method_inputs": [
+    {
+      "argument": "source_split",
+      "name": "source_split",
+      "sha256": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0"
+    },
+    {
+      "argument": "source_mondrian",
+      "name": "source_mondrian",
+      "sha256": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0"
+    },
+    {
+      "argument": "target_split",
+      "name": "target_split",
+      "sha256": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0"
+    },
+    {
+      "argument": "target_mondrian",
+      "name": "target_mondrian",
+      "sha256": "1701f1ab20531abf84ca1248f47fce4b30b56d58b9f11695d98b8b60e0a63de0"
+    },
+    {
+      "argument": "examples/source_split.py",
+      "name": "example_source_split",
+      "sha256": "1cc99d316a798e4ed960e587d3fd09b901562705a46fef4d91d2e4ab342489db"
+    }
+  ],
+  "output_sha256": "4b01a282306d7c5a2ce256893fa1b907d01d40cb07007b9b4eca960c623f5170"
+}

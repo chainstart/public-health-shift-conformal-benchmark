@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "fits": 60,
+  "model_selection": "none; frozen predictions only",
+  "provenance_sha256": "0e04f72db644383033ac3620412a9e846868be9e718d17c90bdecf4fa3707194",
+  "script_sha256": "c2133838fc035469542d6d9b755f71d74cf7d5e24b518f9bee1e43d6f3cea188"
+}

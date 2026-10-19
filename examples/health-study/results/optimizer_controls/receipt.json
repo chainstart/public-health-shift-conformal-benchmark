@@ -1,0 +1,9 @@
+{
+  "status": "objective_fidelity_verified_optimization_gaps_reported",
+  "ot_controls": 9,
+  "lrqr_controls": 18,
+  "optimizer_global_correctness": "Not inferred for health-data problems; analytic global minima apply only to these controls.",
+  "script_sha256": "9b67e08e338f75a99def71df04989ba59a3789390589f4c0375897c46c11be45",
+  "ot_reference_sha256": "2a4c72d3106f7e39758e6ff9a709543132cc52bf9bfec7953a95860596f85b52",
+  "lrqr_reference_sha256": "12c8652c73255d6000e2a37600dfca4a7e2bc2ed6ed7edf2ef65456f457348ca"
+}

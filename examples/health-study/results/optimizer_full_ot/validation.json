@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "cases": 300,
+  "method": "Independent NumPy reconstruction; no solver imports",
+  "maximum_objective_error": 1.5424891069981683e-07,
+  "weights_sha256": "58ac9abdc48df8ed0fea8c73eee9073d6f822b2db64f004f6b438d2d083f9b24",
+  "script_sha256": "14c19e2b86af35d2d691cbf5fdf46ac51286b423bbebdcbca6e98fd332a0e02b"
+}

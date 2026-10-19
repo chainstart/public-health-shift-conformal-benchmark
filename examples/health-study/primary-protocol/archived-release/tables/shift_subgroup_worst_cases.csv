@@ -1,0 +1,13 @@
+dataset,shift_name,Source,Target split 10\%,Target Mondrian 10\%
+BRFSS,age_65plus,obesity=obese; 0.691; n=130425,obesity=obese; 0.794; n=130425,obesity=obese; 0.814; n=130425
+BRFSS,obesity,age=65\_plus; 0.544; n=130367,age=65\_plus; 0.830; n=130367,age=65\_plus; 0.855; n=130367
+BRFSS,race_black_vs_white,age=65\_plus; 0.745; n=27286,age=65\_plus; 0.803; n=27286,age=65\_plus; 0.823; n=27286
+BRFSS,region_south,obesity=obese; 0.768; n=128179,obesity=obese; 0.811; n=128179,obesity=obese; 0.819; n=128179
+BRFSS,time_future,obesity=obese; 0.890; n=244128,obesity=obese; 0.812; n=244128,obesity=obese; 0.805; n=244128
+NHANES,age_65plus,sex=female; 0.330; n=9321,obesity=obese; 0.834; n=6229,obesity=obese; 0.868; n=6229
+NHANES,obesity,age=65\_plus; 0.450; n=6120,age=65\_plus; 0.729; n=6120,age=65\_plus; 0.760; n=6120
+NHANES,race_black_vs_white,age=65\_plus; 0.892; n=3663,age=65\_plus; 0.676; n=3663,age=65\_plus; 0.679; n=3663
+NHANES,time_future,age=65\_plus; 0.720; n=9680,age=65\_plus; 0.635; n=9680,age=65\_plus; 0.626; n=9680
+uci,age_older70,admission=emergency\_room; 0.771; n=61421,admission=emergency\_room; 0.891; n=61421,admission=emergency\_room; 0.892; n=61421
+uci,emergency_admission,age=older70; 0.814; n=61147,age=older70; 0.868; n=61147,age=older70; 0.866; n=61147
+uci,race_african_american,age=older70; 0.876; n=13702,age=older70; 0.861; n=13702,age=older70; 0.860; n=13702

@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "pairs": 60,
+  "rows": 9000,
+  "draws": 3600,
+  "quota_shortfall_draws": 0,
+  "protocol_sha256": "fa7df17971c5a29910d17df2f209e175b690a1993089b272cf923f08d7ccd8dd",
+  "input_manifest_sha256": "0e04f72db644383033ac3620412a9e846868be9e718d17c90bdecf4fa3707194",
+  "outputs": {
+    "dataset_summary.csv": "f4cdc34cbb586a3139e0bff1ba0722a9a764c2cf81b609665861d9372771482a",
+    "replicate_metrics.csv": "b61058156cb6b7791a193185aa678034ca05f2c839b192fc8c59c754adbaba36",
+    "condition_summary.csv": "edf95d2e8e42e10decc2ade9621332b8cab6584e24242d2bc141a3f8b85f5932",
+    "equal_dataset_summary.csv": "637f4a2d268ac2b9c7227adbf935552f7c1bcfd5e2084b5d91935a3c1ea72913",
+    "calibration_draws.csv": "a697b723ff2c638556642af647bf306902a321509d725117a5b04c06226e5940"
+  }
+}

@@ -1,0 +1,32 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Descriptive demographic and operational subgroup audit beyond class labels. Rows report the worst pooled subgroup value for each axis and workflow across the 12 non-pseudo shifts, its denominator, a nominal Wilson range computed for that pooled value, and the coverage range across values. Counts are pooled observation appearances across related conditions and repeated seeds, not unique individuals. Nominal Wilson ranges ignore this dependence and serve as arithmetic descriptions, not population confidence intervals or subgroup-validity guarantees.}
+\label{primary-tab:demographic_subgroup_audit}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}L{2.0cm}L{2.35cm}L{2.8cm}L{2.7cm}rrr@{}}
+\toprule
+Subgroup axis & Workflow & Worst value & Worst cov. [nominal range] & Worst $n$ & Range & Values \\
+\midrule
+admission source & source & non\_emergency & 0.8357 [0.8329, 0.8385] & 67627 & 0.0073 & 2 \\
+admission source & target split 10\% & emergency\_room & 0.8975 [0.8963, 0.8988] & 222428 & 0.0112 & 2 \\
+admission source & target Mondrian 10\% & emergency\_room & 0.8970 [0.8958, 0.8983] & 222428 & 0.0106 & 2 \\
+age & source & 65\_plus & 0.8016 [0.8009, 0.8023] & 1160093 & 0.1271 & 5 \\
+age & target split 10\% & 65\_plus & 0.8630 [0.8624, 0.8637] & 1160093 & 0.0747 & 5 \\
+age & target Mondrian 10\% & 65\_plus & 0.8668 [0.8662, 0.8674] & 1160093 & 0.0676 & 5 \\
+obesity & source & obese & 0.7542 [0.7534, 0.7551] & 1013910 & 0.1691 & 2 \\
+obesity & target split 10\% & obese & 0.8488 [0.8481, 0.8494] & 1013910 & 0.0884 & 2 \\
+obesity & target Mondrian 10\% & obese & 0.8511 [0.8504, 0.8518] & 1013910 & 0.0846 & 2 \\
+race proxy & source & unknown & 0.8166 [0.8150, 0.8182] & 222291 & 0.0887 & 10 \\
+race proxy & target split 10\% & black & 0.8658 [0.8646, 0.8669] & 340110 & 0.0819 & 10 \\
+race proxy & target Mondrian 10\% & black & 0.8702 [0.8690, 0.8713] & 340110 & 0.0700 & 10 \\
+region & source & territory\_or\_unknown & 0.8118 [0.8073, 0.8163] & 28659 & 0.0643 & 5 \\
+region & target split 10\% & territory\_or\_unknown & 0.8573 [0.8532, 0.8613] & 28659 & 0.0632 & 5 \\
+region & target Mondrian 10\% & territory\_or\_unknown & 0.8583 [0.8542, 0.8623] & 28659 & 0.0605 & 5 \\
+sex & source & female & 0.8463 [0.8457, 0.8470] & 1126031 & 0.0138 & 3 \\
+sex & target split 10\% & unknown & 0.8844 [0.8835, 0.8854] & 428586 & 0.0233 & 3 \\
+sex & target Mondrian 10\% & unknown & 0.8858 [0.8849, 0.8868] & 428586 & 0.0207 & 3 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

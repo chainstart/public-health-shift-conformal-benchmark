@@ -1,0 +1,18 @@
+{
+  "reason": "Preserve all eight target fractions in the actual submitted manuscript.",
+  "fractions": [
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "replicates": 5,
+  "models": 60,
+  "runner_sha256": "9e555707db031f04be89104b366c15d3cbd9b012d3ef202032bd184cd40fd74d",
+  "wrapper_sha256": "b3d0a7c6ed751b2fae7b6bb7d8e3a56623c1c6c2da519eabbe2a652b39c91d74",
+  "uses_test_labels_for_fitting": false
+}

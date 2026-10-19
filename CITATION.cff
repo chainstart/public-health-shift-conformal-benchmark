@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this benchmark package, please cite the associated manuscript and this repository."
 title: "Public-Health and Clinical Tabular Shift-Conformal Benchmark"
-type: dataset
+type: software
 authors:
   - family-names: Chen
     given-names: Zhipeng
@@ -13,8 +13,8 @@ authors:
     given-names: Haolun
   - family-names: Feng
     given-names: Yan
-date-released: 2026-07-08
-version: "paper-release"
+date-released: 2026-10-19
+version: "2.0.0"
 repository-code: "https://github.com/chainstart/public-health-shift-conformal-benchmark"
 url: "https://github.com/chainstart/public-health-shift-conformal-benchmark"
 license: "MIT"
@@ -26,19 +26,20 @@ keywords:
   - distribution shift
   - benchmark
   - target-domain recalibration
-preferred-citation:
-  type: article
-  title: "A public-health and clinical tabular benchmark for target-domain recalibration of conformal prediction under deployment shift"
-  authors:
-    - family-names: Chen
-      given-names: Zhipeng
-    - family-names: Zhan
-      given-names: Jingyi
-    - family-names: Wang
-      given-names: Qisheng
-    - family-names: Tang
-      given-names: Haolun
-    - family-names: Feng
-      given-names: Yan
-  year: 2026
-  notes: "Manuscript prepared for Journal of Biomedical Informatics."
+references:
+  - type: dataset
+    title: "Research-code archive"
+    authors:
+      - family-names: Chen
+        given-names: Zhipeng
+      - family-names: Zhan
+        given-names: Jingyi
+      - family-names: Wang
+        given-names: Qisheng
+      - family-names: Tang
+        given-names: Haolun
+      - family-names: Feng
+        given-names: Yan
+    version: "1.4.15"
+    doi: "10.5281/zenodo.23461041"
+    notes: "Archived case study; this DOI does not identify GitHub interface v2.0.0."

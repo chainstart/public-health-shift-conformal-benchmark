@@ -1,0 +1,10 @@
+method,source_labels_used,source_unlabeled_used,target_labels_used,target_unlabeled_used,validity_scope,implementation_note
+source_split_full,all,0,0,0,none_under_target_shift,ordinary split conformal
+source_mondrian_full,all,0,0,0,label_shift_only_if_class_conditionals_are_invariant,class-conditional split conformal
+source_split_300,300,0,0,0,none_under_target_shift,ordinary split conformal on matched source sample
+target_split_300,0,0,300,0,target_marginal_exchangeability,labeled-target reference
+target_mondrian_300,0,0,300,0,target_class_conditional_exchangeability,labeled-target reference
+label_shift_weighted_300,300,0,0,300,plug_in_label_shift_only,BBSE label-prior ratios; estimated weights do not inherit an exact finite-sample guarantee
+score_covariate_weighted_300,300,0,0,300,plug_in_score_space_covariate_shift_only,weighted conformal with a cubic-logit domain classifier and clipped estimated ratios
+ot_minmax_weighted_cdf_300,300,0,0,300,no_exact_coverage_guarantee,free-form Algorithm-2 reproduction minimizing the min/max weighted-CDF bound
+lrqr_300_300_300,300,300,0,300,asymptotic_covariate_shift_with_hypothesis_class_and_optimization_conditions,independent LR-QR reproduction with source-supported 50-component linear feature map and gradient-norm cross-validation

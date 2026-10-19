@@ -1,0 +1,9 @@
+{
+  "source": "Complete reference CSVs, not selected conditions",
+  "outputs": {
+    "tables/label_acquisition.tex": "9c285fe99b8cbeaceac006b752308e770776abebe81dc033c36484f90f0d2262",
+    "tables/label_acquisition_full.tex": "f64e369dc9c416b5494d251c2d6fd317c4f23cf81e7bd6175ff5274efe64a787",
+    "tables/label_acquisition_counts.tex": "9cca9172146f5de0a4a238b9da6e1bd92d70dd1d10097ade8a39e5ec3767120b",
+    "figures/label_acquisition_class_coverage.pdf": "8e72d52395588bb5a2dea0fb6dc0add87d58d45b2121e6f805238448b95bee87"
+  }
+}

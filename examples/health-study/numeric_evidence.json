@@ -1,0 +1,5739 @@
+{
+  "schema_version": "ai-research-writing/numeric-evidence-v2",
+  "entries": [
+    {
+      "value": 0.8049780150728708,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4010730966338085,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.20740842669024775,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5989269033661914,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4010730966338086,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8065675876131975,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3937248847887853,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.257634549329599,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6062751152112146,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.3937248847887855,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8997351308352863,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4864712576290084,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0161382713158577,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5135287423709914,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4864712576290086,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8998465970392728,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.5415680359905404,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.14717415975147238,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.45843196400945957,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5415680359905405,
+      "source": "results/budgets/budget_equal_dataset.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "fraction": 0.1,
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9029154042600275,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4423194764145768,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.05088182950714507,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5576805235854231,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.44231947641457686,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9000731266923628,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3897723588900346,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.11344478731112295,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.00034934096367543466,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6095289591826146,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.39012169985371,
+      "source": "results/controls/control_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.7656305374913335,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3623285517583499,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.28978271004746836,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.63767144824165,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.36232855175835,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.7627213252586815,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3464332897708053,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.28881539671018286,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6535667102291947,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.34643328977080534,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9010201649008726,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4813381192783868,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.036730836269543043,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5186618807216132,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4813381192783867,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.89944718806075,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.5689950549331,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.12107083297372685,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4310049450669001,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5689950549330999,
+      "source": "results/adult_sensitivity/adult_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8297480445653908,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4073556307614246,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.15208268432541783,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5926443692385753,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4073556307614246,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8313557408305695,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3668504345738304,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.16972895138910696,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6331495654261697,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.3668504345738303,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8998937110753543,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4788729790337147,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.01459376691238548,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5211270209662854,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.47887297903371473,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_mondrian"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9002333048386849,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4988988253136402,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.10252608000647777,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5011011746863597,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4988988253136403,
+      "source": "results/nonlinear/nonlinear_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_split"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.7816182616035113,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.397006657140686,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.2772621716012909,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.001281805420819841,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6004297320176741,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.39828846256150613,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9214518658190104,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.7058697961439455,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.09295314038411868,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.019343803084664105,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.2554425976867262,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.7252135992286096,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9761809221655834,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.8668311568037605,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.03083785110355457,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.13316884319623937,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8668311568037605,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.902464562612645,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.5482451385936724,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.14458177271639117,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 5.4743526577982154e-05,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4516453743531715,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5482998821202506,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8049780150728708,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.4010730966338085,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.20740842669024775,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5989269033661914,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4010730966338086,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8061475671921912,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3942095862782147,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.2579043502178506,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.00042675078634909586,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6049369121490871,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.39463633706456386,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8065675876131975,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.3937248847887853,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.257634549329599,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.6062751152112146,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.3937248847887855,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9026371532161098,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.5115287284830963,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.037383167827263926,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.0,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.4884712715169037,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5115287284830963,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.8993518644016801,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 1.5415218587768849,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "mean_set_size",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.1476695050211443,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "class_coverage_gap",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 5.310122078064269e-05,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "empty_set_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.45837193878155386,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.5415749599976655,
+      "source": "results/matched/extended_equal_dataset_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Four-decimal display in generated metrics/tables; descriptive mean"
+    },
+    {
+      "value": 0.9333260213874418,
+      "source": "results/matched/extended_shift_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "min",
+      "tolerance": 5.1e-05
+    },
+    {
+      "value": 0.9986185714285714,
+      "source": "results/matched/extended_shift_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "max",
+      "tolerance": 5.1e-05
+    },
+    {
+      "value": 0.7124650397587058,
+      "source": "results/matched/extended_shift_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "min",
+      "tolerance": 5.1e-05
+    },
+    {
+      "value": 0.997203193791508,
+      "source": "results/matched/extended_shift_summary.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "coverage",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "max",
+      "tolerance": 5.1e-05
+    },
+    {
+      "value": 0.38332979904200526,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.2170999329756688,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.600429732017674,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.39828846256150613,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "label_shift_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.19623826659040067,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.05920433109632547,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.25544259768672617,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7252135992286096,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "lrqr_300_300_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1093497653618228,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.02381907783441654,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1331688431962393,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.8668311568037605,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.3541646804923944,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.097480693860777,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.4516453743531714,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.5482998821202506,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "score_covariate_weighted_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.40390491843906234,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.19502198492712905,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.5989269033661914,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.4010730966338086,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_mondrian_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.41151123012762736,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.19342568202145963,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.604936912149087,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.39463633706456386,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.4128427028244121,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.19343241238680245,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.6062751152112146,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.3937248847887855,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "source_split_full"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.3911084247330135,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.09736284678389023,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.4884712715169037,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.5115287284830963,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_mondrian_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.35777690440401466,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "correct_singleton_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1005950343775392,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_error_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.45837193878155386,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "singleton_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.5415749599976655,
+      "source": "results/decision_tradeoffs/equal_dataset_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "full_set_rate",
+        "where": {
+          "method": "target_split_300"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.09058940239015048,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.09058940239015048,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 1.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.09058940239015048,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "label_shift_weighted_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 8.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.6073732233892387,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 7.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.6073732233892387,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 6.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.6073732233892387,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "lrqr_300_300_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 12.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.907571954889727,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 12.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.907571954889727,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 12.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.907571954889727,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "ot_minmax_weighted_cdf_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 8.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7181021453246419,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 6.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7181021453246419,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7181021453246419,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "score_covariate_weighted_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 3.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13440679130357497,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13440679130357497,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13440679130357497,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_mondrian_full",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 3.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1413503155030498,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1413503155030498,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 1.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.1413503155030498,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 4.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13151785998549098,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13151785998549098,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 1.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.13151785998549098,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "source_split_full",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 12.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.891923294908372,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 12.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.891923294908372,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 6.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.891923294908372,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_mondrian_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 8.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7024283435067186,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.85
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 4.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7024283435067186,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.88
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 2.0,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "conditions_passing",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.7024283435067186,
+      "source": "results/decision_tradeoffs/floor_sensitivity.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "worst_condition_class_mean",
+        "where": {
+          "method": "target_split_300",
+          "floor": 0.9
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Exploratory descriptive; no clinical threshold or prospective deployment guarantee"
+    },
+    {
+      "value": 0.4203497090208737,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.5820235810255003,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.3641568412393748,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.40573356077075,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0109890841529704,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.018650671467185,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "OT",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9063815695406238,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9324705237181246,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8747134631203728,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2857601884752512,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0041796402598265,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0148462615907192,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter731"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9056520862579488,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9319440636139292,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8737153825061693,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2858560755848884,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0041659371039713,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0143013643100857,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "OT",
+          "variant": "jitter991"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.907571954889727,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9333260213874418,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8762051000822593,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2857921656221151,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0042058524719322,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0147365555167198,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "OT",
+          "variant": "steps4000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9077543257103956,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.9334576364134906,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8765012338908692,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.274506108649075,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0008013630900677,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0018734317272901,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "OT",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7197468993304355,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7939786125582671,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7042500685494927,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": -0.9183058754223634,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1409132273954403,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.3970164792147692,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "baseline"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6087569607194846,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7134960241294215,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.5941760350973403,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": -0.9196301024465668,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1333169390120971,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2663950205032694,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "starts_extra"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6073732233892388,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_worst_class",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7124650397587058,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_coverage",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.5926953660542912,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "age_two_label",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": -0.9196398777747824,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "objective_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1307148929850767,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_mean80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2921053733160435,
+      "source": "results/optimizer_comparison.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "gradient_max80",
+        "where": {
+          "method": "LR-QR",
+          "variant": "steps8000"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7518858760978031,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4363296171159295,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2604312896728515,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2128345504762092,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7879261279598961,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4974152817399908,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.3374558806419372,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2376121647184362,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.81788122319283,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.5095123630956188,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1997798204421997,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2093670226621516,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8267396114551337,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "region_south"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.458715125953268,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "region_south"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1968230843544006,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "region_south"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1619063231850117,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "region_south"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8197256802613481,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4096088229925351,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1496171444654464,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1392321428571428,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "brfss_multiyear_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6681776288229353,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4199166274854352,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.5532728374004364,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2790238552234713,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "age_65plus"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.7999897227618674,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4529286111892857,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.3791324734687805,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.189433237271854,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "obesity"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.8834068062739016,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4033454868205229,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0947798401117324,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0980128099852192,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "race_black_vs_white"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.884108298978421,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.4121727931749571,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1400792002677917,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0963762407436584,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "nhanes_multicycle_diabetes",
+          "shift": "time_future"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6162743075352658,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "age_older70"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1561568585535896,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "age_older70"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2966071933507919,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "age_older70"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1013701099693528,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "age_older70"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6298821293901595,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "emergency_admission"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1488566258058319,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "emergency_admission"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2659078329801559,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "emergency_admission"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0907320349227669,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "emergency_admission"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.6232680171692334,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "auroc",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "race_african_american"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.1473130515936891,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "average_precision",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "race_african_american"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.2399051934480667,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "brier_score",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "race_african_american"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    },
+    {
+      "value": 0.0850460037689834,
+      "source": "results/predictor_discrimination/condition_diagnostics.csv",
+      "selector": {
+        "kind": "csv",
+        "column": "prevalence",
+        "where": {
+          "dataset": "uci_diabetes_readmission",
+          "shift": "race_african_american"
+        }
+      },
+      "aggregate": "identity",
+      "representations": [
+        "raw"
+      ],
+      "tolerance": 5.1e-05,
+      "note": "Numerical validation/discrimination; descriptive values."
+    }
+  ]
+}

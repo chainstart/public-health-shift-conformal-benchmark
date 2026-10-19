@@ -1,0 +1,10 @@
+{
+  "doi": "10.5281/zenodo.23461041",
+  "version": "1.4.15",
+  "role": "Experiment code, results, figures and table fragments; no manuscript or supplementary article",
+  "excluded_manuscript_files": [
+    "supplement/supplementary.pdf",
+    "supplement/supplementary.tex",
+    "supplement/references.bib"
+  ]
+}

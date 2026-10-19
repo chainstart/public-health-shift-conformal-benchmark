@@ -1,0 +1,11 @@
+{
+  "source": "reference CSVs; all score/label reconstruction remains separately reproducible",
+  "seed_summary": "draw means; medians across 60 condition-seed pairs",
+  "shortfall": "max(0,.9-coverage) per draw before aggregation",
+  "source_control": "Whole-dataset random controls when supplied; not a condition-size-matched reference",
+  "outputs": {
+    "figures/quality_by_task.pdf": "880632566f240899a251ff4af9ad06de31a8c4defe84a35832272bb18919c0c5",
+    "figures/score_threshold_mismatch.pdf": "1a06fa355349516fca40d0f1f106e1933ebaeb48ff5d3b8b2c5c2ad1e2d40b87",
+    "tables/original_budget_corrected.tex": "484a89fccfa4056f4880845188c42697aae894678e72c2da847f3a009a606f09"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "input_sha256": "e2088cf953b924a7aa35b059a3ebb04eb91b46ab9be9064cdf88cb5bddef6c76",
+  "independent_implementation": "Python standard library; no imports from analysis or threshold code",
+  "replicate_rows": 2700,
+  "conditions_methods": 108,
+  "floor_checks": 27,
+  "script_sha256": "60288471e7e070e682e8542b0e3cb82473b5506bdf1ed5e00bd20d5cfb9045af"
+}

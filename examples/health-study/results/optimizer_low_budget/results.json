@@ -1,0 +1,530 @@
+{
+  "artifacts": {
+    "draw_audit.csv": {
+      "sha256": "257894385f06b375c55909999b2dd997adab28d501f51949b218ffdcd2eb4e92",
+      "size_bytes": 94461
+    },
+    "extended_dataset_summary.csv": {
+      "sha256": "337aab19bbe724dcb20c0ac6409ed31a3154636fe17fbfc2a14d95d92152e556",
+      "size_bytes": 5831
+    },
+    "extended_equal_dataset_summary.csv": {
+      "sha256": "0c3648636cc5995431ac6c7da484a99b729d865269514fecd506e8ffd61dcd75",
+      "size_bytes": 1849
+    },
+    "extended_replicate_metrics.parquet": {
+      "sha256": "405a65a6665608fcddf46999f0a781c4e8fd5b369aa5cc55ab147bbcda42ca9f",
+      "size_bytes": 241979
+    },
+    "extended_shift_summary.csv": {
+      "sha256": "cc5242c15158416d3f416f6244648b94f118a37dc94256d77ef9405924aff206",
+      "size_bytes": 23784
+    },
+    "lrqr_cv_trace.csv": {
+      "sha256": "0c196d68e37807a365bf952f38a5687bf799377caf73ad0aa4fd8539bc069da3",
+      "size_bytes": 428902
+    },
+    "lrqr_diagnostics.csv": {
+      "sha256": "712569f0621db776cadabad8c44c3ac93e8bf6df6a23c753d6bd5b6d3c2abeb6",
+      "size_bytes": 104801
+    },
+    "lrqr_parameters.parquet": {
+      "sha256": "0561548f434573198c82e918b8714988eeb0686505dec8c951c8b16b56a93c37",
+      "size_bytes": 95298
+    },
+    "lrqr_replicate_metrics.parquet": {
+      "sha256": "5fa1b768a67c7afcb86cc7b1487a04ed7e8576fadd2fa16b8f5ff84d531d0e5f",
+      "size_bytes": 47704
+    },
+    "method_information_budget.csv": {
+      "sha256": "088ffc6289166e5cb2e0b8ebac8031671e8932ecd6c3ae0c19663f0f3969678e",
+      "size_bytes": 1292
+    }
+  },
+  "created_at_utc": "2026-10-09T12:45:52.537279+00:00",
+  "design": {
+    "alpha": 0.1,
+    "dataset_shift_conditions": 12,
+    "inference": "descriptive equal-dataset aggregation; shifts and repeated draws are not independent deployment populations",
+    "lrqr": {
+      "beta_bounds": [
+        0.05,
+        20.0
+      ],
+      "cv_steps": 600,
+      "feature_map": "source-fitted numeric/one-hot encoding followed by a source-unlabeled fitted whitened PCA with at most 50 components",
+      "final_steps": 2000,
+      "implementation": "independent reproduction of the empirical LR-QR objective and three-fold gradient-norm lambda selection",
+      "lambda_grid": [
+        0.07937005259840998,
+        0.15874010519681997,
+        0.23811015779522993,
+        0.31748021039363994,
+        0.39685026299204984,
+        0.47622031559045985,
+        0.5555903681888699,
+        0.6349604207872798,
+        0.7143304733856898,
+        0.7937005259840998
+      ],
+      "learning_rate": 0.02,
+      "optimizer": "deterministic batched Adam with three final beta initializations",
+      "reference": "Joshi et al., NeurIPS 2025, Algorithm 1 and Section 5.1",
+      "ridge": 1e-08
+    },
+    "replicates_per_shift_seed": 5,
+    "same_labeled_source_and_target_draws_as_prior_matched_experiment": true,
+    "shift_seed_pairs": 60,
+    "source_labeled_per_problem": 300,
+    "source_unlabeled_draw_disjoint_from_labeled_source": true,
+    "source_unlabeled_per_problem": 300,
+    "target_unlabeled_per_problem": 300,
+    "untouched_target_test": true
+  },
+  "elapsed_seconds": 472.55488634109497,
+  "headline": {
+    "label_shift_weighted_300": {
+      "class_coverage_gap": 0.2772621716012909,
+      "coverage": 0.7816182616035113,
+      "mean_set_size": 1.397006657140686
+    },
+    "lrqr_300_300_300": {
+      "class_coverage_gap": 0.07617738722932375,
+      "coverage": 0.9348606523250128,
+      "mean_set_size": 1.7287678760918794
+    },
+    "ot_minmax_weighted_cdf_300": {
+      "class_coverage_gap": 0.1252504320257034,
+      "coverage": 0.9110717627988804,
+      "mean_set_size": 1.6666144621994092
+    },
+    "score_covariate_weighted_300": {
+      "class_coverage_gap": 0.14458177271639117,
+      "coverage": 0.902464562612645,
+      "mean_set_size": 1.5482451385936724
+    },
+    "source_mondrian_full": {
+      "class_coverage_gap": 0.20740842669024775,
+      "coverage": 0.8049780150728708,
+      "mean_set_size": 1.4010730966338085
+    },
+    "source_split_300": {
+      "class_coverage_gap": 0.2579043502178506,
+      "coverage": 0.8061475671921912,
+      "mean_set_size": 1.3942095862782147
+    },
+    "source_split_full": {
+      "class_coverage_gap": 0.257634549329599,
+      "coverage": 0.8065675876131975,
+      "mean_set_size": 1.3937248847887853
+    },
+    "target_mondrian_300": {
+      "class_coverage_gap": 0.037383167827263926,
+      "coverage": 0.9026371532161098,
+      "mean_set_size": 1.5115287284830963
+    },
+    "target_split_300": {
+      "class_coverage_gap": 0.1476695050211443,
+      "coverage": 0.8993518644016801,
+      "mean_set_size": 1.5415218587768849
+    }
+  },
+  "inputs": {
+    "generation_provenance": {
+      "path": "exp/source_role_outcome_blind_20260725/generation_provenance.json",
+      "sha256": "f2b5150929d16165befcdac27cbe7c9d0471b807f756fb6d4eaafa16a27e2d09"
+    },
+    "prediction_and_covariate_files": [
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__age_65plus__seed_0__covariates.parquet",
+        "covariate_sha256": "d90e3a86a82f1ec19420b57d988681d54830f8e516a040d74ac2efb9800fa640",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__age_65plus__seed_0__predictions.parquet",
+        "prediction_sha256": "fc44513b8b59b984b4080a1b6080cae76495e9abb747cb30603022105ae9bcb3"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__age_65plus__seed_1__covariates.parquet",
+        "covariate_sha256": "10aa994616a8d5bd8ef082c4a9229db1ffec99eac2facef13122e1b13b80894d",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__age_65plus__seed_1__predictions.parquet",
+        "prediction_sha256": "3ce41b2e1d7c998ff051b83ad0e1d24d0d3f917b8eefba07b115e61c5ea67ef6"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__age_65plus__seed_2__covariates.parquet",
+        "covariate_sha256": "0f4f518c30ea06a6c9d0d93900ddc80e4cae67cce64fd7045ae7a1ee185dcb9a",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__age_65plus__seed_2__predictions.parquet",
+        "prediction_sha256": "7f34e8d1e29bc2bddde7ba51985bde92414b953365e402a387650497027df1f6"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__age_65plus__seed_3__covariates.parquet",
+        "covariate_sha256": "4e4a4d0966782d2b76db4b930b8aa2f8e8a9b14865cc6946402a77eeb2c7829f",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__age_65plus__seed_3__predictions.parquet",
+        "prediction_sha256": "3db3e21771af34e632f027cec29497b25a0bdbac663158101843f823dc84d64e"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__age_65plus__seed_4__covariates.parquet",
+        "covariate_sha256": "17083d9a47430efeb65364dc8a877feeb64eb76b47fb504dc6771a78746d692d",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__age_65plus__seed_4__predictions.parquet",
+        "prediction_sha256": "991707828f7e6cec6bb52f8b02584661a42e51af40b9eb381aa072f9c695c93e"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__obesity__seed_0__covariates.parquet",
+        "covariate_sha256": "5b7ffb29a02cc2bd4f8ec2d3e5c8910bc3f2221d01637bc1706bb5bfaf8fa81e",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__obesity__seed_0__predictions.parquet",
+        "prediction_sha256": "396dcd00c11b2d49be51ae4b4caa97f2226eaec01ace354dc46bb25b1da175ee"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__obesity__seed_1__covariates.parquet",
+        "covariate_sha256": "10163abdadeac5b54794394d7eba14fdf500ff34e820949eff354b58c138f76a",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__obesity__seed_1__predictions.parquet",
+        "prediction_sha256": "5f770f14a16fc073812f899e57cfb3afb6c961f226861920f4557f23aafde9b1"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__obesity__seed_2__covariates.parquet",
+        "covariate_sha256": "3239c927bc1063020a4d25f599e9d737c5552a85026365a9c3709f7ea273c1de",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__obesity__seed_2__predictions.parquet",
+        "prediction_sha256": "c52cbaf57f69618ccb6ff84fae9f8a65018821a9109e9b1ea152fd70d8a06479"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__obesity__seed_3__covariates.parquet",
+        "covariate_sha256": "ea1efaae6a84406a3e412f97ccaf7b1a2ae805908bb2fd54b4e7995b29a93ad0",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__obesity__seed_3__predictions.parquet",
+        "prediction_sha256": "928bbdfb6cf9a4afbacdd81c61744db4c0b3644d30aaa2dc5189efa2c687fd44"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__obesity__seed_4__covariates.parquet",
+        "covariate_sha256": "17e87b5223f62780291ffcbcb31304e892cdd267bacff9ca9ccbb835abb5e6ea",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__obesity__seed_4__predictions.parquet",
+        "prediction_sha256": "950392b2a2b679e4297bde04737c30471d95a1cb87d4812ecd9892fe2f0e6a58"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__race_black_vs_white__seed_0__covariates.parquet",
+        "covariate_sha256": "c5a6e98eaafd74257dced1579b42b911c18bebf0ce847a57b792006ee0dbb5b0",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__race_black_vs_white__seed_0__predictions.parquet",
+        "prediction_sha256": "ffaf9e0fe37605e9feadf45f92ded24cfc92b5199023b6e73d6cbda8653e3e0d"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__race_black_vs_white__seed_1__covariates.parquet",
+        "covariate_sha256": "4802f3a465013a29f57f51e269d2735a6b054877e72ef8b0d687e00a8de26d64",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__race_black_vs_white__seed_1__predictions.parquet",
+        "prediction_sha256": "c46f0402400d7dedcbd28fe62bb9a98987fb6c96de7e516420cf9714cbe035ba"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__race_black_vs_white__seed_2__covariates.parquet",
+        "covariate_sha256": "36bf2f4e06e0ba64b01f11350eed7394d2794a6acdc96a37cf064d72eef9355d",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__race_black_vs_white__seed_2__predictions.parquet",
+        "prediction_sha256": "ea8a6fa48e5baac2c77e868d3e6cb509ba043d1fc9b28375986f038fad216c18"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__race_black_vs_white__seed_3__covariates.parquet",
+        "covariate_sha256": "44224f1b2ac1ba42e93bbbb5aaf99d60e72382522bbe61fca04cd06085d0ae86",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__race_black_vs_white__seed_3__predictions.parquet",
+        "prediction_sha256": "518e64c4764faefd7857b4163e577702afc4ff028a7ee679a74f6a685c0a334f"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__race_black_vs_white__seed_4__covariates.parquet",
+        "covariate_sha256": "b54578a6ddbf089d4a82b12c10b47ae33c8b0c82a680797b6a0b9e02b5bb8929",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__race_black_vs_white__seed_4__predictions.parquet",
+        "prediction_sha256": "2c90e1c719c51e872fd4d88e38dfd151b8ba462d4c6286537bc3cf20b9f2e9c5"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__region_south__seed_0__covariates.parquet",
+        "covariate_sha256": "0e6a1cb0af8f57a0309d4aae8852c32ec0d7dbbece23672eb921be5aed5b3d50",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__region_south__seed_0__predictions.parquet",
+        "prediction_sha256": "3955936e228897d8f766dd8a8c80cc05119da8daf48b07ccd2876f846251ef1a"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__region_south__seed_1__covariates.parquet",
+        "covariate_sha256": "cd3a1ded58221ef9b78153d3863d510a1e72a20205265b5c408dc2f9fb0c6c6a",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__region_south__seed_1__predictions.parquet",
+        "prediction_sha256": "0df2cdf0bf5e3d6469be2ff76a2d9e505cc4b01d9c690eb0fa1cbc5e44d7919c"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__region_south__seed_2__covariates.parquet",
+        "covariate_sha256": "85e652bb14fd2e214cfc7ae605ca2086cedeabee739b5b37cc025d4e15a80ad3",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__region_south__seed_2__predictions.parquet",
+        "prediction_sha256": "504ea80da664a3fb59c2c890fd6076920b32a4c312be4ac2a414631d835d689e"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__region_south__seed_3__covariates.parquet",
+        "covariate_sha256": "382ceb5594842df330058b797e81cb1d07498b5c30360e1f2d83e975808bacf8",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__region_south__seed_3__predictions.parquet",
+        "prediction_sha256": "bfb832eeafc2af5af0bb3de46b998d9a1796e4de5d30020197da20eae9872112"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__region_south__seed_4__covariates.parquet",
+        "covariate_sha256": "597711f58cb57f3b4856609b1771c8b7807c0679adf90d17b312bbd2f26cc0ae",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__region_south__seed_4__predictions.parquet",
+        "prediction_sha256": "8d9bd1ea179be0f9de7e8c5070d4839f43e7cd891a42e37c88a3c8c6d9a3de08"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__time_future__seed_0__covariates.parquet",
+        "covariate_sha256": "8214e659568a41141e206252c1dfec784a0a8d490815388d1e342b8d13bb0971",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__time_future__seed_0__predictions.parquet",
+        "prediction_sha256": "eda3873358153086b6711896423532965857a01193b1b47c95a74d435b680c05"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__time_future__seed_1__covariates.parquet",
+        "covariate_sha256": "92ec58353f5451fb037dea63faa225015cee2a4565c2c1270cbe3988449d6db8",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__time_future__seed_1__predictions.parquet",
+        "prediction_sha256": "da9d93485b9d34f875d82b3d95666df8213ecb0d293675af3e6b9e8c5cb67650"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__time_future__seed_2__covariates.parquet",
+        "covariate_sha256": "ee925fac27c7d6b08c325f95b4c088e7877f9eaba1d8fb3e9d2dcd5a5cc134c1",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__time_future__seed_2__predictions.parquet",
+        "prediction_sha256": "2be4ce27bf60b56252a7984b8dfbaf9a4495fc973f3fc0ea5ab392dada870a9c"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__time_future__seed_3__covariates.parquet",
+        "covariate_sha256": "5f97d7450ea7020a39bbc82396e3541e37e8b0137f3b149100acdea807914c68",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__time_future__seed_3__predictions.parquet",
+        "prediction_sha256": "288f39dde5ff28aa65d71a6a4dd02658e80f049c08953e5af71a6aae54887faf"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/brfss_multiyear_diabetes__time_future__seed_4__covariates.parquet",
+        "covariate_sha256": "730898401a6bcad51002502f8a67fa11a47a7e821ca1781fe1c62b257ab66d9c",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/brfss_multiyear_diabetes__time_future__seed_4__predictions.parquet",
+        "prediction_sha256": "6ffe415c9a658dec40185565e44787969851da518486655360894229acef6e95"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__age_65plus__seed_0__covariates.parquet",
+        "covariate_sha256": "de13232b0bdcc036664bd60e1c1a1fd8d4960895c68f941ae1523cd5fc66f84c",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__age_65plus__seed_0__predictions.parquet",
+        "prediction_sha256": "3fbd5bb728decea344e835f90acbacc9650853b68f707417cb9a69b83df0a0a2"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__age_65plus__seed_1__covariates.parquet",
+        "covariate_sha256": "5cef3775b901d424850e8219a12b7dca64243b5db553bfe3b842ae414ea86c1f",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__age_65plus__seed_1__predictions.parquet",
+        "prediction_sha256": "9785401d21f912c81c5f56a31652002fac747ee87af099da5eec15b66bbbc7a5"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__age_65plus__seed_2__covariates.parquet",
+        "covariate_sha256": "dcd29c3a1235978200a98a6874bd49e95cdace4f06c9562f8bd2e7e1c9f3c786",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__age_65plus__seed_2__predictions.parquet",
+        "prediction_sha256": "c25e77c481e87d1725ce594f9687a5281e7c66dbb2c6bb64b18004050ec751c4"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__age_65plus__seed_3__covariates.parquet",
+        "covariate_sha256": "895c44422e2a81ce5be85f8d60a38c1918b4caa44a871539ae2d52f4a00d38c8",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__age_65plus__seed_3__predictions.parquet",
+        "prediction_sha256": "c155b17fb6967cfa91ad2731f38ae51761040541d85dcabd4b7c279bef16a39f"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__age_65plus__seed_4__covariates.parquet",
+        "covariate_sha256": "cde6f2f339c219e2a310775fc498b3f7c05fb571d3daaca7bc5e1c3a0cf87ddd",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__age_65plus__seed_4__predictions.parquet",
+        "prediction_sha256": "2138903f5d9ca0ed5958a4c0cd7e9f313efaa32cb9958d06bb05757229d5dc93"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__obesity__seed_0__covariates.parquet",
+        "covariate_sha256": "c94ddb1c375633b21af9e66112725ae74f443b3e25ca27341f3f26e4844ad971",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__obesity__seed_0__predictions.parquet",
+        "prediction_sha256": "9e9905373d9c1df021df68dd4ebf458987ed9eb86a8050cd0edbf3af063430f7"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__obesity__seed_1__covariates.parquet",
+        "covariate_sha256": "16258fd5d945c3935acaef532289a700c8123381a7796840ecbdda69ed2dff4d",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__obesity__seed_1__predictions.parquet",
+        "prediction_sha256": "ba60943c49971525b0d40a2cb8019cab34574390c561f6a76ee23a3dc8b058a5"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__obesity__seed_2__covariates.parquet",
+        "covariate_sha256": "8196d4f6d00c1be884e9465932b3c91f13a40d01e4384377f49ec7babb7d7e87",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__obesity__seed_2__predictions.parquet",
+        "prediction_sha256": "9f616be89db5c69cb446ff4ba4e514d3f974f9e7035ec4cb7e56d0bc687c2e2d"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__obesity__seed_3__covariates.parquet",
+        "covariate_sha256": "7b1cd199472330ff4c8ca5f946ee45caf3e7fed3e9a11bbb8bb6702ba0f419b3",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__obesity__seed_3__predictions.parquet",
+        "prediction_sha256": "cb2604f9e016d0686982feed7209e876e3bf0371ef67fd7f9268178768e470df"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__obesity__seed_4__covariates.parquet",
+        "covariate_sha256": "4430a6efc669afd36388e95f0bcdadc310cd26b181ea1e1ae43336e42c010c43",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__obesity__seed_4__predictions.parquet",
+        "prediction_sha256": "11c5a9b7199a6072f4586387e4eb8f10c62647e3202af4595e71f318305a682c"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__race_black_vs_white__seed_0__covariates.parquet",
+        "covariate_sha256": "afb82f28f537aec7a1ede30dbc6fdb0802143d94c0d12ae80feeca873de34dd2",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__race_black_vs_white__seed_0__predictions.parquet",
+        "prediction_sha256": "3da42512545a8d69ff438ec6cea21a393918c3a17a495b689619b32d77548b47"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__race_black_vs_white__seed_1__covariates.parquet",
+        "covariate_sha256": "f49b1ba8540c75625688fc9233a8e1d3d25c2d2d2dc5c820dda2d5c860b92ca0",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__race_black_vs_white__seed_1__predictions.parquet",
+        "prediction_sha256": "d981a70702a290ca9bdcfc78c4fc1c96b312b47aa2c545c3e70fd512df2a6871"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__race_black_vs_white__seed_2__covariates.parquet",
+        "covariate_sha256": "2dd42a52340655926f5993b0db60a27bfc4f5a79b7649a56aa31baedd2206aa2",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__race_black_vs_white__seed_2__predictions.parquet",
+        "prediction_sha256": "e9c36da39b182feccb828bb2881bfa0fca1ea334d58d412445b8cb4fde43095d"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__race_black_vs_white__seed_3__covariates.parquet",
+        "covariate_sha256": "7118ac0c8c2871fd1e774c5c60b4abfb1269adfb3fe94be661f3e203f971cf0e",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__race_black_vs_white__seed_3__predictions.parquet",
+        "prediction_sha256": "18a5fbeaf9be97f24dad1d208d82ec5e4fcddeaa4585b7a49fb60c9c90c56ecf"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__race_black_vs_white__seed_4__covariates.parquet",
+        "covariate_sha256": "3b2d0dc0bf5580b546573898a18435f4d3d57e04a0c7710c63937abe8ae1cd27",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__race_black_vs_white__seed_4__predictions.parquet",
+        "prediction_sha256": "ace12155920db175aae9cfcda38f9adc1638105e047c57024edb5d7f77d736c5"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__time_future__seed_0__covariates.parquet",
+        "covariate_sha256": "c6e1dc9d2a21fbf2058d4cc7c038871025e8f629a4fc528b8a8f64ad6bf93952",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__time_future__seed_0__predictions.parquet",
+        "prediction_sha256": "38d2a16820a1673b25d6380dfb783adb2ae4a8283e36375e01fd384bee50b74e"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__time_future__seed_1__covariates.parquet",
+        "covariate_sha256": "587f1c2d8a12497d0039e0882c395f38cdd70a1c3916c7fcc745705ee942f428",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__time_future__seed_1__predictions.parquet",
+        "prediction_sha256": "0a4e2f75b5919c5b37ad0643a8326a7832dd66c1085eae1cab46e666af407a3a"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__time_future__seed_2__covariates.parquet",
+        "covariate_sha256": "dc732efc9d36592273941840bd705ce99cc5c8f556edaea11cc668301ad4bab7",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__time_future__seed_2__predictions.parquet",
+        "prediction_sha256": "c361071e65665258bf45b9b1ab9f22806f73835fb3e05aae1e689534cadff023"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__time_future__seed_3__covariates.parquet",
+        "covariate_sha256": "8292b3b8c85f996270557becde6d460d28eba019ffcbb04f9e2de0afdc615b11",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__time_future__seed_3__predictions.parquet",
+        "prediction_sha256": "3c28a9a799d6169f012a0ea187c0432a57012b1a085d824198831e0590f033ee"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/nhanes_multicycle_diabetes__time_future__seed_4__covariates.parquet",
+        "covariate_sha256": "629920b3655bda7d25d84380ae2b8485e3ef1389f992c0096f4474148d4d6878",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/nhanes_multicycle_diabetes__time_future__seed_4__predictions.parquet",
+        "prediction_sha256": "9d0f22fe56c839133e323f199090e59e5f2d1c303e5e0bb0558fe6a3e498f299"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__age_older70__seed_0__covariates.parquet",
+        "covariate_sha256": "51f7725ca6566252cee4ca53a89b1faa5fe800654e389aa4b6a2ad0af14762ac",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__age_older70__seed_0__predictions.parquet",
+        "prediction_sha256": "1f6b6e6c04d543a34f072dcf2c7b63c4144b277c16a1606fae30a08f29c7a9ac"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__age_older70__seed_1__covariates.parquet",
+        "covariate_sha256": "bf0919f9d5b2f20571b67f416f5cb73d468033e1878d38778bdcd443b0bd9fb5",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__age_older70__seed_1__predictions.parquet",
+        "prediction_sha256": "c61fa600afd803b5ad0fc1767eb3f9672132c43eb45221985e7c89594e68aa33"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__age_older70__seed_2__covariates.parquet",
+        "covariate_sha256": "cef567e8fc54d4921b554e1ef2ae9a48dd92f80945768007a699b5f21e44a67e",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__age_older70__seed_2__predictions.parquet",
+        "prediction_sha256": "61711fa69e706f2adc30ad981495848c41a8963cc4964d9ef94a3e89e0529125"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__age_older70__seed_3__covariates.parquet",
+        "covariate_sha256": "4899cdc9de114fb0dbf3b346468eae2cc6e2da5934ce3f6afc7980ecf06027f4",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__age_older70__seed_3__predictions.parquet",
+        "prediction_sha256": "b88cb7a5220cc2eca9ae41f066ae98d4388e1bfebb56b8d967c72154e30215c2"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__age_older70__seed_4__covariates.parquet",
+        "covariate_sha256": "7a5a03e5c80180f49ba351ff0ac2d5e1a03abe39a02f7226db91506b4ea612cd",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__age_older70__seed_4__predictions.parquet",
+        "prediction_sha256": "57fe3cc83fbc011fd974b8d362b766f392b1bb76cf629340e38027d7f0053dfc"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__emergency_admission__seed_0__covariates.parquet",
+        "covariate_sha256": "04c78b5a7baf4e566ec48ad1130e2f1563633cd2fe1397e93b5f10aa8eb01f36",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__emergency_admission__seed_0__predictions.parquet",
+        "prediction_sha256": "210d4d837b8538e01bc36e89f01efa0d97ef4b57cf3176cf9937f9fb5c2c521b"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__emergency_admission__seed_1__covariates.parquet",
+        "covariate_sha256": "9c7b1b507c1818db1a9fe0a51e37a43e9090e3f229fffc2de35a204797d9a598",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__emergency_admission__seed_1__predictions.parquet",
+        "prediction_sha256": "0d01f5709e14e2c87046bcf259a9a3b8b0b537260605dfaf64d1c75c58eb3e00"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__emergency_admission__seed_2__covariates.parquet",
+        "covariate_sha256": "7bf5850df3a1dba115d4971c217a39ed7ff286c02a555649d8dda189aeabbe8f",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__emergency_admission__seed_2__predictions.parquet",
+        "prediction_sha256": "65e03b9369805586ced63a6e07f949489c1026c133cdd854c658df20f5cf36d9"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__emergency_admission__seed_3__covariates.parquet",
+        "covariate_sha256": "76f00d3a9daf68b8180b304446fca6e3175f06e84c6f2b10b77c96b87bba5178",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__emergency_admission__seed_3__predictions.parquet",
+        "prediction_sha256": "b21d055a06fbbbfd559911513d2bdda10b531f0886990bfb4f06967b0ef1260e"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__emergency_admission__seed_4__covariates.parquet",
+        "covariate_sha256": "6f312bfc55c57471389e19d228c8fd7ae0e59ccac2a8afff54315f75d97794b3",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__emergency_admission__seed_4__predictions.parquet",
+        "prediction_sha256": "63029aaa9cf175d6024fa9560801da271d5ac2b849f80a07391175b2ef0826c0"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__race_african_american__seed_0__covariates.parquet",
+        "covariate_sha256": "51357ffb6c966e01ae3ed7fa906c134d3a2d4d68a4a2d719a863f20b04893010",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__race_african_american__seed_0__predictions.parquet",
+        "prediction_sha256": "e695c3cebd4a92ae76d6903064a6a90496fc4b6ba121d421c3c520d9f2c6b22f"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__race_african_american__seed_1__covariates.parquet",
+        "covariate_sha256": "84ddee3360687bbeeabdea3240d92099c93a9557c2fdc51c92d4c6c49540b513",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__race_african_american__seed_1__predictions.parquet",
+        "prediction_sha256": "e0c3b4ad695f634cce1f2d1f7b8867dccb4282f01e1f14655b9236d8f1290ec6"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__race_african_american__seed_2__covariates.parquet",
+        "covariate_sha256": "6ea6b7a6e4ffb55c8748f28c977f9638ceadb506e866bd7fccf3dbb4227d6d62",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__race_african_american__seed_2__predictions.parquet",
+        "prediction_sha256": "7204e0694021a1cecb755402557e872e93b7b673807861c3c29efabb4d9d11de"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__race_african_american__seed_3__covariates.parquet",
+        "covariate_sha256": "f16b3e3df6dcd61dc98ab34e44e5038c6f8ed2ec997c73a825fe32a13e9ecb62",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__race_african_american__seed_3__predictions.parquet",
+        "prediction_sha256": "853205fc422ba2e119ee9db2bb19bb4e8a995c086e8980ee2a2ad60a0293c446"
+      },
+      {
+        "covariate_path": "exp/source_role_outcome_blind_20260725/artifacts/covariates/uci_diabetes_readmission__race_african_american__seed_4__covariates.parquet",
+        "covariate_sha256": "1f19e00d224951f4f2b90f5d7d56d80830bbb22f670d7c661c83d92bc6af27d0",
+        "prediction_path": "exp/source_role_outcome_blind_20260725/artifacts/predictions/uci_diabetes_readmission__race_african_american__seed_4__predictions.parquet",
+        "prediction_sha256": "f2bd3606ecfa61ae28fbbba9f5851be64ba3e949b4180ac9daa057ad7e259b6e"
+      }
+    ],
+    "prior_draw_audit": {
+      "path": "exp/shift_aware_baselines_20260813/draw_audit.csv",
+      "sha256": "17a8e2c77f6d0b3d89020f6dfdf80954211b62d1f8f8329c25958d10903b565b"
+    },
+    "prior_matched_metrics": {
+      "path": "exp/shift_aware_baselines_20260813/shift_aware_replicate_metrics.parquet",
+      "sha256": "fd4e7db2ac900366464909c4afb3486a395c3ea4f5dd5a78c15c880871eb197b"
+    }
+  },
+  "lrqr_heterogeneity": {
+    "maximum_final_gradient_norm": 0.5457868526634996,
+    "maximum_shift_class_coverage_gap": 0.26615912575553796,
+    "maximum_shift_coverage": 0.9971405119020968,
+    "median_final_gradient_norm": 0.08929778069115206,
+    "minimum_shift_coverage": 0.7939786125582671
+  },
+  "schema_version": "ara.public_shift.lrqr_baseline.v1",
+  "status": "completed",
+  "validation": {
+    "all_metrics_finite": true,
+    "coefficient_rows": true,
+    "extended_row_count": true,
+    "input_hashes_match": true,
+    "lrqr_row_count": true,
+    "matched_source_and_target_draws_reused": true,
+    "method_count": true,
+    "no_target_pool_or_test_labels_used_for_fitting": true,
+    "one_selected_lambda_per_problem": true,
+    "roles_disjoint": true,
+    "source_labeled_and_unlabeled_disjoint": true
+  }
+}

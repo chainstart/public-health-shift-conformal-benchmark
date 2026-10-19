@@ -1,3 +1,18 @@
+# Interface v2.0.0 (2026-10-19)
+
+Public inventory excludes article and supplementary-article text. Experiment
+examples are named health-study and legacy-experiments. Public-content checks
+block article PDF/LaTeX/Word documents from future example distributions.
+
+- Reorganize the entry point around reusable evaluation, with the paper as a case study.
+- Add the published v1.4.15 implementation, protocol map and reference summaries under examples/health-study.
+- Provide one CLI for preparation, synthetic interface checks, matched multi-method evaluation and aggregation.
+- Document method information access, metrics, cohort preparation and reference-result attribution.
+- Move the complete old GitHub tree into examples/legacy-experiments; retain the immutable paper-release tag and fixed-commit URLs. No original measurements replaced.
+- GitHub interface version 2.0.0 and Zenodo paper-support version 1.4.15 are distinct.
+
+## Earlier release notes
+
 # Release Notes
 
 ## Development source updates, 2026-10-17

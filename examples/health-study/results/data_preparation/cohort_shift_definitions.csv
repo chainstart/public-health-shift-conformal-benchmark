@@ -1,0 +1,13 @@
+dataset,shift_name,source_n,target_n,source_prevalence,target_prevalence,group_col,source_values,target_values,description
+brfss_multiyear_diabetes,time_future,180000,240000,0.1303111111111111,0.13969166666666666,survey_year,2011|2013|2015,2017|2019|2021|2023,"train/calibrate on 2011-2015 BRFSS, test on 2017-2023"
+brfss_multiyear_diabetes,region_south,291104,122000,0.12360874464109046,0.1617377049180328,region,northeast|midwest|west,south,"train/calibrate outside US South, test in Southern states"
+brfss_multiyear_diabetes,age_65plus,268769,145343,0.09437472327537774,0.2129789532347619,age_group,18_64,65_plus,"train/calibrate adults 18-64, test adults 65+"
+brfss_multiyear_diabetes,obesity,302189,117811,0.09584068248678806,0.2378385719499877,obesity_group,not_obese,obese,"recorded BMI >=30 or BRFSS BMI category 4 versus other records, including unavailable BMI"
+brfss_multiyear_diabetes,race_black_vs_white,270282,27421,0.1282512338964489,0.21009445315634004,race_group,white,black,"train/calibrate white respondents, test black respondents"
+nhanes_multicycle_diabetes,time_future,18810,18133,0.07682083997873472,0.09645397893343628,cycle_start,2011|2013,2015|2017,"train/calibrate NHANES 2011-2014, test 2015-2018"
+nhanes_multicycle_diabetes,age_65plus,31734,5209,0.05454717337871053,0.2808600499136111,age_group,18_64,65_plus,all participants younger than 65 versus age 65 and older; source includes children
+nhanes_multicycle_diabetes,obesity,28021,8922,0.05410228043253274,0.1880744227751625,obesity_group,not_obese,obese,"recorded BMI >=30 or BRFSS BMI category 4 versus other records, including unavailable BMI"
+nhanes_multicycle_diabetes,race_black_vs_white,12112,8698,0.08371862615587847,0.09749367670728903,race_group,white,black,"train/calibrate white respondents, test black respondents"
+uci_diabetes_readmission,age_older70,39818,31697,0.07785423677733688,0.10073508533930656,age_group,younger,older70,"train/calibrate on patients younger than 70, test on patients 70+"
+uci_diabetes_readmission,race_african_american,53491,12887,0.09003383746798527,0.08481415379840149,race_group,Caucasian,AfricanAmerican,"train/calibrate on Caucasian patients, test on African American patients"
+uci_diabetes_readmission,emergency_admission,33227,38288,0.08535227375327294,0.09028938570831592,admission_shift_group,non_emergency,emergency_room,"train/calibrate on non-emergency admissions, test on emergency-room admissions"

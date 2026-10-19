@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "method": "ot",
+  "cases": 80,
+  "pair_count": 16,
+  "device": "cpu",
+  "reference_code_sha256": "2a4c72d3106f7e39758e6ff9a709543132cc52bf9bfec7953a95860596f85b52",
+  "script_sha256": "37635ad6450982b022d4c8b1306f547e1a9103f5d0d00812aac9a1ef5146dea0",
+  "generation_provenance_sha256": "0e04f72db644383033ac3620412a9e846868be9e718d17c90bdecf4fa3707194",
+  "elapsed_seconds": 135.40883441094775,
+  "files": {
+    "seed0_equal_dataset_summary.csv": "199e4c9ef844d43db7a68c216d259d465cf509c997255a2973ad604d4a44b1fc",
+    "replicate_metrics.csv": "cb4c07c5524aa1cfc551fd476612662e0c8312c5cfc5c01f0cf70fd6c29621e2",
+    "condition_summary.csv": "f3883a49449cb9c26c41e82db4987caf09ab238b4d850f37542ab5e3d9875ba9",
+    "partial_metrics.csv": "f0db3101895ea4498398676349ee0702969767fc583c31b8bee463c9acecc611",
+    "optimization_trace.csv": "b093b788eec4f17bb8e2f40620287b6ef0e86f38cd6d6d561552aa6775e1ea35"
+  }
+}

@@ -1,0 +1,27 @@
+\begin{table*}[!tbp]
+\centering
+\caption{Per-shift heterogeneity diagnostics over five seeds. Source shortfall and target-recalibration shortfall are reported as mean (SD); prevalence difference is target minus source positive-label prevalence.}
+\label{tab:heterogeneity_diagnostics}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Shift & Source short. & Tgt10 short. & Domain AUC & Prev. diff. & Short. red. \\
+\midrule
+BRFSS & age\_65plus & 0.07254 (0.00625) & 0.00071 (0.0014186) & 1.00000 & 0.11860 & 0.07184 \\
+BRFSS & obesity & 0.20982 (0.02773) & 0.00013 (0.00019) & 1.00000 & 0.14200 & 0.20969 \\
+BRFSS & race\_black\_vs\_white & 0.03848 (0.00750) & 0.00462 (0.00408) & 1.00000 & 0.08184 & 0.03387 \\
+BRFSS & region\_south & 0.03311 (0.00248) & 0.00228 (0.00213) & 1.00000 & 0.03813 & 0.03084 \\
+BRFSS & time\_future & 0.00000 (0.00000) & 0.00087 (0.0014194) & 1.00000 & 0.00938 & -0.00087 \\
+NHANES & age\_65plus & 0.53554 (0.02186) & 0.00447 (0.00764) & 0.99979 & 0.22631 & 0.53106 \\
+NHANES & obesity & 0.20839 (0.05490) & 0.00133 (0.00296) & 0.99594 & 0.13397 & 0.20706 \\
+NHANES & race\_black\_vs\_white & 0.00000 (0.00000) & 0.00651 (0.01039) & 1.00000 & 0.01378 & -0.00651 \\
+NHANES & time\_future & 0.00000 (0.00000) & 0.00382 (0.00738) & 1.00000 & 0.01963 & -0.00382 \\
+UCI & age\_older70 & 0.11407 (0.04195) & 0.00325 (0.00403) & 1.00000 & 0.02288 & 0.11082 \\
+UCI & emergency\_admission & 0.03613 (0.01259) & 0.00202 (0.00410) & 1.00000 & 0.00494 & 0.03411 \\
+UCI & race\_african\_american & 0.00000 (0.00000) & 0.00270 (0.00402) & 1.00000 & -0.00522 & -0.00270 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

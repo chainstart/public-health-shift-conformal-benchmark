@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "paired_evaluations": 300,
+  "example_equals_builtin": true,
+  "files": {
+    "example.csv": "82b5883f6277f05aded3595f20c416b2f4b138343e14f138e21cf42191ee1302",
+    "builtin.csv": "ab250882fef5d8021018af89bc3e8851f6dd9022d46f5291974c205410906109"
+  }
+}

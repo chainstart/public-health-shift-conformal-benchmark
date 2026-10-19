@@ -1,0 +1,15 @@
+{
+  "question": "Retain the original whole-dataset random train/calibration/test control.",
+  "test_fraction": 0.25,
+  "calibration_fraction_of_development": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "allocation": "permutation independent of labels/features; original fractions retained",
+  "interpretation": "15 dataset-seed controls, not 60 independent controls and not condition-size matched",
+  "code_sha256": "c9b8b89ed5e4b66bc81e5b9f2ce6f7f75e263224dc3dc96becdb9d633baf4b22"
+}

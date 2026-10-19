@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checked_metric_rows": 9600,
+  "mismatches": [],
+  "scope": "Independent sorted finite-rank thresholds, paired draws, class counts, prediction sets and all efficiency metrics. Does not assert optimizer convergence or clinical validity.",
+  "code_sha256": "9d735d75fb1352c8f397241e2193e6a6e79ade9374f8dc87005727ede35606ca"
+}

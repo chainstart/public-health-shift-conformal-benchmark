@@ -8,3 +8,11 @@ __pycache__/
 data/raw*/
 data/processed*/
 *.log
+
+.venv/
+work/
+build/
+*.egg-info/
+
+**/data/raw*/
+**/data/processed*/
