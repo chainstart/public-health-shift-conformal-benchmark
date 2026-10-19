@@ -14,8 +14,9 @@ primary analysis and separately labelled additional experiments.
 | Cardiac and sepsis extensions | `examples/health-study/institutional/` | Separate external case studies |
 | Full paper presentation | `examples/health-study/supplement/` | Published supplementary discussion, tables and figure sources |
 
-`examples/health-study/` is copied from published support v1.4.15,
-[10.5281/zenodo.23461041](https://doi.org/10.5281/zenodo.23461041).
+`examples/health-study/` is derived from the v1.4.15 experiment code, with article documents excluded;
+current manuscript-free support is v1.4.16,
+[10.5281/zenodo.23476545](https://doi.org/10.5281/zenodo.23476545).
 It includes code and small derived reference summaries, not raw patient records,
 trained weights or prediction arrays. The source archive's inventory and
 reproduction instructions retain their original meaning within this directory.

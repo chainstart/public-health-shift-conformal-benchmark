@@ -82,10 +82,10 @@ controls. Independent cardiac and sepsis extensions are separate case studies.
 
 The maintained interface is version **2.0.0**. The immutable historical
 [`paper-release`](https://github.com/chainstart/public-health-shift-conformal-benchmark/releases/tag/paper-release)
-remains available. The latest published paper-support archive is **v1.4.15**,
-[DOI 10.5281/zenodo.23461041](https://doi.org/10.5281/zenodo.23461041).
+remains available. The latest published code-and-results support archive is **v1.4.16**,
+[DOI 10.5281/zenodo.23476545](https://doi.org/10.5281/zenodo.23476545).
 The interface and the paper-support archive have separate version numbers;
-this GitHub update does not create a new Zenodo deposit or replace original results.
+support v1.4.16 excludes article documents; scientific code and original results are retained.
 See [verified scope](docs/VERIFICATION.md) and the [fixed-300 reference run](reference/fixed300/README.md).
 Use [CITATION.cff](CITATION.cff), and report the exact commit/tag, protocol,
 cohort inputs, model seeds, calibration budget and method information access.

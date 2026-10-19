@@ -50,5 +50,5 @@ python -m benchmark compare --input work/health/results.csv --out work/health/co
 原论文主分析与新增 outcome-blind 协议有明确区别，不能混用结果。
 见 [协议说明](examples/health-study/PROTOCOL_MAP.md) 和 [基准定义](docs/BENCHMARK.md)。
 
-GitHub 接口版本为 2.0.0；Zenodo 论文支撑包版本为 1.4.15，
-DOI [10.5281/zenodo.23461041](https://doi.org/10.5281/zenodo.23461041)。两者版本分别管理。
+GitHub 接口版本为 2.0.0；Zenodo 代码与结果支撑包版本为 1.4.16，
+DOI [10.5281/zenodo.23476545](https://doi.org/10.5281/zenodo.23476545)。两者版本分别管理。

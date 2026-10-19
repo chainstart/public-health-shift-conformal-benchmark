@@ -40,6 +40,6 @@ references:
         given-names: Haolun
       - family-names: Feng
         given-names: Yan
-    version: "1.4.15"
-    doi: "10.5281/zenodo.23461041"
+    version: "1.4.16"
+    doi: "10.5281/zenodo.23476545"
     notes: "Archived case study; this DOI does not identify GitHub interface v2.0.0."
