@@ -8,6 +8,10 @@ fixed baselines on shared source/target roles, calibration draws and metrics.
 **The associated paper is one case study using this benchmark.** Its tables,
 figures and experimental records are examples of benchmark outputs.
 
+## Supplementary article
+
+[Read the complete supplementary article (Sections S1–S20)](docs/supplementary/20260706-ai-health-conformal-deployment-shift-v1.4.16-supplementary.pdf). The same PDF is separately downloadable from [Zenodo supporting release v1.4.17](https://doi.org/10.5281/zenodo.23610036).
+
 ## Start here
 
 | Goal | Entry point |
