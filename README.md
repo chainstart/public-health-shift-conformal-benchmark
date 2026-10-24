@@ -10,7 +10,7 @@ figures and experimental records are examples of benchmark outputs.
 
 ## Supplementary article
 
-[Read the complete supplementary article (Sections S1–S20)](docs/supplementary/20260706-ai-health-conformal-deployment-shift-v1.4.16-supplementary.pdf). The same PDF is separately downloadable from [Zenodo supporting release v1.4.17](https://doi.org/10.5281/zenodo.23610036).
+[Read the complete supplementary article (Sections S1–S20)](docs/supplementary/20260706-ai-health-conformal-deployment-shift-v1.4.18-supplementary.pdf). The same PDF is separately downloadable from [Zenodo supporting release v1.4.18](https://doi.org/10.5281/zenodo.23611003).
 
 ## Start here
 
