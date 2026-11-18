@@ -12,7 +12,7 @@ primary analysis and separately labelled additional experiments.
 | Additional basic-method budgets | `examples/health-study/results/` | Follow the named protocol and `REPRODUCE.md` |
 | Fixed-300 nine-method comparison | `examples/health-study/results/matched/` | Stronger comparator reference; preserve labels and optimizer settings |
 | Cardiac and sepsis extensions | `examples/health-study/institutional/` | Separate external case studies |
-| Complete supplementary article | [`supplementary/`](supplementary/README.md) | Sections S1–S20 in the author-authorized public PDF; archived as a separate file in Zenodo v1.4.18 |
+| Complete supplementary article | [`supplementary/`](supplementary/README.md) | Sections S1–S21 in the author-authorized public PDF; archived as a separate file in Zenodo v1.4.20 (DOI 10.5281/zenodo.24342075) |
 
 `examples/health-study/` is derived from the v1.4.15 experiment code, with article documents excluded;
 current manuscript-free support is v1.4.16,
