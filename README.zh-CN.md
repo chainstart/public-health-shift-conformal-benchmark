@@ -6,9 +6,13 @@
 
 - `benchmark/`：基准接口、任务配置、数据与预测准备、统一评测和汇总命令。
 - `examples/source_split.py`：可复制修改的外部方法示例。
-- `examples/health-study/`：基于 Zenodo v1.4.15 整理的实验样例，不含论文正文或补充文章全文。
+- `examples/health-study/`：基于 Zenodo v1.4.15 整理的实验样例；论文正文不公开，补充文章全文见下文“补充材料”。
 - `examples/legacy-experiments/`：重构前 GitHub 仓库的完整历史快照。
 - `docs/`：评测规则、真实数据流程、方法接入和参考结果说明。
+
+## 补充材料
+
+[阅读完整的补充文章（第 S1–S21 节）](docs/supplementary/20260706-ai-health-conformal-deployment-shift-v1.4.21-supplementary.pdf)。同一 PDF 也可从 [Zenodo 支撑材料发布版本 v1.4.21](https://doi.org/10.5281/zenodo.24359089) 单独下载。
 
 ## 从接入自己的方法开始
 
